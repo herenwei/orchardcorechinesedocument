@@ -1,0 +1,1133 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Widgets - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#widgets-orchardcorewidgets" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Widgets
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Widgets" class="md-nav__link md-nav__link--active">
+      Widgets
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Widgets/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="widgets-orchardcorewidgets">Widgets (OrchardCore.Widgets)</h1>
+<h1 id="orchardcorewidgets"><font color=#0099ff size=4 face="黑体">小部件（OrchardCore.Widgets）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Widgets are content items of a specific category (stereotype) that can be rendered in custom locations of a page.</p>
+<p><font color=#0099ff size=4 face="黑体">窗口小部件是特定类别（构造型）的内容项，可以在页面的自定义位置呈现。</font> </p>
+<p>The Widgets modules provides a <code>Widget</code> stereotype and some templates to render it. Widgets are used by different modules that need to</p>
+<p><font color=#0099ff size=4 face="黑体">Widgets模块提供了一个<code>Widget</code>构造型和一些模板来呈现它。小部件由需要的不同模块使用</font> </p>
+<p>render specialized pieces of content like Layers or Forms.</p>
+<p><font color=#0099ff size=4 face="黑体">渲染专门的内容，如图层或表单。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="creating-custom-widgets">Creating custom Widgets</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">创建自定义小部件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Many types of Widgets can be created and the default recipes do create some custom ones like <code>Paragraph</code>, <code>Blockquote</code>, <code>MediaWidget</code> that you can </p>
+<p><font color=#0099ff size=4 face="黑体">可以创建许多类型的小部件，默认的配方会创建一些自定义的小部件，如<code>Paragraph</code>，<code>Blockquote</code>，<code>MediaWidget</code>，你可以</font> </p>
+<p>use as examples.</p>
+<p><font color=#0099ff size=4 face="黑体">用作例子。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Widgets are content items, and as such they can be composed of content fields and content parts. For instance the <code>Paragraph</code> widget that is included with the </p>
+<p><font color=#0099ff size=4 face="黑体">窗口小部件是内容项，因此它们可以由内容字段和内容部分组成。例如，包含在内的<code>Paragraph</code>小部件</font> </p>
+<p>TheBlogTheme recipe is made out of an Html field with a Wysiwyg editor.</p>
+<p><font color=#0099ff size=4 face="黑体">TheBlogTheme配方由带有Wysiwyg编辑器的Html字段组成。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Widgets can then be composed from the Admin UI during the lifetime of the site, from migrations files to include them as part of custom modules, or recipe files</p>
+<p><font color=#0099ff size=4 face="黑体">然后，可以在站点生命周期内从Admin UI组合窗口小部件，从迁移文件组成窗口小部件，将其作为自定义模块或配方文件的一部分包含在内</font> </p>
+<p>when a site is set up. The only requirement to create a Widget is to mark a content type with the <code>Widget</code> stereotype. By doing so the different services that look</p>
+<p><font color=#0099ff size=4 face="黑体">设置网站时。创建Widget的唯一要求是使用<code>Widget</code>构造型标记内容类型。通过这样做，看起来不同的服务</font> </p>
+<p>for Widgets will treat this content item in accordance. This is how the Layers module, or the Page editor can display the list of available Widget types.</p>
+<p><font color=#0099ff size=4 face="黑体">对于小部件，将按照处理此内容项。这就是图层模块或页面编辑器可以显示可用窗口小部件类型列表的方式。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="theming">Theming</h2>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">主题化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Because <code>Widget</code> is a stereotype, all Widget content items are rendered from a main shape named <code>Widget</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">因为<code>Widget</code>是一个刻板印象，所有Widget内容项都是从名为<code>Widget</code>的主要形状渲染的。</font> </p>
+<p>This main shape's template has access to these properties:</p>
+<p><font color=#0099ff size=4 face="黑体">此主要形状的模板可以访问这些属性：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|说明|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Model.ContentItem</code> | The Widget content item. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.ContentItem</code> | Widget内容项。 |</font> </p>
+<p>| <code>Model.Content</code> | A list of inner shapes to display. It's populated by all the fields and parts the widget is composed of. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.Content</code> |要显示的内部形状列表。它由窗口小部件组成的所有字段和部分组成。 |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>It also contains these specific zones, which are not used most of the time and can be ignored when creating custom templates for </p>
+<p><font color=#0099ff size=4 face="黑体">它还包含这些特定区域，这些区域在大多数时间不使用，在创建自定义模板时可以忽略</font> </p>
+<p>the website front-end.</p>
+<p><font color=#0099ff size=4 face="黑体">网站前端。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|说明|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Model.Header</code> | The shapes to render in the widget's header. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.Header</code> |要在窗口小部件的标题中呈现的形状。 |</font> </p>
+<p>| <code>Model.Meta</code> | The shapes to render in the widget's metadata zone. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.Meta</code> |要在窗口小部件的元数据区域中呈现的形状。 |</font> </p>
+<p>| <code>Model.Footer</code> | The shapes to render in the widget's footer. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.Footer</code> |要在窗口小部件的页脚中呈现的形状。 |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The shape also contains all the properties common to all shapes like <code>Classes</code>, <code>Id</code> and <code>Attributes</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">形状还包含所有形状共有的所有属性，如<code>Classes</code>，<code>Id</code>和<code>Attributes</code>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="customizing-widget-templates">Customizing <code>Widget</code> templates</h3>
+<h2 id="widget"><font color=#0099ff size=4 face="黑体">自定义<code>Widget</code>模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <code>Widget</code> shape is used to render a Widget. The default template will render something like this:</p>
+<p><font color=#0099ff size=4 face="黑体"><code>Widget</code>形状用于渲染Widget。默认模板将呈现如下内容：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="html">
+&lt;div class=&quot;widget-container&quot;&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;div class =“widget-container”&gt;&lt;/font&gt; 
+
+
+    &lt;div class=&quot;widget-container-title&quot;&gt;
+
+        &lt;h2&gt;A Paragraph&lt;/h2&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;widget widget-html-widget&quot;&gt;
+
+        &lt;div class=&quot;widget-body&quot;&gt;
+
+            &lt;p&gt;This is a paragraph&lt;/p&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/ DIV&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>If the HTML contains <code>&lt;div class="widget-container"&gt;</code> then your widget has been rendered by the Layers modules which will add this automatically as it needs to </p>
+<p><font color=#0099ff size=4 face="黑体">如果HTML包含<code>&lt;div class =“widget-container”&gt;</code>那么你的小部件已由层模块呈现，它将根据需要自动添加</font> </p>
+<p>be able to render a title, and uses it as a container for both the title and the widget's actual content.</p>
+<p><font color=#0099ff size=4 face="黑体">能够呈现标题，并将其用作标题和小部件实际内容的容器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The actual template for the <code>Widget</code> shape can be found in <code>src/OrchardCore.Modules/OrchardCore.Widgets/Views/Widgets.cshtml</code> but can be simplified to this:</p>
+<p><font color=#0099ff size=4 face="黑体"><code>Widget</code>形状的实际模板可以在<code>src / OrchardCore.Modules / OrchardCore.Widgets / Views / Widgets.cshtml</code>中找到，但可以简化为：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+&lt;div class=&quot;{{ Model.Classes | join &quot; &quot;}}&quot;&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;div class =“{{Model.Classes | join”“}}”&gt;&lt;/font&gt; 
+
+
+    &lt;div class=&quot;widget-body&quot;&gt;
+
+    {{ Model.Content | shape_render }}
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/ DIV&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="razor">
+&lt;div class=&quot;@String.Join(&quot; &quot;, Model.Classes.ToArray())&quot;&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;div class =“@ String.Join（”“，Model.Classes.ToArray（））”&gt;&lt;/font&gt; 
+
+
+    &lt;div class=&quot;widget-body&quot;&gt;
+
+    @await DisplayAsync(Model.Content)
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/ DIV&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Alternates are available per Content Type.</p>
+<p><font color=#0099ff size=4 face="黑体">每种内容类型都有替代品。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Definition | Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|定义|模板|文件名|</font> </p>
+<p>| ---------- | --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| ---------- | --------- | ------------ |</font> </p>
+<p>| <code>Widget__[ContentType]</code> | <code>Widget__Paragraph</code> | <code>Widget-Paragraph.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Widget __ [ContentType]</code>| <code>Widget__Paragraph</code> | <code>Widget-Paragraph.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="customizing-the-widget_wrapper-template">Customizing the <code>Widget_Wrapper</code> template</h3>
+<h2 id="widget_wrapper"><font color=#0099ff size=4 face="黑体">自定义<code>Widget_Wrapper</code>模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>As mentioned in the previous section, the Layers module uses a template to wrap the widgets that it renders and insert a custom title for each of them.</p>
+<p><font color=#0099ff size=4 face="黑体">如上一节所述，图层模块使用模板来包装它呈现的小部件，并为每个小部件插入自定义标题。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The actual template for this wrapper shape can be found in <code>src/OrchardCore.Modules/OrchardCore.Layers/Views/Widget.Wrapper.cshtml</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">这个包装器形状的实际模板可以在<code>src / OrchardCore.Modules / OrchardCore.Layers / Views / Widget.Wrapper.cshtml</code>中找到。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A common requirement is to remove these tags, which can be done by creating this template instead:</p>
+<p><font color=#0099ff size=4 face="黑体">一个常见的要求是删除这些标记，这可以通过创建此模板来完成：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.Content | shape_render }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.Content | shape_render}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="razor">
+@await DisplayAsync(Model.Content)
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;@awa DisplayAsync（Model.Content）&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Optionally you change </p>
+<p><font color=#0099ff size=4 face="黑体">您可以选择更改</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Definition | Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|定义|模板|文件名|</font> </p>
+<p>| ---------- | --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| ---------- | --------- | ------------ |</font> </p>
+<p>| <code>Widget_Wrapper__[ContentType]</code> | <code>Widget_Wrapper__Paragraph</code> | <code>Widget-Paragraph.Wrapper.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Widget_Wrapper __ [ContentType]</code>| <code>Widget_Wrapper__Paragraph</code> | <code>Widget-Paragraph.Wrapper.cshtml</code> |</font> </p>
+<p>| <code>Widget_Wrapper__Zone__[ContentZone]</code> | <code>Widget_Wrapper__Zone__Footer</code> | <code>Widget-Zone-Footer.Wrapper.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Widget_Wrapper__Zone __ [ContentZone]</code>| <code>Widget_Wrapper__Zone__Footer</code> | <code>Widget-Zone-Footer.Wrapper.cshtml</code> |</font> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Custom Settings
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OrchardCore.Flows/" title="Flows" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Flows
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

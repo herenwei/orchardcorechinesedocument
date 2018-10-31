@@ -1,0 +1,1491 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Themes - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#orchard-core-theming-explained" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Themes
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Themes" class="md-nav__link md-nav__link--active">
+      Themes
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Themes/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="orchard-core-theming-explained">Orchard Core Theming explained</h1>
+<h1 id="orchard-core-theming"><font color=#0099ff size=4 face="黑体">Orchard Core Theming解释道</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This article explains how a Content Item is rendered, and the many ways in which the HTML that is rendered can be customized.</p>
+<p><font color=#0099ff size=4 face="黑体">本文介绍了如何呈现内容项，以及可以自定义呈现的HTML的多种方式。</font> </p>
+<p>It also explains the fundamental theming concepts, namely <strong>Shapes</strong>, <strong>Alternates</strong>, <strong>Templates</strong>, <strong>Differentiators</strong>, <strong>Content Zones</strong> and <strong>Display Types</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">它还解释了基本的主题概念，即__Shapes <strong>，</strong> Alternates <strong>，__Templates </strong>，<em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em> _ <em> _ </em></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="goals">Goals</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">目标</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Let's assume we want to add a portfolio section to our Blog where we could list all the projects we are working on, and be able to manage these projects individually, as opposed to having an static page where we would have to copy-paste the HTML for each project.</p>
+<p><font color=#0099ff size=4 face="黑体">假设我们想在我们的博客中添加一个投资组合部分，我们可以列出我们正在处理的所有项目，并且能够单独管理这些项目，而不是拥有一个静态页面，我们必须复制粘贴HTML为每个项目。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The portfolio should have its own URL like <code>/portfolio</code>, and should display the projects in</p>
+<p><font color=#0099ff size=4 face="黑体">投资组合应该有自己的URL，如<code>/ portfolio</code>，并且应该显示项目</font> </p>
+<p>a predefined order.</p>
+<p><font color=#0099ff size=4 face="黑体">预定义的订单。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The end result would look like this:</p>
+<p><font color=#0099ff size=4 face="黑体">最终结果如下：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="Portfolio" src="Assets/docs/portfolio-page.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="modeling-the-content">Modeling the content</h2>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">建模内容</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The only obvious thing that is required is to create a new <code>Project</code> content type.</p>
+<p><font color=#0099ff size=4 face="黑体">唯一显而易见的是创建一个新的“Project”内容类型。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>However there are many different ways to model the content to represent a portfolio:</p>
+<p><font color=#0099ff size=4 face="黑体">但是，有许多不同的方法可以对内容进行建模以表示投资组合：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Create a <code>Portfolio</code> content type with a <code>List</code> content part that is limited to <code>Project</code> content items. In this case, projects are independent from the list and can be reused elsewhere in the site (they are referenced by the portfolio).</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">创建一个<code>Portfolio</code>内容类型，其中<code>List</code>内容部分仅限于<code>Project</code>内容项。在这种情况下，项目独立于列表，可以在站点的其他位置重用（它们由组合引用）。</font> </p>
+</li>
+<li>
+<p>Create a <code>Portfolio</code> content type with a <code>BagPart</code> content part that is limited to <code>Project</code> content items. In this case project content items live inside the portfolio content item (they are contained by the portfolio).</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">使用“BagPart”内容部分创建一个“Portfolio”内容类型，该内容部分仅限于“Project”内容项。在这种情况下，项目内容项目位于项目组合内容项目内（它们由项目组合包含）。</font> </p>
+</li>
+<li>
+<p>Create a <code>Liquid Page</code> content item to query and render all content items of type <code>Project</code>.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">创建一个<code>Liquid Page</code>内容项来查询和呈现“Project”类型的所有内容项。</font> </p>
+</li>
+<li>
+<p>Create a Razor Page that will use a query to load all the project content items.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">创建一个将使用查询加载所有项目内容项的Razor页面。</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This article will explain how to do it with a <code>BagPart</code> as it will provide the best performance by issuing a single database query, while allowing to do everything from the admin UI. </p>
+<p><font color=#0099ff size=4 face="黑体">本文将解释如何使用<code>BagPart</code>来实现它，因为它将通过发出单个数据库查询提供最佳性能，同时允许从管理UI执行所有操作。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="creating-the-content-types">Creating the content types</h2>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">创建内容类型</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><code>Project</code> is a content type that will be composed of:</p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>a <code>Title</code> part to set a custom name</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">用于设置自定义名称的<code>Title</code>部分</font> </p>
+</li>
+<li>
+<p>a <code>Text</code> field to store the link to the project</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">一个<code>Text</code>字段，用于存储项目的链接</font> </p>
+</li>
+<li>
+<p>a <code>Markdown</code> part to provide a description in markdown format</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">“Markdown”部分以标记格式提供描述</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In the admin, select <strong>Content Definition</strong> then <strong>Content Types</strong> and create a new type named <code>Project</code>. Click <code>Create</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">在管理员中，选择__Content Definition__然后选择__Content Types__并创建一个名为<code>Project</code>的新类型。单击“创建”。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Select <strong>Title</strong> and <strong>Markdown</strong> for the parts we can add already, then click <strong>Save</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">选择__Title__和__Markdown__作为我们可以添加的部分，然后单击__Save__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click <strong>Edit</strong> for the <strong>Markdown</strong> part. Select <strong>Wysiwyg editor</strong> and click <strong>Save</strong>. This will provide a richer markdown editing experience.</p>
+<p><font color=#0099ff size=4 face="黑体">单击__Edit__作为__Markdown__部分。选择__Wysiwyg editor__并单击__Save__。这将提供更丰富的降价编辑体验。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click <strong>Add Field</strong>, give it a display name <code>Url</code>, and select <strong>Text Field</strong>. Click <strong>Save</strong> then <strong>Save</strong> again.</p>
+<p><font color=#0099ff size=4 face="黑体">单击__Add Field__，为其指定显示名称<code>Url</code>，然后选择__Text Field__。再次单击__Save__然后__Save__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Take the time to drag and drop the <strong>Title</strong> part at the top of the list such that it will appear first in the editor. Then click <strong>Save</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">花点时间将__Title__部分拖放到列表顶部，使其首先出现在编辑器中。然后单击__Save__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="New Content Type" src="Assets/docs/new-content-type.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>At that point you could already create all the Project content items you want very easily. However we need to create a <code>Portfolio</code> type to contain and organize them.</p>
+<p><font color=#0099ff size=4 face="黑体">此时，您可以非常轻松地创建所需的所有项目内容项。但是，我们需要创建一个“Portfolio”类型来包含和组织它们。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In the admin, select <strong>Content Definition</strong> then <strong>Content Types</strong> and create a new type named <code>Portfolio</code>. Click <code>Create</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">在管理员中，选择__Content Definition__然后选择__Content Types__并创建一个名为<code>Portfolio</code>的新类型。单击“创建”。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Select <strong>Title</strong>, <strong>Autoroute</strong> and <strong>Bag</strong>, then click <strong>Save</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">选择__Title <strong>，</strong> Autoroute__和__Bag__，然后单击__Save__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Now we can configure the <code>Portfolio</code> content type to only accept <code>Project</code> content items in its bag.</p>
+<p><font color=#0099ff size=4 face="黑体">现在我们可以将<code>Portfolio</code>内容类型配置为仅接受其包中的<code>Project</code>内容项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click <strong>Edit</strong> for the <strong>Bag</strong> part. Check <strong>Project</strong> and click <strong>Save</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">单击__Edit__作为__Bag__部分。检查__Project__并单击__Save__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click <strong>Edit</strong> for the <strong>Autoroute</strong> part. Enter <code>{{ ContentItem | display_text | slugify }}</code> and check <strong>Allow custom path</strong>. Click <strong>Save</strong>. This will generate a customizable url or used what the user defines.</p>
+<p><font color=#0099ff size=4 face="黑体">单击__Edit__作为__Autoroute__部分。输入<code>{{ContentItem | display_text | slugify}}</code>并检查__Allow自定义路径<strong><em>。单击</em>_Save</strong>。这将生成可自定义的URL或使用用户定义的内容。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Take the time to drag and drop the <strong>Title</strong> part at the top of the list such that it will appear first in the editor. Then click <strong>Save</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">花点时间将__Title__部分拖放到列表顶部，使其首先出现在编辑器中。然后单击__Save__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="Project" src="Assets/docs/project.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="creating-the-portfolio">Creating the Portfolio</h2>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">创建投资组合</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click on <strong>New</strong>, then <strong>Portfolio</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">单击__New__，然后单击__Portfolio__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Give it a title like <code>My Project</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">给它一个像“我的项目”这样的标题。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In <strong>Permalink</strong> enter <code>portfolio</code>. This will be the url to display this content item.</p>
+<p><font color=#0099ff size=4 face="黑体">在__Permalink__中输入<code>portfolio</code>。这将是显示此内容项的URL。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>As you click on <strong>Add Item</strong> you'll notice that only <strong>Project</strong> is available as configured in the <code>Bag</code> part for <code>Portfolio</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">当您单击__Add Item__时，您会注意到只有__Project__可用于<code>Portfolio</code>部分的<code>Bag</code>部分。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Create a few Projects, then click <strong>Publish</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">创建一些项目，然后单击__Publish__。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click on the <strong>View</strong> button to see how it looks like already.</p>
+<p><font color=#0099ff size=4 face="黑体">单击__View__按钮以查看它的样子。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="Portfolio" src="Assets/docs/portfolio.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>At that point it already looks like something that could be shipped, and all the information that was entered is rendered in some way. Next step is to understand how all this content got rendered.</p>
+<p><font color=#0099ff size=4 face="黑体">此时它已经看起来像是可以发送的东西，并且输入的所有信息都以某种方式呈现。下一步是了解所有这些内容是如何呈现的。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="rendering-logic">Rendering logic</h2>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">渲染逻辑</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="loading-the-portfolio-from-the-database">Loading the portfolio from the database</h3>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">从数据库加载投资组合</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When the url <code>/portfolio</code> is requested, a custom action is called to render the content item that is associated with this URL.</p>
+<p><font color=#0099ff size=4 face="黑体">当请求url<code>/ portfolio</code>时，将调用自定义操作来呈现与此URL关联的内容项。</font> </p>
+<p>The URL got associated with the portfolio thanks to the <strong>Aurotoute</strong> part that provides this mechanism.</p>
+<p><font color=#0099ff size=4 face="黑体">由于提供此机制的__Aurotoute__部分，URL与组合相关联。</font> </p>
+<p>The autoroute registers a custom URL and stores the associated content item id.</p>
+<p><font color=#0099ff size=4 face="黑体">autoroute注册自定义URL并存储关联的内容项ID。</font> </p>
+<p>At this point the action will issue a database request to load the portfolio in its entirety, including the projects, as this is how it was modeled with the <strong>Bag</strong> part.</p>
+<p><font color=#0099ff size=4 face="黑体">此时，操作将发出数据库请求以完整地加载项目组合，包括项目，因为这是使用__Bag__部分建模的方式。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="how-a-content-item-is-displayed">How a Content Item is displayed</h3>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">如何显示内容项</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>With the portfolio in memory, the theming engine is invoked to render the content item.</p>
+<p><font color=#0099ff size=4 face="黑体">使用内存中的投资组合，调用主题引擎来呈现内容项。</font> </p>
+<p>What happens at that moment is that all the components which want to participate in the rendering of a content item are invoked (the Display Drivers), and each component can return an object representing what to render (the Shapes).</p>
+<p><font color=#0099ff size=4 face="黑体">此时发生的是调用所有想要参与内容项呈现的组件（显示驱动程序），并且每个组件都可以返回表示要呈现内容的对象（形状）。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In our case, the <strong>Title</strong> and <strong>Bag</strong> parts are provided by custom modules that have specific a <strong>Display Driver</strong> for each of these parts.</p>
+<p><font color=#0099ff size=4 face="黑体">在我们的例子中，<strong>Title__和__Bag__部分由自定义模块提供，这些模块具有针对每个部分的特定__Display Driver</strong>。</font> </p>
+<p>Then another display driver will be invoked for each <strong>Text</strong> field.</p>
+<p><font color=#0099ff size=4 face="黑体">然后将为每个__Text__字段调用另一个显示驱动程序。</font> </p>
+<p>The <strong>Bag</strong> part will invoke all available display drivers recursively, to render the <code>Project</code> content items it owns.</p>
+<p><font color=#0099ff size=4 face="黑体">__Bag__部分将递归调用所有可用的显示驱动程序，以呈现它拥有的<code>Project</code>内容项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Each of these drivers return one or more shapes that are added to named zones (or sections) of a global <strong>Shape</strong> called the <code>Content</code> shape.</p>
+<p><font color=#0099ff size=4 face="黑体">这些驱动程序中的每一个都返回一个或多个形状，这些形状被添加到称为“Content”形状的全局__Shape__的命名区域（或部分）中。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For instance the <code>TitleDisplayDriver</code> class will return a shape of type <code>TitlePart</code> in the <code>Header</code> zone of the main shape at position <code>5</code>. See <a href="../OrchardCore.Title/Drivers/TitlePartDisplay.cs#L14-L20">TitlePartDisplay</a></p>
+<p><font color=#0099ff size=4 face="黑体">例如，<code>TitleDisplayDriver</code>类将在位置为“5”的主形状的“标题”区域中返回类型为“TitlePart”的形状。参见[TitlePartDisplay]（../ OrchardCore.Title / Drivers / TitlePartDisplay.cs＃L14-L20）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Then the <code>BagPart</code> shape is added in the <code>Content</code> zone of the main shape at the position <code>5</code>. See <a href="../OrchardCore.Flows/Drivers/BagPartDisplay.cs#L39-L45">BagPartDisplay</a>.</p>
+<p><font color=#0099ff size=4 face="黑体">然后将'BagPart`形状添加到位于“5”的主形状的“内容”区域中。参见[BagPartDisplay]（../ OrchardCore.Flows / Drivers / BagPartDisplay.cs＃L39-L45）。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Once all the drivers for all the parts and all the fields have returned their shapes to specific zones of the main <code>Content</code> shape, Orchard will look for a matching template.</p>
+<p><font color=#0099ff size=4 face="黑体">一旦所有部件和所有字段的所有驱动程序将其形状返回到主要“Content”形状的特定区域，Orchard将查找匹配的模板。</font> </p>
+<p>Template matching is done dynamically, and if no specific ones are created for a Content Type, then the file <code>Content.cshtml</code> (or <code>Content.liquid</code>) is used.</p>
+<p><font color=#0099ff size=4 face="黑体">模板匹配是动态完成的，如果没有为内容类型创建特定的匹配，则使用文件<code>Content.cshtml</code>（或<code>Content.liquid</code>）。</font> </p>
+<p>The default template will go over all the zones it knows about and render the shapes that are inside each of them.</p>
+<p><font color=#0099ff size=4 face="黑体">默认模板将遍历它所知道的所有区域，并渲染每个区域内的形状。</font> </p>
+<p>See <a href="../OrchardCore.Contents/Views/Content.cshtml#L17">Header</a> where the <code>Header</code> zone shapes are rendered (the <code>TitlePart</code> shape) and also <a href="../OrchardCore.Contents/Views/Content.cshtml#L24">Content</a> where the <code>Content</code> zone shapes are rendered (<code>BagPart</code> and <code>TextField</code> shapes).</p>
+<p><font color=#0099ff size=4 face="黑体">参见[Header]（../ OrchardCore.Contents / Views / Content.cshtml＃L17），其中呈现<code>Header</code>区域形状（<code>TitlePart</code>形状）和[Content]（../ OrchardCore.Contents / Views /Content.cshtml#L24）呈现<code>Content</code>区域形状（<code>BagPart</code>和<code>TextField</code>形状）。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="customizing-templates">Customizing templates</h2>
+<h2 id="_8"><font color=#0099ff size=4 face="黑体">自定义模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>We can already see that many shapes, and thus templates, are used to render a single content item. But every piece of HTML can be replaced, locally (for a page) or globally (over the site).</p>
+<p><font color=#0099ff size=4 face="黑体">我们已经可以看到许多形状和模板用于呈现单个内容项。但是，每个HTML都可以替换，本地（对于页面）或全局（通过站点）。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Templates are usually provided by the modules that create the corresponding shape types, but can always be redefined by a Theme.</p>
+<p><font color=#0099ff size=4 face="黑体">模板通常由创建相应形状类型的模块提供，但始终可以通过主题重新定义。</font> </p>
+<p>Themes are able to provide custom templates that will be used instead of the default ones. This means that a template can be copied to a theme in order to be customized.</p>
+<p><font color=#0099ff size=4 face="黑体">主题能够提供将使用的自定义模板，而不是默认模板。这意味着可以将模板复制到主题以进行自定义。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="alternates">Alternates</h3>
+<h2 id="_9"><font color=#0099ff size=4 face="黑体">候补</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When the <strong>Content</strong> shape is rendered into HTML, it is done using the <code>Content.cshtml</code> file as mentioned earlier.</p>
+<p><font color=#0099ff size=4 face="黑体">当__Content__形状呈现为HTML时，它使用前面提到的<code>Content.cshtml</code>文件完成。</font> </p>
+<p>Similarly, the <strong>TitlePart</strong> shape will be converted using a <code>TitlePart.cshtml</code> template.</p>
+<p><font color=#0099ff size=4 face="黑体">同样，__TitlePart__形状将使用<code>TitlePart.cshtml</code>模板进行转换。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This means that we can copy the <code>Content.cshtml</code> file from the <strong>OrchardCore.Contents</strong> module in order to customize how the <strong>Content</strong> shape is rendered.</p>
+<p><font color=#0099ff size=4 face="黑体">这意味着我们可以从__OrchardCore.Contents__模块复制<code>Content.cshtml</code>文件，以自定义__Content__形状的呈现方式。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>One issue with customizing the <code>Content.cshtml</code> file is that it would change how any content item is rendered.</p>
+<p><font color=#0099ff size=4 face="黑体">自定义<code>Content.cshtml</code>文件的一个问题是它会改变任何内容项的呈现方式。</font> </p>
+<p>The original file is generic enough to be usable with any content type, and does so by rendering a generic <code>&lt;article&gt;</code> element with a <code>&lt;header&gt;</code>, a body and a <code>&lt;footer&gt;</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">原始文件足够通用，可用于任何内容类型，并通过使用<code>&lt;header&gt;</code>，body和<code>&lt;footer&gt;</code>呈现通用<code>&lt;article&gt;</code>元素来实现。</font> </p>
+<p>Each driver provides shapes that will target these predefined zones, and the <code>Content.cshtml</code> default template just renders them all in order.</p>
+<p><font color=#0099ff size=4 face="黑体">每个驱动程序提供将定位这些预定义区域的形状，而“Content.cshtml”默认模板只是按顺序呈现它们。</font> </p>
+<p>For this reason it is not recommended to change this file as it may impact too many pages, unless you decide to change the way content items are rendered by default.</p>
+<p><font color=#0099ff size=4 face="黑体">因此，建议不要更改此文件，因为它可能会影响太多页面，除非您决定更改默认情况下呈现内容项的方式。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To be able to change how specific content types are rendered the theming engine provide the concept of <strong>Alternates</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">为了能够更改特定内容类型的呈现方式，主题引擎提供了__Alternates__的概念。</font> </p>
+<p>An alternate is an optional shape type that should be used if a template can be found for it.</p>
+<p><font color=#0099ff size=4 face="黑体">替代是可选的形状类型，如果可以为其找到模板，则应使用该形状类型。</font> </p>
+<p>Alternates provide more specific ways to customize templates.</p>
+<p><font color=#0099ff size=4 face="黑体">替代提供了更具体的方法来自定义模板。</font> </p>
+<p>In the case of our Portfolio <strong>Content</strong> shape, a special alternate named <code>Content__Portfolio</code> is added so that we can provide a template for the <strong>Content</strong> shape that will be used only for <strong>Portfolio</strong> content items. </p>
+<p><font color=#0099ff size=4 face="黑体">在我们的Portfolio __Content__形状的情况下，添加了一个名为<code>Content__Portfolio</code>的特殊替换，以便我们可以为__Content__形状提供仅用于__Portfolio__内容项的模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a shape contains <code>__</code> in its name, the theming engine will match a file with a <code>-</code> instead.</p>
+<p><font color=#0099ff size=4 face="黑体">当一个形状在其名称中包含<code>__</code>时，主题引擎将匹配一个带有<code>-</code>的文件。</font> </p>
+<p>In this case we can provide a template named <code>Content-Portfolio.cshtml</code> in order to customize how a <strong>Portfolio</strong> content item is rendered.</p>
+<p><font color=#0099ff size=4 face="黑体">在这种情况下，我们可以提供名为<code>Content-Portfolio.cshtml</code>的模板，以便自定义__Portfolio__内容项的呈现方式。</font> </p>
+<p>This file can be created by copying the original <code>Content.cshtml</code> file or by creating a brand new one.</p>
+<p><font color=#0099ff size=4 face="黑体">可以通过复制原始的<code>Content.cshtml</code>文件或创建一个全新的文件来创建此文件。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Many other alternates are available to be able to selectively create templates for a content item.</p>
+<p><font color=#0099ff size=4 face="黑体">许多其他替代方案可用于选择性地为内容项创建模板。</font> </p>
+<p>See <a href="../OrchardCore.Templates/README/#content-templates">Content templates</a></p>
+<p><font color=#0099ff size=4 face="黑体">请参阅[内容模板]（../ OrchardCore.Templates / README / #content-templates）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="customizing-part-templates">Customizing Part templates</h3>
+<h2 id="_10"><font color=#0099ff size=4 face="黑体">自定义零件模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>It might not be necessary to change the <strong>Content</strong> template, but only to change how a single part or field is rendered.</p>
+<p><font color=#0099ff size=4 face="黑体">可能没有必要更改__Content__模板，但只更改单个部件或字段的呈现方式。</font> </p>
+<p>These are also rendered as shapes and have specific templates that can be customized.</p>
+<p><font color=#0099ff size=4 face="黑体">它们也呈现为形状，并具有可自定义的特定模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <strong>Title</strong> part can be customized by creating a template for the <code>TitlePart</code> shape. See <a href="../OrchardCore.Title/README/">Title</a></p>
+<p><font color=#0099ff size=4 face="黑体">可以通过为<code>TitlePart</code>形状创建模板来自定义__Title__部分。见[标题]（../ OrchardCore.Title / README /）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Changing how the title is rendered for every content items would mean creating one of these files:</p>
+<p><font color=#0099ff size=4 face="黑体">更改每个内容项的标题呈现方式意味着创建以下文件之一：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="titlepartcshtml">TitlePart.cshtml</h4>
+<h2 id="titlepartcshtml_1"><font color=#0099ff size=4 face="黑体">TitlePart.cshtml</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="razor">
+&lt;h1&gt;@Model.Title&lt;/h1&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;H1&gt; @ Model.Title &lt;/ H1&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="titlepartliquid">TitlePart.liquid</h4>
+<h2 id="titlepartliquid_1"><font color=#0099ff size=4 face="黑体">TitlePart.liquid</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+&lt;h1&gt;{{ Model.Title }}&lt;/h1&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;h1&gt; {{Model.Title}} &lt;/ h1&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Assuming only the title of <strong>Portfolio</strong> content items should be customized, alternates can be used to create a specialized template. Content part shapes have alternates specific to their parent content type, in this case <code>Portfolio__TitlePart</code>. see <a href="../OrchardCore.Templates/README/#contenttype_displaytype__parttype">Content type, Display type, Part type</a></p>
+<p><font color=#0099ff size=4 face="黑体">假设只应定制__Portfolio__内容项的标题，则可以使用替换项创建专用模板。内容部分形状具有特定于其父内容类型的替代，在这种情况下为“Portfolio__TitlePart”。参见[内容类型，显示类型，零件类型]（../ OrchardCore.Templates / README /＃contentstype_displaytype__parttype）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The template file name for this shape is <code>Portfolio-TitlePart.cshtml</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">此形状的模板文件名是<code>Portfolio-TitlePart.cshtml</code>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="customizing-field-templates">Customizing Field templates</h3>
+<h2 id="_11"><font color=#0099ff size=4 face="黑体">自定义字段模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Because multiple fields of the same type can be added to the same content type or even the same content part, their shape type is not the optimal way to customize the template. Fortunately different alternates based on their name are available.</p>
+<p><font color=#0099ff size=4 face="黑体">由于可以将相同类型的多个字段添加到同一内容类型或甚至相同的内容部分，因此它们的形状类型不是自定义模板的最佳方式。幸运的是，基于他们的名字可以使用不同的替代品。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For a list of available shape alternates for fields see <a href="../OrchardCore.Templates/README/#content-field-templates">Content field templates</a></p>
+<p><font color=#0099ff size=4 face="黑体">有关字段的可用形状替换列表，请参阅[内容字段模板]（../ OrchardCore.Templates / README /＃contents-field-templates）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In our case, the <strong>Project</strong> has a <strong>Text</strong> field named <code>Url</code>. The best shape to override in this case is <code>Project__Url</code> which will match the template <code>Project-Url.cshtml</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">在我们的例子中，__Project__有一个名为<code>Url</code>的__Text__字段。在这种情况下，要覆盖的最佳形状是<code>Project__Url</code>，它将匹配模板<code>Project-Url.cshtml</code>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The model accessible from this field is described here <a href="../OrchardCore.ContentFields/README/#available-fields">Available fields</a></p>
+<p><font color=#0099ff size=4 face="黑体">此字段中可访问的模型在此处描述[可用字段]（../ OrchardCore.ContentFields / README / #available-fields）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This page explains that the <strong>Text</strong> field contains a property <code>Text</code> that contains the value of the field.</p>
+<p><font color=#0099ff size=4 face="黑体">此页面解释__Text__字段包含属性<code>Text</code>，其中包含字段的值。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To create a link for this field we can create these templates.</p>
+<p><font color=#0099ff size=4 face="黑体">要为此字段创建链接，我们可以创建这些模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="project-urlcshtml">Project-Url.cshtml</h4>
+<h2 id="urlcshtml"><font color=#0099ff size=4 face="黑体">项目Url.cshtml</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="razor">
+&lt;a href=&quot;@Model.Field.Text&quot;&gt;External url&lt;/a&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;a href=\&quot;@Model.Field.Text\&quot;&gt;外部网址&lt;/a&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="project-urlliquid">Project-Url.liquid</h4>
+<h2 id="urlliquid"><font color=#0099ff size=4 face="黑体">项目Url.liquid</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+&lt;a href=&quot;{{ Model.Field.Text }}&quot;&gt;External url&lt;/a&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;a href=\&quot;{{ Model.Field.Text}}“&gt;外部网址&lt;/a&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="display-types">Display types</h3>
+<h2 id="_12"><font color=#0099ff size=4 face="黑体">显示类型</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a content item is rendered by the theming engine, a specific <strong>Display Type</strong> is provided as a context of how rendered elements will be used. The default display type is called <strong>Detail</strong>. This is the one that is used to render a content item in its entirety.</p>
+<p><font color=#0099ff size=4 face="黑体">当主题引擎呈现内容项时，提供特定的__Display Type__作为如何使用呈现元素的上下文。默认显示类型称为__Detail__。这是用于完整呈现内容项的那个。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When content items are rendered in a list, the convention is to use the <code>Summary</code> display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当内容项在列表中呈现时，约定是使用“摘要”显示类型。</font> </p>
+<p>Looking at how our <strong>Portfolio</strong> content item is rendered, the <strong>Project</strong> content items are displayed as a list, using the <code>Summary</code> display type.</p>
+<p><font color=#0099ff size=4 face="黑体">查看我们的__Portfolio__内容项是如何呈现的，__Project__内容项使用<code>Summary</code>显示类型显示为列表。</font> </p>
+<p>Alternates exist to target templates for a specific display type.</p>
+<p><font color=#0099ff size=4 face="黑体">存在用于特定显示类型的目标模板的替代。</font> </p>
+<p>For instance we can customize how <strong>Project</strong> content items are displayed when rendered as part of a list by create a template for the shape <code>Content_Summary__Project</code>, which corresponds to the file <code>Content-Project.Summary.cshtml</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">例如，我们可以通过创建形状为“Content_Summary__Project”的模板来定制在作为列表的一部分呈现时如何显示__Project__内容项，该模板对应于文件“Content-Project.Summary.cshtml”。</font> </p>
+<p>See <a href="../OrchardCore.Templates/README/#content_displaytype__contenttype">Templates documentation</a></p>
+<p><font color=#0099ff size=4 face="黑体">请参阅[模板文档]（../ OrchardCore.Templates / README / #content_displaytype__contenttype）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Here, the <code>_</code> in the shape name is replaced by a dot (<code>.</code>) in the template name, and the dotted portion of the name is moved at the end.</p>
+<p><font color=#0099ff size=4 face="黑体">这里，形状名称中的<code>_</code>被模板名称中的点（<code>.</code>）替换，名称的虚线部分在末尾移动。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="content-zones-differentiators">Content zones, differentiators</h3>
+<h2 id="_13"><font color=#0099ff size=4 face="黑体">内容区，差异化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>As previously stated, the <strong>Content</strong> shape is made of zones that contains all the shapes which were provided by the display drivers, and ways to customize the templates for theses shapes was explained.</p>
+<p><font color=#0099ff size=4 face="黑体">如前所述，__Content__形状由包含显示驱动程序提供的所有形状的区域组成，并解释了为这些形状自定义模板的方法。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sometimes it is necessary to be able to reorganize the list of shapes that are added in these zones, for instance to remove some shapes of the list, or move them to a different location.</p>
+<p><font color=#0099ff size=4 face="黑体">有时需要能够重新组织在这些区域中添加的形状列表，例如删除列表的某些形状，或将它们移动到其他位置。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In the case of the <strong>Project</strong> main content shape, the <code>Content</code> zone contains two shapes:</p>
+<p><font color=#0099ff size=4 face="黑体">对于__Project__主要内容形状，“Content”区域包含两个形状：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p><code>TextField</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体"><code>TextField</code></font> </p>
+</li>
+<li>
+<p><code>MarkdownPart</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体"><code>MarkdownPart</code></font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <code>TitlePart</code> shape is rendered in the zone called <code>Header</code>.</p>
+<p><font color=#0099ff size=4 face="黑体"><code>TitlePart</code>形状在名为<code>Header</code>的区域中呈现。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Some templating helpers provide ways to select and remove these shapes.</p>
+<p><font color=#0099ff size=4 face="黑体">一些模板助手提供了选择和删除这些形状的方法。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In order to cherrypick specific shapes from a zone, shapes are given a nickname called a <strong>Differentiator</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">为了从区域中挑选特定形状，形状被赋予称为__Differentiator__的昵称。</font> </p>
+<p>This is necessary, as multiple identical shape types can be added to content zones. See <a href="../OrchardCore.Templates/README/#shape-differentiators">Shape differentiators</a></p>
+<p><font color=#0099ff size=4 face="黑体">这是必要的，因为可以将多个相同的形状类型添加到内容区域。参见[形状微分器]（../ OrchardCore.Templates / README /＃shape-differentiationators）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For the <code>Url</code> text field the differentiator is <code>Project-Url</code>. For the <strong>Markdown</strong> part it is <code>MarkdownPart</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">对于<code>Url</code>文本字段，区别符是<code>Project-Url</code>。对于__Markdown__部分，它是<code>MarkdownPart</code>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This lets us customize the <strong>Content</strong> shape template for <strong>Project</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">这让我们可以为__Project__自定义__Content__形状模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="content-projectcshtml">Content-Project.cshtml</h4>
+<h2 id="projectcshtml"><font color=#0099ff size=4 face="黑体">内容Project.cshtml</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="razor">
+&lt;article&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;文章&gt;&lt;/font&gt; 
+
+
+    &lt;header&gt;
+
+        @await DisplayAsync(Model.Header.TitlePart)
+
+        @{ Model.Header.Remove(&quot;TitlePart&quot;) }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        @await DisplayAsync(Model.Header)
+
+    &lt;/header&gt;
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        @await DisplayAsync(Model.Content[&quot;Project-Url&quot;])
+
+        @{ Model.Content.Remove(&quot;Project-Url&quot;) }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        @await DisplayAsync(Model.Content.MarkdownPart)
+
+        @{ Model.Content.Remove(&quot;MarkdownPart&quot;) }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        @await DisplayAsync(Model.Content)
+
+    &lt;footer&gt;
+
+        @await DisplayAsync(Model.Footer)
+
+    &lt;/footer&gt;
+
+&lt;/article&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/文章&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="content-projectliquid">Content-Project.liquid</h4>
+<h2 id="projectliquid"><font color=#0099ff size=4 face="黑体">内容Project.liquid</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+&lt;article&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;文章&gt;&lt;/font&gt; 
+
+
+    &lt;header&gt;
+
+        {{ Model.Header.TitlePart | shape_render }}
+
+        {% shape_remove_item Model.Header &quot;TitlePart&quot; %}
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        {{ Model.Header | shape_render }}
+
+    &lt;/header&gt;
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        {{ Model.Content[&quot;Project-Url&quot;] | shape_render }}
+
+        {% shape_remove_item Model.Content &quot;Project-Url&quot; %}
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        {{ Model.Content.MarkdownPart | shape_render }}
+
+        {% shape_remove_item Model.Content &quot;MarkdownPart&quot; %}
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        {{ Model.Content | shape_render }}
+
+
+
+
+    &lt;footer&gt;
+
+        @await DisplayAsync(Model.Footer)
+
+    &lt;/footer&gt;
+
+&lt;/article&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/文章&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Here the known shapes are extracted from their respective zones, then rendered explicitly.</p>
+<p><font color=#0099ff size=4 face="黑体">这里，已知的形状从它们各自的区域中提取，然后明确地呈现。</font> </p>
+<p>Finally the rest of the shapes in each zones are rendered in case more content fields or parts are added later on to the content type.</p>
+<p><font color=#0099ff size=4 face="黑体">最后，如果稍后将更多内容字段或部分添加到内容类型，则呈现每个区域中的其余形状。</font> </p>
+<p>If the zones weren't being rendered, the new elements would not show up automatically.</p>
+<p><font color=#0099ff size=4 face="黑体">如果未渲染区域，则新元素不会自动显示。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Instead of rendering the shapes that have been removed from the zone, some custom rendering can be applied directly.</p>
+<p><font color=#0099ff size=4 face="黑体">可以直接应用某些自定义渲染，而不是渲染已从区域中删除的形状。</font> </p>
+<p>One advantage of reusing the shape is that its template might contain some complex logic that is not easily reusable.</p>
+<p><font color=#0099ff size=4 face="黑体">重用形状的一个优点是其模板可能包含一些不易重复使用的复杂逻辑。</font> </p>
+<p>This is the case for the <code>MarkdownPart</code> shape for instance, as it will have to convert some markdown content to HTML.</p>
+<p><font color=#0099ff size=4 face="黑体">例如，“MarkdownPart”形状就是这种情况，因为它必须将一些降价内容转换为HTML。</font> </p>
+<p>The <code>TitlePart</code> however could easily be ignored and the <strong>Content</strong> template directly access the <code>Title</code> property of this shape. </p>
+<p><font color=#0099ff size=4 face="黑体">然而，<code>TitlePart</code>很容易被忽略，而__Content__模板直接访问这个形状的<code>Title</code>属性。</font> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.Templates/" title="Templates" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Templates
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OrchardCore.Liquid/" title="Liquid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Liquid
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

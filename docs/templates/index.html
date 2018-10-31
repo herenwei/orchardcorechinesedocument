@@ -1,0 +1,1336 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#code-generation-templates" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Code Generation Templates
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Code Generation Templates" class="md-nav__link md-nav__link--active">
+      Code Generation Templates
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore.Modules/OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/docs/templates/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="code-generation-templates">Code Generation Templates</h1>
+<h1 id="_1"><font color=#0099ff size=4 face="黑体">代码生成模板</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Orchard Core Templates uses <code>dotnet new</code> templates configurations for creating new websites, themes and modules from the command shell. </p>
+<p><font color=#0099ff size=4 face="黑体">Orchard Core Templates使用<code>dotnet new</code>模板配置从命令shell创建新的网站，主题和模块。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>More information about <code>dotnet new</code> can be found at <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new">https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new</a></p>
+<p><font color=#0099ff size=4 face="黑体">有关<code>dotnet new</code>的更多信息，请访问<a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new">https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new</a></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="installing-the-orchard-cms-templates">Installing the Orchard Cms templates</h2>
+<h2 id="orchard-cms"><font color=#0099ff size=4 face="黑体">安装Orchard Cms模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Once the .NET Core SDK has been installed, type the following command to install the templates for creating Orchard Core Cms web applications.</p>
+<p><font color=#0099ff size=4 face="黑体">安装.NET Core SDK后，键入以下命令以安装用于创建Orchard Core Cms Web应用程序的模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="CMD">
+dotnet new -i OrchardCore.Cms.Templates::1.0.0-beta2-*
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;dotnet new -i OrchardCore.Cms.Templates :: 1.0.0-beta2- *&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This will use the most stable release of Orchard Core. In order to use the latest <strong>dev</strong> branch of Orchard Core, the following command can be used:</p>
+<p><font color=#0099ff size=4 face="黑体">这将使用最稳定的Orchard Core版本。要使用Orchard Core的最新__dev__分支，可以使用以下命令：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="CMD">
+dotnet new -i OrchardCore.Cms.Templates::1.0.0-beta2-* --nuget-source https://www.myget.org/F/orchardcore-preview/api/v3/index.json  
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;dotnet new -i OrchardCore.Cms.Templates :: 1.0.0-beta2- * --nuget-source https://www.myget.org/F/orchardcore-preview/api/v3/index.json&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="create-a-new-website">Create a new website</h2>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">创建一个新网站</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="from-command-shell-automated-way">From Command Shell (automated way)</h3>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">从命令外壳（自动方式）</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="generate-an-orchard-cms-web-application">Generate an Orchard Cms Web Application</h4>
+<h2 id="orchard-cms-web"><font color=#0099ff size=4 face="黑体">生成Orchard Cms Web应用程序</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="CMD">
+dotnet new occms  
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;dotnet new occms&lt;/font&gt; 
+
+
+</code></pre>
+
+<p>The above command will use the default options.</p>
+<p><font color=#0099ff size=4 face="黑体">以上命令将使用默认选项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>You can pass the following CLI parameters to setup options</p>
+<p><font color=#0099ff size=4 face="黑体">您可以将以下CLI参数传递给设置选项</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="CMD">
+Orchard Core Cms Web App (C#)
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;Orchard Core Cms Web App（C＃）&lt;/font&gt; 
+
+
+Author: Orchard Project
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;作者：Orchard Project&lt;/font&gt; 
+
+
+Options:
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;选项：&lt;/font&gt; 
+
+
+  -lo|--logger           Configures the logger component.
+
+  - &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;lo | --logger配置记录器组件。&lt;/font&gt; 
+
+
+                             nlog       - Configures NLog as the logger component.
+
+                             serilog    - Configures Serilog as the logger component.
+
+                             none       - Do not configure logger.
+
+                         Default: nlog
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+  -ov|--orchard-version  Specifies which version of Orchard Core packages to use.
+
+  - &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;ov | --orchard-version指定要使用的Orchard Core软件包的版本。&lt;/font&gt; 
+
+
+                         string - Optional
+
+                         Default: 1.0.0-beta3
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Logging can be ignored with this command:</p>
+<p><font color=#0099ff size=4 face="黑体">使用此命令可以忽略日志记录：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="CMD">
+dotnet new occms --logger none
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;dotnet new occms --logger none&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="from-visual-studio-manual-way">From Visual Studio (manual way)</h3>
+<h2 id="visual-studio"><font color=#0099ff size=4 face="黑体">从Visual Studio（手动方式）</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Fire up Visual Studio, create a new solution file (.sln) by creating a new ASP.NET Core Web Application :</p>
+<p><font color=#0099ff size=4 face="黑体">启动Visual Studio，通过创建新的ASP.NET Core Web应用程序创建新的解决方案文件（.sln）：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="image" src="../assets/images/templates/orchard-screencast-1.gif" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Now that we created a new Web Application we need to add proper dependencies so that this new Web Application be targetted as an Orchard Core application.</p>
+<p><font color=#0099ff size=4 face="黑体">现在我们创建了一个新的Web应用程序，我们需要添加适当的依赖项，以便将这个新的Web应用程序作为Orchard Core应用程序进行定位。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>See <a href="#adding-orchard-core-nuget-feed">Adding Orchard Core Nuget Feed</a></p>
+<p><font color=#0099ff size=4 face="黑体">请参阅[添加果园核心Nuget Feed]（＃adding-orchard-core-nuget-feed）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="image" src="../assets/images/templates/orchard-screencast-2.gif" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Finally we will need to register Orchard CMS service in our <code>Startup.cs</code> file like this :</p>
+<p><font color=#0099ff size=4 face="黑体">最后，我们需要在<code>Startup.cs</code>文件中注册Orchard CMS服务，如下所示：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="C#">
+using Microsoft.AspNetCore.Builder;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;使用Microsoft.AspNetCore.Builder;&lt;/font&gt; 
+
+
+using Microsoft.AspNetCore.Hosting;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;使用Microsoft.AspNetCore.Hosting;&lt;/font&gt; 
+
+
+using Microsoft.AspNetCore.Http;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;使用Microsoft.AspNetCore.Http;&lt;/font&gt; 
+
+
+using Microsoft.Extensions.DependencyInjection;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;使用Microsoft.Extensions.DependencyInjection;&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+namespace MyNewWebsite
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;命名空间MyNewWebsite&lt;/font&gt; 
+
+
+{
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{&lt;/font&gt; 
+
+
+    public class Startup
+
+    {
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+
+        public void ConfigureServices(IServiceCollection services)
+
+        {
+
+            services.AddOrchardCms();
+
+        }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+
+        {
+
+            if (env.IsDevelopment())
+
+            {
+
+                app.UseDeveloperExceptionPage();
+
+            }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+            app.UseOrchardCore();
+
+        }
+
+    }
+
+}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="create-a-new-module">Create a new module</h2>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">创建一个新模块</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="new-module-from-command-shell-automated-way">New module from Command Shell (automated way)</h3>
+<h2 id="command-shell"><font color=#0099ff size=4 face="黑体">Command Shell的新模块（自动方式）</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="module-commands">Module commands</h4>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">模块命令</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="CMD">
+dotnet new ocmodule -n ModuleName.OrchardCore
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;dotnet new ocmodule -n ModuleName.OrchardCore&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+dotnet new ocmodule -n ModuleName.OrchardCore --PartName TestPart
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;dotnet new ocmodule -n ModuleName.OrchardCore --PartName TestPart&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+dotnet new ocmodule -n ModuleName.OrchardCore --PartName TestPart --AddPart true
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;dotnet new ocmodule -n ModuleName.OrchardCore --PartName TestPart --AddPart true&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="new-module-from-visual-studio-manual-way">New module from Visual Studio (manual way)</h3>
+<h2 id="visual-studio_1"><font color=#0099ff size=4 face="黑体">Visual Studio的新模块（手动方式）</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Fire up Visual Studio, open Orchard Core solution file (.sln), select OrchardCore.Modules folder, right click and select "add --&gt; new project" and create a new .NET Standard Class Library:</p>
+<p><font color=#0099ff size=4 face="黑体">启动Visual Studio，打开Orchard Core解决方案文件（.sln），选择OrchardCore.Modules文件夹，右键单击并选择“添加 - &gt;新项目”并创建一个新的.NET标准类库：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="image" src="../assets/images/templates/38450533-6c0fbc98-39ed-11e8-91a5-d26a1105b91a.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For marking this new Class Library as an Orchard Module we will now need to reference OrchardCore.Module.Targets Nuget package.</p>
+<p><font color=#0099ff size=4 face="黑体">为了将这个新类库标记为Orchard模块，我们现在需要引用OrchardCore.Module.Targets Nuget包。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><a href="#adding-orchard-core-nuget-feed">See adding Orchard Core Nuget Feed</a></p>
+<p><font color=#0099ff size=4 face="黑体">[请参阅添加Orchard Core Nuget Feed]（＃adding-orchard-core-nuget-feed）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Each of these "*.Targets" Nuget packages are used to mark a Class Library as a specific Orchard Core functionality. OrchardCore.Module.Targets is the one we are interested in for now. We will mark our new Class Library as a module by adding OrchardCore.Module.Targets as a dependency. For doing so you will need to right click on MyModule.OrchardCore project and select "Manage Nuget Packages" option. To find the packages in Nuget Package Manager you will need to check "include prerelease" and make sure you have Orchard Core feed that we added earlier selected. Once you have found it click on the Install button on the right panel next to Version : Latest prerelease x.x.x.x</p>
+<p><font color=#0099ff size=4 face="黑体">这些“* .Targets”Nuget包中的每一个都用于将类库标记为特定的Orchard Core功能。 OrchardCore.Module.Targets是我们现在感兴趣的。我们将新的类库标记为模块，方法是将OrchardCore.Module.Targets添加为依赖项。为此，您需要右键单击MyModule.OrchardCore项目并选择“Manage Nuget Packages”选项。要在Nuget Package Manager中查找软件包，您需要选中“include prerelease”并确保您已选择我们之前添加的Orchard Core Feed。找到它后，单击Version：Latest prerelease x.x.x.x旁边右侧面板上的Install按钮</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="image" src="../assets/images/templates/38450558-f4b83098-39ed-11e8-93c7-0fd9e5112dff.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Once done your new module will look like this :</p>
+<p><font color=#0099ff size=4 face="黑体">完成后，您的新模块将如下所示：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="image" src="../assets/images/templates/38450628-31c8e2b0-39ef-11e8-9de7-c15f0c6544c5.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For Orchard Core to identify this module it will now require a <code>Manifest.cs</code> file. Here is an example of that file:</p>
+<p><font color=#0099ff size=4 face="黑体">要让Orchard Core识别此模块，它现在需要一个<code>Manifest.cs</code>文件。以下是该文件的示例：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="C#">
+using OrchardCore.Modules.Manifest;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;使用OrchardCore.Modules.Manifest;&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+[assembly: Module(
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;[组装：模块（&lt;/font&gt; 
+
+
+    Name = &quot;TemplateModule.OrchardCore&quot;,
+
+    Author = &quot;The Orchard Team&quot;,
+
+    Website = &quot;http://orchardproject.net&quot;,
+
+    Version = &quot;0.0.1&quot;,
+
+    Description = &quot;Template module.&quot;
+
+)]
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;）]&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For this module to start we now will need to add a <code>Startup.cs</code> file to our new module. See this file as an example:  </p>
+<p><font color=#0099ff size=4 face="黑体">为了启动这个模块，我们现在需要在我们的新模块中添加一个<code>Startup.cs</code>文件。以此文件为例：</font> </p>
+<p><a href="https://github.com/OrchardCMS/OrchardCore/tree/dev/src/Templates/OrchardCore.Cms.Templates/content/OrchardCore.Templates.Module/Startup.cs">OrchardCore.Templates.Module/Startup.cs</a></p>
+<p><font color=#0099ff size=4 face="黑体">[OrchardCore.Templates.Module / Startup.cs]（https://github.com/OrchardCMS/OrchardCore/tree/dev/src/Templates/OrchardCore.Cms.Templates/content/OrchardCore.Templates.Module/Startup.cs）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Last step is to add our new module to the OrchardCore.Cms.Web project as a reference for including it as part as our website modules. After that, you should be all set for starting building your custom module. You can refer to our <a href="https://github.com/OrchardCMS/OrchardCore/tree/dev/src/Templates/OrchardCore.Cms.Templates/content/OrchardCore.Templates.Module/">template module</a> for examples of what's basically needed normally.</p>
+<p><font color=#0099ff size=4 face="黑体">最后一步是将我们的新模块添加到OrchardCore.Cms.Web项目中作为参考，将其作为我们网站模块的一部分包含在内。之后，您应该已准备好开始构建自定义模块。您可以参考我们的[模板模块]（https://github.com/OrchardCMS/OrchardCore/tree/dev/src/Templates/OrchardCore.Cms.Templates/content/OrchardCore.Templates.Module/）获取基本示例通常需要。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="create-a-new-theme">Create a new theme</h2>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">创建一个新主题</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="new-theme-from-command-shell-automated-way">New theme From Command Shell (automated way)</h3>
+<h2 id="command-shell_1"><font color=#0099ff size=4 face="黑体">来自Command Shell的新主题（自动方式）</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="theme-commands">Theme commands</h4>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">主题命令</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><code>dotnet new octheme -n "ThemeName.OrchardCore"</code></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="new-theme-from-visual-studio-manual-way">New theme from Visual Studio (manual way)</h3>
+<h2 id="visual-studio_2"><font color=#0099ff size=4 face="黑体">Visual Studio的新主题（手动方式）</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Should be the same procedure as with modules but instead we need to reference OrchardCore.Theme.Targets and <code>Manifest.cs</code> file slightly differ:</p>
+<p><font color=#0099ff size=4 face="黑体">应该是与模块相同的过程，但我们需要引用OrchardCore.Theme.Targets和<code>Manifest.cs</code>文件略有不同：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="C#">
+using OrchardCore.DisplayManagement.Manifest;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;使用OrchardCore.DisplayManagement.Manifest;&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+[assembly: Theme(
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;[集会：主题（&lt;/font&gt; 
+
+
+    Name = &quot;TemplateTheme.OrchardCore&quot;,
+
+    Author = &quot;The Orchard Team&quot;,
+
+    Website = &quot;https://orchardproject.net&quot;,
+
+    Version = &quot;0.0.1&quot;,
+
+    Description = &quot;The TemplateTheme.&quot;
+
+)]
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;）]&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="adding-orchard-core-nuget-feed">Adding Orchard Core Nuget Feed</h2>
+<h2 id="nuget-feed"><font color=#0099ff size=4 face="黑体">添加果园核心Nuget Feed</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In order to be able to use the <strong>dev</strong> feed from Visual Studio, open the Tools menu under Nuget Package Manager --&gt; Package Manager Settings.</p>
+<p><font color=#0099ff size=4 face="黑体">为了能够使用Visual Studio中的__dev__提要，请打开Nuget包管理器 - &gt;包管理器设置下的“工具”菜单。</font> </p>
+<p>The feed url is <a href="https://www.myget.org/F/orchardcore-preview/api/v3/index.json">https://www.myget.org/F/orchardcore-preview/api/v3/index.json</a></p>
+<p><font color=#0099ff size=4 face="黑体">Feed网址为<a href="https://www.myget.org/F/orchardcore-preview/api/v3/index.json">https://www.myget.org/F/orchardcore-preview/api/v3/index.json</a></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="image" src="../assets/images/templates/38450422-63670f1c-39eb-11e8-9c14-0743f0a4da42.png" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../getting-started/theme/" title="Create a Theme" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Create a Theme
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Orchard Core Modules
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

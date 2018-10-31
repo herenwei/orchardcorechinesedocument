@@ -1,0 +1,1473 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Templates - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#templates-orchardcoretemplates" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Templates
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Templates" class="md-nav__link md-nav__link--active">
+      Templates
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Templates/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="templates-orchardcoretemplates">Templates (<code>OrchardCore.Templates</code>)</h1>
+<h1 id="orchardcoretemplates"><font color=#0099ff size=4 face="黑体">模板（<code>OrchardCore.Templates</code>）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The templates module allows editors to create custom Liquid templates.</p>
+<p><font color=#0099ff size=4 face="黑体">模板模块允许编辑者创建自定义Liquid模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="available-templates">Available templates</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">可用模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Templates can be defined using the web editor, or in a theme. Templates are distinguished by their name. </p>
+<p><font color=#0099ff size=4 face="黑体">可以使用Web编辑器或主题定义模板。模板以其名称区分。</font> </p>
+<p>Orchard Core doesn't render HTML directly, but instead will usually render something called a <strong>Shape</strong>, which is an object that represents</p>
+<p><font color=#0099ff size=4 face="黑体">Orchard Core不直接呈现HTML，而是通常会呈现一个名为<strong> Shape </strong>的东西，它是一个代表的对象</font> </p>
+<p>the thing to render and has all the necessary data and metatada to render HTML.</p>
+<p><font color=#0099ff size=4 face="黑体">要呈现的东西，并具有呈现HTML的所有必要数据和元数据。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When rendering a Shape, Orchard Core will look for specific templates, passing the Shape to this template.</p>
+<p><font color=#0099ff size=4 face="黑体">渲染Shape时，Orchard Core将查找特定模板，将Shape传递给此模板。</font> </p>
+<p>Orchard Core can match with many templates for the same Shape.</p>
+<p><font color=#0099ff size=4 face="黑体">Orchard Core可以匹配相同Shape的许多模板。</font> </p>
+<p>These potential templates are called <strong>Alternates</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">这些潜在的模板称为<strong> Alternates </strong>。</font> </p>
+<p>A Shape contains a list of acceptable template names (the alternates) and will look into providers to get the most appropriate one.</p>
+<p><font color=#0099ff size=4 face="黑体">Shape包含可接受的模板名称列表（替换项），并将查找提供程序以获取最合适的模板名称。</font> </p>
+<p>For instance, when rendering a Content Item of type Article, the corresponding Shape that is rendered will be configured</p>
+<p><font color=#0099ff size=4 face="黑体">例如，在呈现Article类型的Content Item时，将配置渲染的相应Shape</font> </p>
+<p>to look for a template that handles all articles, but also one that handles an article when used in a list, and so on.</p>
+<p><font color=#0099ff size=4 face="黑体">查找处理所有文章的模板，以及在列表中使用时处理文章的模板，依此类推。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This document provides a list of pre-defined templates that can be used when rendering shapes.</p>
+<p><font color=#0099ff size=4 face="黑体">本文档提供了在渲染形状时可以使用的预定义模板列表。</font> </p>
+<p>It uses the internal name of a template and also the filename in case it's provided by a Theme.</p>
+<p><font color=#0099ff size=4 face="黑体">它使用模板的内部名称以及文件名，以防主题提供。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="content-templates">Content templates</h2>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">内容模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="content__contenttype"><code>Content__[ContentType]</code></h3>
+<h2 id="__-contenttype"><font color=#0099ff size=4 face="黑体"><code>内容__ [ContentType的]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when displaying a content item with the <code>Detail</code> display type, for instance when accessed from its own URL.</p>
+<p><font color=#0099ff size=4 face="黑体">当显示具有“Detail”显示类型的内容项时，例如当从其自己的URL访问时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples">Examples</h4>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Content__BlogPost</code> | <code>Content-BlogPost.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Content__BlogPost</code> | <code>Content-BlogPost.cshtml</code> |</font> </p>
+<p>| <code>Content__Article</code> | <code>Content-Article.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Content__Article</code> | <code>Content-Article.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="available-properties">Available properties</h4>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">可用的属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|说明|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Model.Content</code> | A zone shape that contains all the shapes generated by the content's parts and fields. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.Content</code> |包含内容部件和字段生成的所有形状的区域形状。 |</font> </p>
+<p>| <code>Model.ContentItem</code> | Represents the current content item being rendered by the template. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.ContentItem</code> |表示模板呈现的当前内容项。 |</font> </p>
+<p>| <code>Model.ContentItem.Content</code> | A Json object containing all the data of the content item. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.ContentItem.Content</code> |包含内容项的所有数据的Json对象。 |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="content_displaytype__contenttype"><code>Content_[DisplayType]__[ContentType]</code></h3>
+<h2 id="content_-__-contenttype"><font color=#0099ff size=4 face="黑体"><code>Content_ [显示类型] __ [ContentType的]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when displaying a content item with a specific display type.</p>
+<p><font color=#0099ff size=4 face="黑体">显示具有特定显示类型的内容项时，将调用此模板。</font> </p>
+<p>For instance, when a content item is displayed in a list, the <code>Summary</code> display type is commonly used.</p>
+<p><font color=#0099ff size=4 face="黑体">例如，当在列表中显示内容项时，通常使用“摘要”显示类型。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_1">Examples</h4>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Content_Summary__BlogPost</code> | <code>Content-BlogPost.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Content_Summary__BlogPost</code> | <code>Content-BlogPost.Summary.cshtml</code> |</font> </p>
+<p>| <code>Content_Summary__Article</code> | <code>Content-Article.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Content_Summary__Article</code> | <code>Content-Article.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="widget-templates">Widget templates</h2>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">小部件模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="widget__contenttype"><code>Widget__[ContentType]</code></h3>
+<h2 id="widget-__-contenttype"><font color=#0099ff size=4 face="黑体"><code>的widget __ [ContentType的]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a widget is rendered on a page.</p>
+<p><font color=#0099ff size=4 face="黑体">在页面上呈现窗口小部件时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_2">Examples</h4>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Widget__Paragraph</code> | <code>Widget-Paragraph.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Widget__Paragraph</code> | <code>Widget-Paragraph.cshtml</code> |</font> </p>
+<p>| <code>Widget__Blockquote</code> | <code>Widget-Blockquote.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Widget__Blockquote</code> | <code>Widget-Blockquote.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="available-properties_1">Available properties</h4>
+<h2 id="_8"><font color=#0099ff size=4 face="黑体">可用的属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|说明|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Model.Content</code> | A zone shape that contains all the shapes generated by the widget's parts and fields. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.Content</code> |区域形状，包含窗口小部件的部件和字段生成的所有形状。 |</font> </p>
+<p>| <code>Model.ContentItem</code> | Represents the current content item being rendered by the template. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.ContentItem</code> |表示模板呈现的当前内容项。 |</font> </p>
+<p>| <code>Model.ContentItem.Content</code> | A Json object containing all the data of the content item. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.ContentItem.Content</code> |包含内容项的所有数据的Json对象。 |</font> </p>
+<p>| <code>Model.Classes</code> | An array of all the classes attached to the widget. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Model.Classes</code> |附加到窗口小部件的所有类的数组。 |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="content-part-templates">Content Part templates</h2>
+<h2 id="_9"><font color=#0099ff size=4 face="黑体">内容部分模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Each driver is free to return a shape type of its choosing, but the usage is </p>
+<p><font color=#0099ff size=4 face="黑体">每个驱动程序都可以自由返回其选择的形状类型，但用法是</font> </p>
+<p>to render a content part using a shape with a name that matches the type name.</p>
+<p><font color=#0099ff size=4 face="黑体">使用名称与类型名称匹配的形状呈现内容部件。</font> </p>
+<p>For instance the <code>HtmlBodyPart</code> content part will return a single shape of type <code>HtmlBodyPart</code>, but the <code>ListPart</code> returns many</p>
+<p><font color=#0099ff size=4 face="黑体">例如，<code>HtmlBodyPart</code>内容部分将返回一个类型为<code>HtmlBodyPart</code>的形状，但<code>ListPart</code>返回许多</font> </p>
+<p>shapes, one among them being <code>ListPart</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">形状，其中一个是<code>ListPart</code>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>As a consequence the following list of templates use the <code>[ShapeType]</code> term where </p>
+<p><font color=#0099ff size=4 face="黑体">因此，以下模板列表使用<code>[ShapeType]</code>术语where</font> </p>
+<p>most of the time it will be equal to the name of the content part. The examples use</p>
+<p><font color=#0099ff size=4 face="黑体">大部分时间它将等于内容部分的名称。这些例子使用</font> </p>
+<p>common content part names for this reason.</p>
+<p><font color=#0099ff size=4 face="黑体">因此，共同内容部分名称。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="properties">Properties</h3>
+<h2 id="_10"><font color=#0099ff size=4 face="黑体">属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The properties available on a shape rendered for a content part are unique for each content</p>
+<p><font color=#0099ff size=4 face="黑体">为内容部件呈现的形状上可用的属性对于每个内容都是唯一的</font> </p>
+<p>part. Please refer to each content part documentation.</p>
+<p><font color=#0099ff size=4 face="黑体">部分。请参阅每个内容部分文档。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shapetype"><code>[ShapeType]</code></h3>
+<h2 id="shapetype_1"><font color=#0099ff size=4 face="黑体"><code>[ShapeType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a Content Part is rendered.</p>
+<p><font color=#0099ff size=4 face="黑体">呈现内容部件时调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_3">Examples</h4>
+<h2 id="_11"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>HtmlBodyPart</code> | <code>HtmlBodyPart.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>HtmlBodyPart</code> | <code>HtmlBodyPart.cshtml</code> |</font> </p>
+<p>| <code>ListPartFeed</code> | <code>ListPartFeed.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ListPartFeed</code> | <code>ListPartFeed.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shapetype_displaytype"><code>[ShapeType]_[DisplayType]</code></h3>
+<h2 id="shapetype-_"><font color=#0099ff size=4 face="黑体"><code>[ShapeType] _ [显示类型]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a Content Part shape type is rendered in a specific display type.</p>
+<p><font color=#0099ff size=4 face="黑体">在特定显示类型中呈现内容部件形状类型时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_4">Examples</h4>
+<h2 id="_12"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>HtmlBodyPart_Summary</code> | <code>HtmlBodyPart.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>HtmlBodyPart_Summary</code> | <code>HtmlBodyPart.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype_displaytype__parttype"><code>[ContentType]_[DisplayType]__[PartType]</code></h3>
+<h2 id="contenttype-_-__-parttype"><font color=#0099ff size=4 face="黑体"><code>[ContentType的] _ [显示类型] __ [PartType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content part type is rendered for a given content type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">在为给定内容类型呈现内容部件类型时调用此模板，具有或不具有给定的显示类型。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_5">Examples</h4>
+<h2 id="_13"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Blog__HtmlBodyPart</code> | <code>Blog-HtmlBodyPart.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog__HtmlBodyPart</code> | <code>Blog-HtmlBodyPart.cshtml</code> |</font> </p>
+<p>| <code>LandingPage__BagPart</code> | <code>LandingPage-BagPart.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage__BagPart</code> | <code>LandingPage-BagPart.cshtml</code> |</font> </p>
+<p>| <code>Blog_Summary__HtmlBodyPart</code> | <code>Blog-HtmlBodyPart.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog_Summary__HtmlBodyPart</code> | <code>Blog-HtmlBodyPart.Summary.cshtml</code> |</font> </p>
+<p>| <code>LandingPage_Summary__BagPart</code> | <code>LandingPage-BagPart.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage_Summary__BagPart</code> | <code>LandingPage-BagPart.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype_displaytype__partname"><code>[ContentType]``_[DisplayType]__[PartName]</code></h3>
+<h2 id="contenttype_-__"><font color=#0099ff size=4 face="黑体"><code>[ContentType的]``_ [显示类型] __ [零件名称]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content part name is rendered for a given content type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">在为给定内容类型呈现内容部件名称时，无论是否具有给定的显示类型，都会调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_6">Examples</h4>
+<h2 id="_14"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>LandingPage__Services</code> | <code>LandingPage-Services.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage__Services</code> | <code>LandingPage-Services.cshtml</code> |</font> </p>
+<p>| <code>LandingPage_Summary__Services</code> | <code>LandingPage-Services.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage_Summary__Services</code> | <code>LandingPage-Services.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype_displaytype__parttype__shapetype"><code>[ContentType]_[DisplayType]__[PartType]__[ShapeType]</code></h3>
+<h2 id="contenttype-_-__-parttype-__-shapetype"><font color=#0099ff size=4 face="黑体"><code>[ContentType的] _ [显示类型] __ [PartType] __ [ShapeType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a shape type is rendered in a given content part type for a given content type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">在给定内容类型的给定内容部件类型中呈现形状类型（具有或不具有给定显示类型）时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_7">Examples</h4>
+<h2 id="_15"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Blog__ListPart__ListPartFeed</code> | <code>Blog__ListPart__ListPartFeed.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog__ListPart__ListPartFeed</code> | <code>Blog__ListPart__ListPartFeed.cshtml</code> |</font> </p>
+<p>| <code>Blog_Summary__ListPart__ListPartFeed</code> | <code>Blog__ListPart__ListPartFeed.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog_Summary__ListPart__ListPartFeed</code> | <code>Blog__ListPart__ListPartFeed.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype_displaytype__partname__shapetype"><code>[ContentType]_[DisplayType]__[PartName]__[ShapeType]</code></h3>
+<h2 id="contenttype-_-__-__-shapetype"><font color=#0099ff size=4 face="黑体"><code>[ContentType的] _ [显示类型] __ [零件名称] __ [ShapeType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a shape type is rendered in a given content part name for a given content type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">在给定内容类型的给定内容部件名称中呈现形状类型（具有或不具有给定显示类型）时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_8">Examples</h4>
+<h2 id="_16"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>LandingPage__Services__CustomShape</code> | <code>LandingPage-Services-CustomShape.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage__Services__CustomShape</code> | <code>LandingPage-Services-CustomShape.cshtml</code> |</font> </p>
+<p>| <code>LandingPage_Summary__Services__CustomShape</code> | <code>LandingPage-Services-CustomShape.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage_Summary__Services__CustomShape</code> | <code>LandingPage-Services-CustomShape.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="content-field-templates">Content Field templates</h2>
+<h2 id="_17"><font color=#0099ff size=4 face="黑体">内容字段模板</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Each driver is free to return a shape type of its choosing but the usage is </p>
+<p><font color=#0099ff size=4 face="黑体">每个驱动程序都可以自由返回其选择的形状类型，但用途是</font> </p>
+<p>to render a content field using a shape with the same type name. </p>
+<p><font color=#0099ff size=4 face="黑体">使用具有相同类型名称的形状呈现内容字段。</font> </p>
+<p>For instance the <code>TextField</code> content field will return a single shape of type <code>TextField</code>,</p>
+<p><font color=#0099ff size=4 face="黑体">例如，<code>TextField</code>内容字段将返回一个类型为<code>TextField</code>的形状，</font> </p>
+<p>but other fields might return many shapes.</p>
+<p><font color=#0099ff size=4 face="黑体">但其他领域可能会返回许多形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="properties_1">Properties</h3>
+<h2 id="_18"><font color=#0099ff size=4 face="黑体">属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The properties available on a shape rendered for a content field are unique for each content</p>
+<p><font color=#0099ff size=4 face="黑体">为内容字段呈现的形状上可用的属性对于每个内容都是唯一的</font> </p>
+<p>field. Please refer to each content field documentation.</p>
+<p><font color=#0099ff size=4 face="黑体">领域。请参阅每个内容字段文档。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shapetype_displaytype_1"><code>[ShapeType]_[DisplayType]</code></h3>
+<h2 id="shapetype-__1"><font color=#0099ff size=4 face="黑体"><code>[ShapeType] _ [显示类型]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field type is rendered in given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">在给定显示类型中呈现内容字段类型时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_9">Examples</h4>
+<h2 id="_19"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>TextField_Summary</code> | <code>TextField.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>TextField_Summary</code> | <code>TextField.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="parttype__fieldname"><code>[PartType]__[FieldName]</code></h3>
+<h2 id="parttype-__"><font color=#0099ff size=4 face="黑体"><code>[PartType] __ [字段名]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field name is rendered for a given content part type when the shape type matches the field type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当形状类型与字段类型匹配（具有或不具有给定显示类型）时，为给定内容部件类型呈现内容字段名称时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_10">Examples</h4>
+<h2 id="_20"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>|  <code>HtmlBodyPart__Description</code> |  <code>HtmlBodyPart-Description.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>HtmlBodyPart__Description</code> | <code>HtmlBodyPart-Description.cshtml</code> |</font> </p>
+<p>|  <code>HtmlBodyPart_Summary__Description</code> |  <code>HtmlBodyPart-Description.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>HtmlBodyPart_Summary__Description</code> | <code>HtmlBodyPart-Description.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype__partname__fieldname"><code>[ContentType]__[PartName]__[FieldName]</code></h3>
+<h2 id="contenttype-__-__"><font color=#0099ff size=4 face="黑体"><code>[ContentType的] __ [零件名称] __ [字段名]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field name is rendered for a given content type and content part name when the shape type matches the field type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当形状类型与字段类型匹配时，对于给定内容类型和内容部件名称呈现内容字段名称时，将调用此模板，具有或不具有给定的显示类型。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_11">Examples</h4>
+<h2 id="_21"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Blog__HtmlBodyPart__Description</code> | <code>Blog-HtmlBodyPart-Description.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog__HtmlBodyPart__Description</code> | <code>Blog-HtmlBodyPart-Description.cshtml</code> |</font> </p>
+<p>| <code>LandingPage__Services__Image</code> | <code>LandingPage-Services-Image.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage__Services__Image</code> | <code>LandingPage-Services-Image.cshtml</code> |</font> </p>
+<p>| <code>Blog_Summary__HtmlBodyPart__Description</code> | <code>Blog-HtmlBodyPart-Description.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog_Summary__HtmlBodyPart__Description</code> | <code>Blog-HtmlBodyPart-Description.Summary.cshtml</code> |</font> </p>
+<p>| <code>LandingPage_Summary__Services__Image</code> | <code>LandingPage-Services-Image.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage_Summary__Services__Image</code> | <code>LandingPage-Services-Image.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype__fieldtype"><code>[ContentType]__[FieldType]</code></h3>
+<h2 id="contenttype-__-fieldtype"><font color=#0099ff size=4 face="黑体"><code>[ContentType的] __ [的FieldType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field type is rendered for a given content type when the shape type matches the field type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当形状类型与字段类型匹配（具有或不具有给定显示类型）时，为给定内容类型呈现内容字段类型时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_12">Examples</h4>
+<h2 id="_22"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Blog__TextField</code> | <code>Blog-TextField.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog__TextField</code> | <code>Blog-TextField.cshtml</code> |</font> </p>
+<p>| <code>LandingPage__TextField</code> | <code>LandingPage-TextField.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage__TextField</code> | <code>LandingPage-TextField.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="fieldtype__shapetype"><code>[FieldType]__[ShapeType]</code></h3>
+<h2 id="fieldtype-__-shapetype"><font color=#0099ff size=4 face="黑体"><code>[的FieldType] __ [ShapeType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field shape type is rendered for a given content field type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当为给定内容字段类型呈现内容字段形状类型（具有或不具有给定显示类型）时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_13">Examples</h4>
+<h2 id="_23"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>CustomField__CustomFieldSummary</code> | <code>CustomField-CustomFieldSummary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>CustomField__CustomFieldSummary</code> | <code>CustomField-CustomFieldSummary.cshtml</code> |</font> </p>
+<p>| <code>CustomField_Summary__CustomFieldSummary</code> | <code>CustomField-CustomFieldSummary.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>CustomField_Summary__CustomFieldSummary</code> | <code>CustomField-CustomFieldSummary.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="parttype__fieldname__shapetype"><code>[PartType]__[FieldName]__[ShapeType]</code></h3>
+<h2 id="parttype-__-__-shapetype"><font color=#0099ff size=4 face="黑体"><code>[PartType] __ [字段名] __ [ShapeType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field shape type is rendered for a given content field name in a given content part type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当为给定内容部件类型中的给定内容字段名称呈现内容字段形状类型（具有或不具有给定显示类型）时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_14">Examples</h4>
+<h2 id="_24"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>|  <code>HtmlBodyPart__Description__CustomFieldSummary</code>| <code>HtmlBodyPart__Description__CustomFieldSummary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>HtmlBodyPart__Description__CustomFieldSummary</code> | <code>HtmlBodyPart__Description__CustomFieldSummary.cshtml</code> |</font> </p>
+<p>|  <code>HtmlBodyPart_Summary__Description__CustomFieldSummary</code>| <code>HtmlBodyPart__Description__CustomFieldSummary.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>HtmlBodyPart_Summary__Description__CustomFieldSummary</code> | <code>HtmlBodyPart__Description__CustomFieldSummary.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype__partname__fieldname__shapetype"><code>[ContentType]__[PartName]__[FieldName]__[ShapeType]</code></h3>
+<h2 id="contenttype-__-__-__-shapetype"><font color=#0099ff size=4 face="黑体"><code>[ContentType的] __ [零件名称] __ [字段名] __ [ShapeType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field shape type is rendered for a given content field name in a given content part name in a given content type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当给定内容类型中给定内容部分名称中的给定内容字段名称（具有或不具有给定显示类型）呈现内容字段形状类型时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_15">Examples</h4>
+<h2 id="_25"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Blog__HtmlBodyPart__Description__CustomFieldSummary</code> | <code>Blog-HtmlBodyPart-Description-CustomFieldSummary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog__HtmlBodyPart__Description__CustomFieldSummary</code> | <code>Blog-HtmlBodyPart-Description-CustomFieldSummary.cshtml</code> |</font> </p>
+<p>| <code>LandingPage__Services__Description__CustomFieldSummary</code> | <code>LandingPage-Services-Description-CustomFieldSummary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage__Services__Description__CustomFieldSummary</code> | <code>LandingPage-Services-Description-CustomFieldSummary.cshtml</code> |</font> </p>
+<p>| <code>Blog_Summary__HtmlBodyPart__Description__CustomFieldSummary</code> | <code>Blog-HtmlBodyPart-Description-CustomFieldSummary.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog_Summary__HtmlBodyPart__Description__CustomFieldSummary</code> | <code>Blog-HtmlBodyPart-Description-CustomFieldSummary.Summary.cshtml</code> |</font> </p>
+<p>| <code>LandingPage_Summary__Services__Description__CustomFieldSummary</code> | <code>LandingPage-Services-Description-CustomFieldSummary.Summary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage_Summary__Services__Description__CustomFieldSummary</code> | <code>LandingPage-Services-Description-CustomFieldSummary.Summary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="contenttype__fieldtype__shapetype"><code>[ContentType]__[FieldType]__[ShapeType]</code></h3>
+<h2 id="contenttype-__-fieldtype-__-shapetype"><font color=#0099ff size=4 face="黑体"><code>[ContentType的] __ [的FieldType] __ [ShapeType]</code></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This template is called when a content field shape type is rendered for a given content field type in a given content type, with or without a given display type.</p>
+<p><font color=#0099ff size=4 face="黑体">当为给定内容类型中的给定内容字段类型呈现内容字段形状类型（具有或不具有给定显示类型）时，将调用此模板。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples_16">Examples</h4>
+<h2 id="_26"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Template | Filename|</p>
+<p><font color=#0099ff size=4 face="黑体">|模板|文件名|</font> </p>
+<p>| --------- | ------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ------------ |</font> </p>
+<p>| <code>Blog__TextField__TextFieldSummary</code> | <code>Blog-TextField-TextFieldSummary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Blog__TextField__TextFieldSummary</code> | <code>Blog-TextField-TextFieldSummary.cshtml</code> |</font> </p>
+<p>| <code>LandingPage__TextField__TextFieldSummary</code> | <code>LandingPage-TextField-TextFieldSummary.cshtml</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>LandingPage__TextField__TextFieldSummary</code> | <code>LandingPage-TextField-TextFieldSummary.cshtml</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="shape-differentiators">Shape differentiators</h2>
+<h2 id="_27"><font color=#0099ff size=4 face="黑体">形状差异化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The differentiator uniquely identifies a shape in a zone. When rendering a content item, the shape has a <code>Content</code> property that contains</p>
+<p><font color=#0099ff size=4 face="黑体">微分器唯一地标识区域中的形状。渲染内容项时，形状具有包含的“Content”属性</font> </p>
+<p>all the shapes provided by content display drivers, including the ones for content parts and content fields.</p>
+<p><font color=#0099ff size=4 face="黑体">内容显示驱动程序提供的所有形状，包括内容部分和内容字段的形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Differentiators can be used to configure the placement information (c.f. <a href="../../OrchardCore/OrchardCore.DisplayManagement/README">Placement documentation page</a>), or to access specific shapes in a zone using these template helpers:</p>
+<p><font color=#0099ff size=4 face="黑体">微分器可用于配置放置信息（c.f。[放置文档页面]（../../ OrchardCore / OrchardCore.DisplayManagement / README）），或使用这些模板助手访问区域中的特定形状：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="content-part-differentiator">Content Part differentiator</h3>
+<h2 id="_28"><font color=#0099ff size=4 face="黑体">内容部分差异化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>If the shape type is the same as the content part name, the shape will be named <code>[PartName]</code>, e.g. <code>HtmlBodyPart</code>, <code>Services</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">如果形状类型与内容部分名称相同，则形状将命名为“[PartName]”，例如<code>HtmlBodyPart</code>，<code>Services</code>。</font> </p>
+<p>If the shape type is different than the content part name, it will be <code>[PartName]-[ShapeType]</code>, e.g. <code>ListPart-ListPartFeed</code></p>
+<p><font color=#0099ff size=4 face="黑体">如果形状类型与内容部分名称不同，则它将是“[PartName]  -  [ShapeType]”，例如<code>ListPart-ListPartFeed</code></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="content-field-differentiator">Content Field differentiator</h3>
+<h2 id="_29"><font color=#0099ff size=4 face="黑体">内容领域差异化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>If the shape type is the same as the content field name, the shape will be named <code>[PartName]-[FieldName]</code>, e.g. <code>HtmlBodyPart-Description</code>, <code>Services-Image</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">如果形状类型与内容字段名称相同，则形状将命名为“[PartName]  -  [FieldName]<code>，例如，</code>HtmlBodyPart-Description<code>，</code>Services-Image`。</font> </p>
+<p>If the shape type is different than the content field name, it will be <code>[PartName]-[FieldName]-[ShapeType]</code>, e.g. <code>HtmlBodyPart-Description-CustomFieldSummary</code>, <code>Services-Image-ImageFieldSummary</code></p>
+<p><font color=#0099ff size=4 face="黑体">如果形状类型与内容字段名称不同，则它将是“[PartName]  -  [FieldName]  -  [ShapeType]”，例如<code>HtmlBodyPart-Description-CustomFieldSummary</code>，<code>Services-Image-ImageFieldSummary</code></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="razor">Razor</h4>
+<h2 id="_30"><font color=#0099ff size=4 face="黑体">剃刀</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Access a specific shape by name</p>
+<p><font color=#0099ff size=4 face="黑体">按名称访问特定形状</font> </p>
+<pre><code>
+Model.Content.HtmlBodyPart
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;Model.Content.HtmlBodyPart&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Removing a specific shape by name</p>
+<p><font color=#0099ff size=4 face="黑体">按名称删除特定形状</font> </p>
+<pre><code>
+Model.Content.Remove(&quot;HtmlBodyPart&quot;);
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;Model.Content.Remove（ “HtmlBodyPart”）;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="liquid">Liquid</h4>
+<h2 id="_31"><font color=#0099ff size=4 face="黑体">液体</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Display a shape after removing a specific shape by name</p>
+<p><font color=#0099ff size=4 face="黑体">按名称删除特定形状后显示形状</font> </p>
+<pre><code class="liquid">
+{% shape_remove_item Model.Content &quot;HtmlBodyPart&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_remove_item Model.Content“HtmlBodyPart”％}&lt;/font&gt; 
+
+
+{{ Model.Content | shape_render }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.Content | shape_render}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Display a specific shape by name</p>
+<p><font color=#0099ff size=4 face="黑体">按名称显示特定形状</font> </p>
+<pre><code class="liquid">
+{{ Model.Content.HtmlBodyPart | shape_render }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.Content.HtmlBodyPart | shape_render}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To access or render the shapes for a field that is added to the content type directly, the <code>[PartName]</code> is equal to the content type.</p>
+<p><font color=#0099ff size=4 face="黑体">要访问或呈现直接添加到内容类型的字段的形状，<code>[PartName]</code>等于内容类型。</font> </p>
+<p>For instance, given a content type <code>Article</code> with a Text field named <code>Description</code>, the shapes for this field would be named <code>"Article-Description"</code>. Render these shapes in Liquid would be:</p>
+<p><font color=#0099ff size=4 face="黑体">例如，给定一个带有名为<code>Description</code>的Text字段的内容类型<code>Article</code>，该字段的形状将被命名为<code>“Article-Description”</code>。在Liquid中渲染这些形状将是：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.Content[&quot;Article-Description&quot;] | shape_render }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.Content [“Article-Description”] | shape_render}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In this example the indexer syntax is necessary as the name of the differentiator is not compatible with Liquid language.</p>
+<p><font color=#0099ff size=4 face="黑体">在此示例中，索引器语法是必需的，因为微分器的名称与Liquid语言不兼容。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Instead of rendering the shape directly, you can also access its properties. In the case of a text field you have access to the <code>Field</code> property which has a <code>Text</code> property.</p>
+<p><font color=#0099ff size=4 face="黑体">您也可以访问其属性，而不是直接渲染形状。在文本字段的情况下，您可以访问具有“Text”属性的<code>Field</code>属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.Content[&quot;Article-Description&quot;].Field.Text }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.Content [“Article-Description”]。Field.Text}}&lt;/font&gt; 
+
+
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.Queries/" title="Queries" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Queries
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OrchardCore.Themes/" title="Themes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Themes
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

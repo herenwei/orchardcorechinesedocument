@@ -1,0 +1,1352 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Dynamic Cache - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#dynamic-cache-orchardcoredynamiccache" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Dynamic Cache
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Dynamic Cache" class="md-nav__link md-nav__link--active">
+      Dynamic Cache
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.DynamicCache/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="dynamic-cache-orchardcoredynamiccache">Dynamic Cache (OrchardCore.DynamicCache)</h1>
+<h1 id="orchardcoredynamiccache"><font color=#0099ff size=4 face="黑体">动态缓存（OrchardCore.DynamicCache）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="purpose">Purpose</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">目的</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Dynamic Cache allows you to cache sections of markup. </p>
+<p><font color=#0099ff size=4 face="黑体">动态高速缓存允许您缓存标记的各个部分。</font> </p>
+<p>Each cached section of markup can contain other (child) cached sections of markup.</p>
+<p><font color=#0099ff size=4 face="黑体">标记的每个缓存部分都可以包含标记的其他（子）缓存部分。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Cached sections can all have their own cache policies, which allows for finer configuration options than a page level cache would have.</p>
+<p><font color=#0099ff size=4 face="黑体">缓存部分都可以拥有自己的缓存策略，这允许比页面级缓存更精细的配置选项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Cached values are stored using the <code>IDynamicCache</code> service.</p>
+<p><font color=#0099ff size=4 face="黑体">使用<code>IDynamicCache</code>服务存储缓存的值。</font> </p>
+<p>Its default implementation is based on <code>IDistributedCache</code> which is itself based on <code>IMemoryCache</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">它的默认实现基于<code>IDistributedCache</code>，它本身基于<code>IMemoryCache</code>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="example">Example:</h3>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">例：</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Layout (not cached)</p>
+<p><font color=#0099ff size=4 face="黑体">布局（未缓存）</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Section A</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">A部分</font> </p>
+<ul>
+<li>
+<p>Section A1 (varies by role)</p>
+</li>
+<li>
+<p>Section A2</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Section B</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">B节</font> </p>
+<ul>
+<li>
+<p>Section B1 (varies by query string)</p>
+</li>
+<li>
+<p>Section B2</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="rendering-cached-sections">Rendering cached sections</h2>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">渲染缓存的部分</font></h2>
+<p>When this page is rendered for the first time, all shapes will be evaluated. Any blocks of markup that have been identified as cachable will be stored in the <code>IDynamicCache</code> service.</p>
+<p><font color=#0099ff size=4 face="黑体">首次渲染此页面时，将评估所有形状。任何已标识为可缓存的标记块都将存储在“IDynamicCache”服务中。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>On subsequent requests, if a cacheable section has already been cached (and the cache entry is still valid) then it won't be processed (<code>Processing</code> event in</p>
+<p><font color=#0099ff size=4 face="黑体">在后续请求中，如果已缓存可缓存部分（并且缓存条目仍然有效），则不会处理它（处理中的<code>Processing</code>事件）</font> </p>
+<p>the <code>ShapeMetadata</code>). The markup will be retrieved from the cache and returned as part of the response.</p>
+<p><font color=#0099ff size=4 face="黑体"><code>ShapeMetadata</code>）。标记将从缓存中检索并作为响应的一部分返回。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="invalidating-cached-sections">Invalidating cached sections</h2>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">使缓存的部分无效</font></h2>
+<p>If a cached section is invalidated, the markup for the section will be regenerated on the next request, and then placed back into the cache for subsequent requests to take advantage of.</p>
+<p><font color=#0099ff size=4 face="黑体">如果缓存的部分无效，则将在下一个请求上重新生成该部分的标记，然后将其放回缓存中以供后续请求利用。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>If its children are still cached then their cached value will be used.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">如果它的子节点仍然被缓存，那么将使用它们的缓存值。</font> </p>
+</li>
+<li>
+<p>Invalidating a block will also invalidate all parent blocks.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">使块无效也将使所有父块无效。</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For instance, if <code>Section B2</code> is invalidated, <code>Section B</code> will also be invalidated. When the Layout is rendered, the <code>Section B</code> code will run </p>
+<p><font color=#0099ff size=4 face="黑体">例如，如果<code>Section B2</code>无效，<code>Section B</code>也将失效。渲染Layout时，将运行<code>Section B</code>代码</font> </p>
+<p>again, as will <code>Section B2</code>, but the cached content of <code>Section B1</code> will be reused.</p>
+<p><font color=#0099ff size=4 face="黑体">再次，<code>部分B2</code>，但'部分B1`的缓存内容将被重用。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Cached sections can define dependencies, which allows the cache to know when the cached value should be invalidated. </p>
+<p><font color=#0099ff size=4 face="黑体">缓存部分可以定义依赖关系，这允许缓存知道何时应该使缓存的值无效。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For example- if a cache section includes the body of a content item, you may want to automatically invalidate this cache section whenever that content item changes.</p>
+<p><font color=#0099ff size=4 face="黑体">例如，如果缓存部分包含内容项的主体，则可能希望每当该内容项发生更改时自动使此缓存部分无效。</font> </p>
+<p>You can do this by adding the dependencies <code>contentitemid:{ContentItemId}</code> to the cache section. </p>
+<p><font color=#0099ff size=4 face="黑体">您可以通过将依赖项“contentitemid：{ContentItemId}”添加到缓存部分来完成此操作。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Cached sections can also be configured with a sliding expiration window, an absolute expiration window, or both. </p>
+<p><font color=#0099ff size=4 face="黑体">缓存部分还可以配置滑动到期窗口，绝对到期窗口或两者。</font> </p>
+<p>If no expiration window is provided, a default sliding window of one minute will be used.</p>
+<p><font color=#0099ff size=4 face="黑体">如果未提供到期窗口，则将使用一分钟的默认滑动窗口。</font> </p>
+<p>If both types of expiration windows are supplied, the sliding policy will be used, up to the maximum absolute time allowed by the absolute expiration window. </p>
+<p><font color=#0099ff size=4 face="黑体">如果提供了两种类型的到期窗口，则将使用滑动策略，直到绝对到期窗口允许的最大绝对时间。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="well-known-cache-dependencies">Well-known Cache dependencies</h3>
+<h2 id="cache"><font color=#0099ff size=4 face="黑体">众所周知的Cache依赖项</font></h2>
+<p>Here is a list of common cache dependency values that can be used to invalidate cache entries.</p>
+<p><font color=#0099ff size=4 face="黑体">以下是可用于使缓存条目无效的公共缓存依赖项值列表。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Dependency | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|依赖性|说明|</font> </p>
+<p>| --------- | ----------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | -----------</font> </p>
+<p>| <code>contentitemid:{ContentItemId}</code> | Invalidated when a content item described with its unique id (<code>{ContentItemId}</code>) is Published, Unpublished or Removed. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>contentitemid：{ContentItemId}</code>|使用其唯一ID（<code>{ContentItemId}</code>）描述的内容项是已发布，未发布或已删除时无效。 |</font> </p>
+<p>| <code>alias:{Alias}</code> | Invalidated when a content item with a specific alias (<code>{Alias}</code>) is Published, Unpublished or Removed. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>alias：{Alias}</code>|具有特定别名（“{Alias}”）的内容项为已发布，未发布或已删除时无效。 |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>You can create your own dependencies by calling <code>RemoveTagAsync()</code> on <code>ITagCache</code> in response to events.</p>
+<p><font color=#0099ff size=4 face="黑体">您可以通过在<code>ITagCache</code>上调用<code>RemoveTagAsync（）</code>来响应事件来创建自己的依赖项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="varying-cached-sections-contexts">Varying cached sections (Contexts)</h2>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">改变缓存部分（上下文）</font></h2>
+<p>You may have a cached section that needs to be varied depending on the context of the request. </p>
+<p><font color=#0099ff size=4 face="黑体">您可能有一个缓存部分需要根据请求的上下文进行更改。</font> </p>
+<p>An example of this would be a header section that is included on every page on the site, but contains different markup for each user (e.g. a log in form, or the currently logged in user's username etc...').</p>
+<p><font color=#0099ff size=4 face="黑体">这方面的一个示例是包含在网站上每个页面上的标题部分，但是每个用户包含不同的标记（例如登录表单，或者当前登录用户的用户名等......）。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>You can do this by adding 'vary by' values (called contexts) to the cache policy of a cached section.</p>
+<p><font color=#0099ff size=4 face="黑体">您可以通过将“vary by”值（称为上下文）添加到缓存节的缓存策略来执行此操作。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Adding a <code>user</code> context to the header example given above would create a unique cache item for each user that logs in to your site</p>
+<p><font color=#0099ff size=4 face="黑体">在上面给出的标题示例中添加“user”上下文将为登录到您站点的每个用户创建一个唯一的缓存项</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Contexts are hierarchical. For instance if a shape varies by <code>user</code> and <code>user.roles</code> contexts, only the <code>user</code> value will be used</p>
+<p><font color=#0099ff size=4 face="黑体">上下文是分层的。例如，如果形状因<code>user</code>和<code>user.roles</code>上下文而异，则仅使用<code>user</code>值</font> </p>
+<p>as it's more specialized than the <code>user.roles</code> one.</p>
+<p><font color=#0099ff size=4 face="黑体">因为它比<code>user.roles</code>更专业。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Contexts can be parameterized, for instance <code>query:age</code> will pick the <code>age</code> value of the query string.</p>
+<p><font color=#0099ff size=4 face="黑体">上下文可以参数化，例如<code>query：age</code>将选择查询字符串的<code>age</code>值。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="available-contexts">Available Contexts</h3>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">可用的上下文</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Context | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|上下文|说明|</font> </p>
+<p>| --------- | ----------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | -----------</font> </p>
+<p>| <code>features</code> | The list of enabled features. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>features</code> |已启用功能的列表。 |</font> </p>
+<p>| <code>features:{featureName}</code> | The specified feature name. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>features：{featureName}</code>|指定的功能名称。 |</font> </p>
+<p>| <code>query</code> | The list of querystring values. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>query</code> |查询字符串值列表。 |</font> </p>
+<p>| <code>query:{queryName}</code> | The specified query name value. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>query：{queryName}</code>|指定的查询名称值。 |</font> </p>
+<p>| <code>user</code> | The current user. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>user</code> |当前用户。 |</font> </p>
+<p>| <code>user.roles</code> | The roles of the current user. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>user.roles</code> |当前用户的角色。 |</font> </p>
+<p>| <code>route</code> | The current request path. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>route</code> |当前的请求路径。 |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>You can create your own Contexts by implementing <code>ICacheContextProvider</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">您可以通过实现<code>ICacheContextProvider</code>来创建自己的上下文。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="fallback-contexts">Fallback Contexts</h3>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">后备上下文</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sometimes you may want to vary by a known value that is not an available context. </p>
+<p><font color=#0099ff size=4 face="黑体">有时您可能希望根据不是可用上下文的已知值进行更改。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For example: You may wish to cache all your blog posts so that you can quickly display lists of your posts throughout your site. If the cache ID for the cache block was <code>blog-post</code>, you can use a known value as a context to vary the cache item for each blog post. In this case, you could use the Content Item ID as a context:</p>
+<p><font color=#0099ff size=4 face="黑体">例如：您可能希望缓存所有博客帖子，以便您可以在整个网站中快速显示帖子列表。如果缓存块的缓存ID是“blog-post”，则可以使用已知值作为上下文来改变每个博客帖子的缓存项。在这种情况下，您可以使用内容项ID作为上下文：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+{% cache &quot;blog-post-summary&quot;, vary_by: Model.ContentItemId %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％cache“blog-post-summary”，vary_by：Model.ContentItemId％}&lt;/font&gt; 
+
+
+    ...
+
+{% endcache %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％endcache％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="usage">Usage</h2>
+<h2 id="_8"><font color=#0099ff size=4 face="黑体">用法</font></h2>
+<p>Cached sections can be configured to encompass a shape, or they can be explicitly added to markup with the <code>cache</code> liquid block, or the <code>cache</code> razor tag helper:</p>
+<p><font color=#0099ff size=4 face="黑体">缓存的部分可以配置为包含一个形状，或者可以使用<code>cache</code> liquid块或<code>cache</code> razor tag helper将它们显式添加到标记中：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="caching-a-shape">Caching a shape</h3>
+<h2 id="_9"><font color=#0099ff size=4 face="黑体">缓存形状</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><code>ShapeMetadata.Cache(string cacheId)</code></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When called on a shape instances, marks the shape as being cached. Returns a <code>CacheContext</code> object.</p>
+<p><font color=#0099ff size=4 face="黑体">在形状实例上调用时，将形状标记为正在缓存。返回一个<code>CacheContext</code>对象。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Example: <code>myShape.Cache("myshape")</code></p>
+<p><font color=#0099ff size=4 face="黑体">示例：<code>myShape.Cache（“myshape”）</code></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="cachecontext-members">CacheContext members</h4>
+<h2 id="cachecontext"><font color=#0099ff size=4 face="黑体">CacheContext成员</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Method | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|方法|说明|</font> </p>
+<p>| --------- | ----------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | -----------</font> </p>
+<p>| <code>WithDuration(Timespan)</code> | Cache the shape for the specific amount of time. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>WithDuration（Timespan）</code>|缓存形状特定的时间。 |</font> </p>
+<p>| <code>WithSlidingExpiration(Timespan)</code> | Cache the shape for a specific amount of time with a sliding window. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>WithSlidingExpiration（Timespan）</code>|使用滑动窗口缓存形状特定的时间。 |</font> </p>
+<p>| <code>AddContext(params string[])</code> | Varies the cached content on the specified context values. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>AddContext（params string []）</code>|改变指定上下文值的缓存内容。 |</font> </p>
+<p>| <code>RemoveContext(string)</code> | Removes the specified context. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>RemoveContext（string）</code>|删除指定的上下文。 |</font> </p>
+<p>| <code>AddDependency(params string[])</code> | Defines the context values that will invalidate the cache entry. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>AddDependency（params string []）</code>|定义将使高速缓存条目无效的上下文值。 |</font> </p>
+<p>| <code>RemoveDependency(string)</code> | Removes the specified dependency. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>RemoveDependency（string）</code>|删除指定的依赖项。 |</font> </p>
+<p>| <code>AddTag(string)</code> | Adds a tag to the cache entry to that it can be invalidated by this tag value. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>AddTag（string）</code>|将标记添加到缓存条目，使其可以通过此标记值无效。 |</font> </p>
+<p>| <code>RemoveTag(string)</code> | Removes the specified tag. |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>RemoveTag（string）</code>|删除指定的标记。 |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p><font color=#0099ff size=4 face="黑体">！注意</font> </p>
+<pre><code>`AddDependency` differs from `AddContext` in that it doesn't store multiple values for each context,
+
+but invalidates the cached shape content when the value of the context varies.
+
+Internally they share the same implementation, as the physical cache key will contain the dependency context value.
+</code></pre>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="shape-tag-helper-attributes">Shape Tag Helper Attributes</h4>
+<h2 id="_10"><font color=#0099ff size=4 face="黑体">形状标记助手属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When using shape tag helpers, the following attributes can be used:</p>
+<p><font color=#0099ff size=4 face="黑体">使用形状标记帮助程序时，可以使用以下属性：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Razor Attribute | Liquid Attribute | Description | Required |</p>
+<p><font color=#0099ff size=4 face="黑体">|剃刀属性|液体属性|说明|必需|</font> </p>
+<p>| --------- | ----------- | ----------- | ----------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ----------- ----------- -----------</font> </p>
+<p>| <code>cache-id</code> | <code>cache_id</code> | The identifier of the cached shape. | Yes |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache-id</code> | <code>cache_id</code> |缓存形状的标识符。 |是的|</font> </p>
+<p>| <code>cache-context</code> | <code>cache_context</code> | A set of space/comma-separated context values. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache-context</code> | <code>cache_context</code> |一组空格/逗号分隔的上下文值。 |没有|</font> </p>
+<p>| <code>cache-dependency</code> | <code>cache_dependency</code> | A set of space/comma-separated dependency values. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache-dependency</code> | <code>cache_dependency</code> |一组空格/逗号分隔的依赖项值。 |没有|</font> </p>
+<p>| <code>cache-tag</code> | <code>cache_tag</code> | A set of space/comma-separated tag values. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache-tag</code> | <code>cache_tag</code> |一组空格/逗号分隔的标记值。 |没有|</font> </p>
+<p>| <code>cache-fixed-duration</code> | <code>cache_expires_after</code> | The cache duration of the entry, e.g. "00:05:00" for 5 minutes. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache-fixed-duration</code> | <code>cache_expires_after</code> |条目的缓存持续时间，例如“00:05:00”持续5分钟。 |没有|</font> </p>
+<p>| <code>cache-sliding-duration</code> | <code>cache_expires_sliding</code> | The sliding cache duration of the entry, e.g. "00:05:00" for 5 minutes. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache-sliding-duration</code> | <code>cache_expires_sliding</code> |该条目的滑动缓存持续时间，例如， “00:05:00”持续5分钟。 |没有|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>e.g.: to cache the menu shape in a liquid template, you would use this markup:</p>
+<p><font color=#0099ff size=4 face="黑体">例如：要将菜单形状缓存在液体模板中，您可以使用此标记：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><code>{% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_expires_after: "00:05:00", cache_tag: "alias:main-menu" %}</code></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="liquid-cache-block">Liquid cache block</h3>
+<h2 id="_11"><font color=#0099ff size=4 face="黑体">液体缓存块</font></h2>
+<p>The liquid <code>cache</code> block can be used to cache sections of markup. <code>cache</code> blocks can be nested.</p>
+<p><font color=#0099ff size=4 face="黑体">液体“缓存”块可用于缓存标记部分。 <code>cache</code>块可以嵌套。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="arguments">Arguments</h4>
+<h2 id="_12"><font color=#0099ff size=4 face="黑体">参数</font></h2>
+<p>| Liquid Attribute | Description | Required |</p>
+<p><font color=#0099ff size=4 face="黑体">|液体属性|说明|必需|</font> </p>
+<p>| --------- | ----------- | ----------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ----------- -----------</font> </p>
+<p>| <code>id</code> | The identifier of the cached shape. | Yes (this is the default first argument- no need to explicitly specify the name of this argument)  |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>id</code> |缓存形状的标识符。 |是（这是默认的第一个参数 - 无需显式指定此参数的名称）|</font> </p>
+<p>| <code>contexts</code> | A set of space/comma-separated context values. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>contexts</code> |一组空格/逗号分隔的上下文值。 |没有|</font> </p>
+<p>| <code>dependencies</code> | A set of space/comma-separated dependency values. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>dependencies</code> |一组空格/逗号分隔的依赖项值。 |没有|</font> </p>
+<p>| <code>expires_after</code> | The cache duration of the entry, e.g. "00:05:00" for 5 minutes. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>expires_after</code> |条目的缓存持续时间，例如“00:05:00”持续5分钟。 |没有|</font> </p>
+<p>| <code>expires_sliding</code> | The sliding cache duration of the entry, e.g. "00:05:00" for 5 minutes. | No |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>expires_sliding</code> |该条目的滑动缓存持续时间，例如， “00:05:00”持续5分钟。 |没有|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="examples">Examples</h4>
+<h2 id="_13"><font color=#0099ff size=4 face="黑体">例子</font></h2>
+<p>Simple block:</p>
+<p><font color=#0099ff size=4 face="黑体">简单块：</font> </p>
+<pre><code>
+{% cache &quot;my-cache-block&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％cache“my-cache-block”％}&lt;/font&gt; 
+
+
+    ...
+
+{% endcache %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％endcache％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Nested blocks:</p>
+<p><font color=#0099ff size=4 face="黑体">嵌套块：</font> </p>
+<pre><code>
+{% cache &quot;a&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％cache“a”％}&lt;/font&gt; 
+
+
+    A {{ &quot;now&quot; | date: &quot;%T&quot; }} (No Duration) &lt;br /&gt;
+
+    {% cache &quot;a1&quot;, dependencies: &quot;a1&quot;, vary_by: &quot;user&quot;, expires_after: &quot;0:5:0&quot; %}
+
+        A1 {{ &quot;now&quot; | date: &quot;%T&quot; }} (5 Minutes) &lt;br /&gt;
+
+    {% endcache %}
+
+    {% cache &quot;a2&quot;, dependencies: &quot;a2&quot;, expires_after: &quot;0:0:1&quot; %}
+
+        A2 {{ &quot;now&quot; | date: &quot;%T&quot; }} (1 Second) &lt;br /&gt;
+
+        {% cache &quot;a2a&quot;, dependencies: &quot;a2a&quot;, contexts: &quot;route&quot;, expires_sliding: &quot;0:0:5&quot; %}
+
+            A2A {{ &quot;now&quot; | date: &quot;%T&quot; }} (5 Seconds) &lt;br /&gt;
+
+        {% endcache %}
+
+    {% endcache %}
+
+{% endcache %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％endcache％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="altering-a-cache-scope">Altering a cache scope</h3>
+<h2 id="_14"><font color=#0099ff size=4 face="黑体">更改缓存范围</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>You may not yet know all the child dependencies, or even how long the cache block should be cached for when you enter a cache block. </p>
+<p><font color=#0099ff size=4 face="黑体">您可能还不知道所有子依赖项，甚至还不知道在您输入缓存块时缓存块应该缓存多长时间。</font> </p>
+<p>An example might be a cache block around a list of content items from a query- because you do not know which content items will be displayed by the query, you cannot define the correct dependencies when you enter the cache block.</p>
+<p><font color=#0099ff size=4 face="黑体">一个示例可能是来自查询的内容项列表周围的缓存块 - 因为您不知道查询将显示哪些内容项，所以在输入缓存块时无法定义正确的依赖项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>There are four tags that allow you to alter the current cache scope. It's safe to use these tags even if you don't necessarily know if you're inside a cache block:</p>
+<p><font color=#0099ff size=4 face="黑体">有四个标记允许您更改当前缓存范围。即使您不一定知道自己是否在缓存块中，使用这些标记也是安全的：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Liquid Tag | Description | Example |</p>
+<p><font color=#0099ff size=4 face="黑体">|液体标签|说明|示例|</font> </p>
+<p>| --------- | ----------- | ----------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ----------- -----------</font> </p>
+<p>| <code>cache_dependency</code> | Adds a dependency to the current cache scope | <code>{% cache_dependency "alias:{Alias}" %}</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache_dependency</code> |向当前缓存范围添加依赖项| <code>{％cache_dependency'别名：{Alias}“％}</code>|</font> </p>
+<p>| <code>cache_expires_on</code> | Sets a fixed date and time that the cache item will expire. The most restrictive cache policy (i.e. the one with the shortest life) will win in the event of multiple expiry policies being defined for a single block.  | <code>{% cache_expires_on {A DateTime or DateTimeOffset instance %}</code> (e.g. from a date/time field on a content item) |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache_expires_on</code> |设置缓存项目将过期的固定日期和时间。如果为单个块定义了多个到期策略，则限制性最强的缓存策略（即具有最短寿命的缓存策略）将获胜。 | <code>{％cache_expires_on {DateTime或DateTimeOffset instance％}</code>（例如来自内容项的日期/时间字段）|</font> </p>
+<p>| <code>cache_expires_after</code> | Sets a timespan relative to when the item was cached that the cache item will expire. The most restrictive cache policy (i.e. the one with the shortest life) will win in the event of multiple expiry policies being defined for a single block. | <code>{% cache_expires_after "01:00:00" %}</code> (One hour) |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache_expires_after</code> |设置相对于缓存项目缓存项目到期时的时间跨度。如果为单个块定义了多个到期策略，则限制性最强的缓存策略（即具有最短寿命的缓存策略）将获胜。 | <code>{％cache_expires_after“01:00:00”％}</code>（一小时）|</font> </p>
+<p>| <code>cache_expires_sliding</code> | Sets a sliding window for the expiry of the cache item. The most restrictive cache policy (i.e. the one with the shortest life) will win in the event of multiple expiry policies being defined for a single block. | <code>{% cache_expires_sliding "00:01:00" %}</code> (One minute) |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>cache_expires_sliding</code> |为缓存项的到期设置滑动窗口。如果为单个块定义了多个到期策略，则限制性最强的缓存策略（即具有最短寿命的缓存策略）将获胜。 | <code>{％cache_expires_sliding“00:01:00”％}</code>（一分钟）|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="example_1">Example:</h4>
+<h2 id="_15"><font color=#0099ff size=4 face="黑体">例：</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Displaying content items from a query:</p>
+<p><font color=#0099ff size=4 face="黑体">显示查询中的内容项：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+{% cache &quot;recent-blog-posts&quot;}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％cache“recent-blog-posts”}&lt;/font&gt; 
+
+
+    {% assign recentBlogPosts = Queries.RecentBlogPosts | query %}
+
+    {% for item in recentBlogPosts %}
+
+        {{ item | display_text }}
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        {% assign cacheDependency = &quot;contentitemid:&quot; | append: Model.ContentItem.ContentItemId %}
+
+        {% cache_dependency cacheDependency %}
+
+    {% endfor %}
+
+{% endcache %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％endcache％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Each item that is displayed by the query will now add its own cache dependency to the <code>recent-blog-posts</code> cache block.</p>
+<p><font color=#0099ff size=4 face="黑体">查询显示的每个项目现在都会将自己的缓存依赖项添加到<code>recent-blog-posts</code>缓存块中。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="razor-cache-tag">Razor cache tag</h3>
+<h2 id="_16"><font color=#0099ff size=4 face="黑体">剃刀缓存标签</font></h2>
+<p>This has not yet been implemented. If you feel up to it, and you'd like to help out, then please raise a pull request.</p>
+<p><font color=#0099ff size=4 face="黑体">这尚未实施。如果您对此感到满意，并希望提供帮助，请提出拉取请求。</font> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Placement
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OrchardCore.Localization/" title="Localization" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Localization
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

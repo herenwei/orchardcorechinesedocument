@@ -1,0 +1,1837 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Workflows - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#workflows-orchardcoreworkflows" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Workflows
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Workflows" class="md-nav__link md-nav__link--active">
+      Workflows
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Workflows/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="workflows-orchardcoreworkflows">Workflows (OrchardCore.Workflows)</h1>
+<h1 id="orchardcoreworkflows"><font color=#0099ff size=4 face="黑体">工作流程（OrchardCore.Workflows）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The Workflows module provides a way for users to visually implement business rules using flowchart diagrams.</p>
+<p><font color=#0099ff size=4 face="黑体">Workflows模块为用户提供了一种使用流程图可视地实现业务规则的方法。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="general-concepts">General Concepts</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">一般概念</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A workflow is a collection of <strong>activities</strong> that are connected to eachother. These connections are called <strong>transitions</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">工作流程是<strong>活动</strong>的集合，它们彼此连接。这些连接称为<strong>转换</strong>。</font> </p>
+<p>Activities and their transitions are stored in a <strong>Workflow Definition</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">活动及其转换存储在<strong>工作流定义</strong>中。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A workflow is essentially a visual script, where each activity is a statement of that script.</p>
+<p><font color=#0099ff size=4 face="黑体">工作流本质上是一个可视脚本，其中每个活动都是该脚本的声明。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>There are two types of activities: <strong>Task</strong> and <strong>Event</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">有两种类型的活动：<strong>任务</strong>和<strong>事件</strong>。</font> </p>
+<p>A Task activity typically performs an action, such as publishing a content item, while an Event activity typically listens for an event to happen before execution continues.</p>
+<p><font color=#0099ff size=4 face="黑体">Task活动通常执行操作，例如发布内容项，而Event活动通常在执行继续之前侦听事件。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In order for a workflow to execute, at least one activity must be marked as the <em>start of the workflow</em>. Only Event activities can be marked as the start of a workflow. An example of such an event activity is <em>Content Created</em>, which executes whenever a content item is created.</p>
+<p><font color=#0099ff size=4 face="黑体">为了执行工作流，必须至少将一个活动标记为工作流<em>的</em>开始。只有事件活动才能标记为工作流程的开始。此类事件活动的一个示例是_Content Created_，它在创建内容项时执行。</font> </p>
+<p>A workflow can have more than one start event. This allows you to trigger (run) a workflow in response to various types of events.</p>
+<p><font color=#0099ff size=4 face="黑体">工作流可以有多个启动事件。这允许您触发（运行）工作流以响应各种类型的事件。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Each activity has one or more <strong>outcomes</strong>, which represent a source endpoint from which a connection can be made to the next activity, which are called transitions.</p>
+<p><font color=#0099ff size=4 face="黑体">每个活动都有一个或多个<strong>结果</strong>，它们代表一个源端点，从该端点可以与下一个活动建立连接，称为转换。</font> </p>
+<p>By connecting activities, you are effectively creating a program that can be executed by Orchard in response to a multitude of events.</p>
+<p><font color=#0099ff size=4 face="黑体">通过连接活动，您可以有效地创建一个程序，可以由Orchard执行以响应多个事件。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="The workflow editor " src="docs/workflow-editor.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ol>
+<li>Activity Picker (Task / Event)</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">1.活动选择器（任务/事件）</font> </p>
+<ol>
+<li>Activity actions (click an activity to display activity actions)</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">2.活动操作（单击活动以显示活动操作）</font> </p>
+<ol>
+<li>An activity configured as the starting activity of the workflow.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">3.配置为工作流的起始活动的活动。</font> </p>
+<ol>
+<li>An activity.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">4.一项活动。</font> </p>
+<ol>
+<li>An Outcome ("Done") of an activity.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">5.活动的结果（“完成”）。</font> </p>
+<ol>
+<li>A transition between two activities (from "Content Created" via the "Done" outcome to the "Send Email" activity).</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">6.两个活动之间的转换（从“创建内容”到“完成”结果到“发送电子邮件”活动）。</font> </p>
+<ol>
+<li>The workflow editor design surface.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">7.工作流编辑器设计表面。</font> </p>
+<ol>
+<li>Edit the workflow definition properties (Name, Enabled, etc.)</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">8.编辑工作流定义属性（名称，已启用等）</font> </p>
+<ol>
+<li>List the workflow instances for this workflow definition.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">9.列出此工作流定义的工作流实例。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="vocabulary">Vocabulary</h2>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">词汇</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When working with Orchard Workflows, you will encounter the following terms:</p>
+<p><font color=#0099ff size=4 face="黑体">使用Orchard Workflows时，您将遇到以下术语：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="workflow-definition">Workflow Definition</h3>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">工作流定义</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A document (as in a "document-DB" document) that contains all the necessary information about a workflow, such as its name, whether it's enabled or not, its set of activities and their transitions.</p>
+<p><font color=#0099ff size=4 face="黑体">一个文档（如“document-DB”文档中），其中包含有关工作流的所有必要信息，例如其名称，是否已启用，其活动集及其转换。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="workflow-instance">Workflow Instance</h3>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">工作流程实例</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A document that represents an "instance" of a workflow definition. A workflow instance contains runtime-state of a workflow. Whenever a workflow is started, a new workflow instance is created of a given workflow definition.</p>
+<p><font color=#0099ff size=4 face="黑体">表示工作流定义的“实例”的文档。工作流实例包含工作流的运行时状态。每当启动工作流时，都会创建给定工作流定义的新工作流实例。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="activity">Activity</h3>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A step in a workflow definition. An activity performs an action and provides zero or more outcomes, which are used to connect to the next activity to execute. There are two types of activities: Task and Event.</p>
+<p><font color=#0099ff size=4 face="黑体">工作流定义中的一个步骤。活动执行操作并提供零个或多个结果，用于连接到要执行的下一个活动。有两种类型的活动：任务和事件。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="task">Task</h3>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">任务</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A specialized type of activity. Tasks perform actions such as sending emails, publishing content and making HTTP requests.</p>
+<p><font color=#0099ff size=4 face="黑体">一种特殊类型的活动。任务执行诸如发送电子邮件，发布内容和发出HTTP请求等操作。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="event">Event</h3>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">事件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A specialized type of activity. Like tasks, events can perform actions, but typically all they do is halt the workflow, awaiting for an event to happen before continuing on to the next activity. When an event is configured as the starting activity of a workflow, that workflow is started when that event is triggered.</p>
+<p><font color=#0099ff size=4 face="黑体">一种特殊类型的活动。与任务类似，事件可以执行操作，但通常他们所做的只是停止工作流，等待事件发生，然后继续下一个活动。将事件配置为工作流的启动活动时，将在触发该事件时启动该工作流。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="workflow-editor">Workflow Editor</h3>
+<h2 id="_8"><font color=#0099ff size=4 face="黑体">工作流编辑器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>An editor that allows you to create and manage a workflow definition using a drag &amp; drop visual interface.</p>
+<p><font color=#0099ff size=4 face="黑体">一种编辑器，允许您使用拖放可视界面创建和管理工作流定义。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="activity-editor">Activity Editor</h3>
+<h2 id="_9"><font color=#0099ff size=4 face="黑体">活动编辑器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Most activities expose settings that can be configured via the activity editor. To configure an activity, you can either double-click an activity on the design surface of the workflow editor, or click an activity once to activate a small popup that provides various actions you can perform on an activity. One of these actions is the Edit action.</p>
+<p><font color=#0099ff size=4 face="黑体">大多数活动都会公开可以通过活动编辑器配置的设置。要配置活动，您可以双击工作流编辑器设计图面上的活动，也可以单击活动一次以激活一个小弹出窗口，该弹出窗口提供您可以对活动执行的各种操作。其中一个操作是编辑操作。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="activity-picker">Activity Picker</h3>
+<h2 id="_10"><font color=#0099ff size=4 face="黑体">活动选择器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When you are in the Workflow Editor, you use the Activity Picker to add activities to the design surface. Open the activity picker by clicking <em>Add Task</em> or <em>Add Event</em> to add a task or event, respectively.</p>
+<p><font color=#0099ff size=4 face="黑体">当您在工作流程编辑器中时，可以使用活动选择器将活动添加到设计图面。单击_Add Task_或_Add Event_分别添加任务或事件，打开活动选择器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="outcome">Outcome</h3>
+<h2 id="_11"><font color=#0099ff size=4 face="黑体">结果</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Each activity has zero or more outcomes. When an activity has executed, it yields control back to the workflow manager along with a list of outcomes. The workflow manager uses this list of outcomes to determine which activities to execute next.</p>
+<p><font color=#0099ff size=4 face="黑体">每项活动都有零个或多个结果。执行活动后，它会将控制权返回给工作流程管理器以及结果列表。工作流管理器使用此结果列表来确定接下来要执行的活动。</font> </p>
+<p>Although many activities support multiple outcomes, they typically return only one of them when done executing. For example, the <em>Send Email</em> activity has two possible outcomes: "Done" and "Failed". When the email was sent successfully, it yields "Done" as the outcome, and "Failed" otherwise.</p>
+<p><font color=#0099ff size=4 face="黑体">虽然许多活动支持多种结果，但它们通常在执行时只返回其中一种。例如，_Send Email_活动有两种可能的结果：“完成”和“失败”。电子邮件成功发送后，会产生“完成”作为结果，否则“失败”。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="transition">Transition</h3>
+<h2 id="_12"><font color=#0099ff size=4 face="黑体">过渡</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A transition is the connection between the outcome of one activity to another activity. Transitions are created using drag &amp; drop operations in the workflow editor.</p>
+<p><font color=#0099ff size=4 face="黑体">转换是一个活动的结果与另一个活动之间的联系。使用工作流编辑器中的拖放操作创建过渡。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="workflow-manager">Workflow Manager</h3>
+<h2 id="_13"><font color=#0099ff size=4 face="黑体">工作流程管理器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>A service class that can execute workflows. When a workflow is executed, it takes care of creating a workflow instance which is then executed.</p>
+<p><font color=#0099ff size=4 face="黑体">可以执行工作流的服务类。执行工作流时，它会负责创建随后执行的工作流实例。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="workflow-execution-context">Workflow Execution Context</h3>
+<h2 id="_14"><font color=#0099ff size=4 face="黑体">工作流程执行上下文</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When the Workflow Manager executes a workflow, it creates an object called the Workflow Execution Context. The Workflow Execution Context is a collection of all information relevant to workflow execution.</p>
+<p><font color=#0099ff size=4 face="黑体">当Workflow Manager执行工作流时，它会创建一个名为Workflow Execution Context的对象。工作流程执行上下文是与工作流程执行相关的所有信息的集合。</font> </p>
+<p>For example, it contains a reference to the workflow instance, workflow definition, correlation values, input, output and properties.</p>
+<p><font color=#0099ff size=4 face="黑体">例如，它包含对工作流实例，工作流定义，相关值，输入，输出和属性的引用。</font> </p>
+<p>Each activity has access to this execution context.</p>
+<p><font color=#0099ff size=4 face="黑体">每个活动都可以访问此执行上下文。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="correlation">Correlation</h3>
+<h2 id="_15"><font color=#0099ff size=4 face="黑体">关联</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Correlation is the act of associating a workflow instance with one or more <em>identifiers</em>. These identifiers can be anything. For example, when a workflow has the <em>Content Created</em> event as its starting point, the workflow instance will be associated, or rather <em>correlated</em> to the content item ID that was just created.</p>
+<p><font color=#0099ff size=4 face="黑体">关联是将工作流实例与一个或多个_identifiers_相关联的行为。这些标识符可以是任何内容例如，当工作流将_Content Created_事件作为其起点时，工作流实例将与刚刚创建的内容项ID相关联，或者更确切地说_correlated_。</font> </p>
+<p>This allows long-running workflow scenarios where only workflow instances associated with a given content item ID are resumed.</p>
+<p><font color=#0099ff size=4 face="黑体">这允许长时间运行的工作流场景，其中仅恢复与给定内容项ID相关联的工作流实例。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="input">Input</h3>
+<h2 id="_16"><font color=#0099ff size=4 face="黑体">输入</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a workflow is executed, the caller can provide input to the workflow instance. This input is stored in the <code>Input</code> dictionary of the workfow execution context.</p>
+<p><font color=#0099ff size=4 face="黑体">执行工作流时，调用者可以向工作流实例提供输入。此输入存储在工作流执行上下文的“输入”字典中。</font> </p>
+<p>This is analogous to providing arguments to a function.</p>
+<p><font color=#0099ff size=4 face="黑体">这类似于为函数提供参数。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="output">Output</h3>
+<h2 id="_17"><font color=#0099ff size=4 face="黑体">产量</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a workflow executes, each activity can provide output values to the workflow instance. This output is stored in the <code>Output</code> dictionary of the workfow execution context.</p>
+<p><font color=#0099ff size=4 face="黑体">执行工作流时，每个活动都可以向工作流实例提供输出值。此输出存储在工作流执行上下文的“输出”字典中。</font> </p>
+<p>This is analogous to returning values from a function.</p>
+<p><font color=#0099ff size=4 face="黑体">这类似于从函数返回值。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="properties">Properties</h3>
+<h2 id="_18"><font color=#0099ff size=4 face="黑体">属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a workflow executes, each activity can set property values to the workflow instance. These properties are stored in the <code>Properties</code> dictionary of the workfow execution context.</p>
+<p><font color=#0099ff size=4 face="黑体">当工作流执行时，每个活动都可以将属性值设置为工作流实例。这些属性存储在工作流执行上下文的“属性”字典中。</font> </p>
+<p>Each activity can set and access these properties, allowing a workflow to compute and retrieve information that can then be processed by other activities further down the chain.</p>
+<p><font color=#0099ff size=4 face="黑体">每个活动都可以设置和访问这些属性，允许工作流计算和检索信息，然后可以由链中的其他活动处理。</font> </p>
+<p>This is analogous to a function setting local variables.</p>
+<p><font color=#0099ff size=4 face="黑体">这类似于设置局部变量的函数。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="workflow-execution">Workflow Execution</h2>
+<h2 id="_19"><font color=#0099ff size=4 face="黑体">工作流程执行</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a workflow executes, the <strong>Workflow Manager</strong> creates a <strong>Workflow Instance</strong> and a <strong>Workflow Execution Context</strong>. A workflow instance maintains state about the execution, such as which activity to execute next and state that can be provided by individual activities.</p>
+<p><font color=#0099ff size=4 face="黑体">当工作流程执行时，<strong> Workflow Manager </strong>会创建<strong>工作流程实例</strong>和<strong>工作流程执行上下文</strong>。工作流实例维护有关执行的状态，例如下一个要执行的活动以及可以由各个活动提供的状态。</font> </p>
+<p>A Workflow Instance is ultimately persisted in the underlying data storage provider, while a Workflow Execution Context exists only in memory for the duration of a workflow execution. </p>
+<p><font color=#0099ff size=4 face="黑体">工作流实例最终保留在基础数据存储提供程序中，而工作流执行上下文仅在工作流执行期间存在于内存中。</font> </p>
+<p>Workflows can be <strong>short-running</strong> as well as <strong>long-running</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">工作流程可以<strong>短期运行</strong>以及<strong>长期运行</strong>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="short-running-workflows">Short-running workflows</h3>
+<h2 id="_20"><font color=#0099ff size=4 face="黑体">短期运行的工作流程</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a workflow executes without encountering any <strong>blocking</strong> activities (i.e. activities that wait for an event to occur, such as <em>Signal</em>), the workflow will run to completion in one go.</p>
+<p><font color=#0099ff size=4 face="黑体">当工作流执行时没有遇到任何<strong>阻塞</strong>活动（即等待事件发生的活动，例如_Signal_），工作流将一次完成运行。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="long-running-workflows">Long-running workflows</h3>
+<h2 id="_21"><font color=#0099ff size=4 face="黑体">长期运行的工作流程</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When a workflow executes and encounters a blocking activity (such as an event), the workflow manager will <em>halt</em> execution and persist the workflow instance to the underlying persistence layer.</p>
+<p><font color=#0099ff size=4 face="黑体">当工作流执行并遇到阻塞活动（例如事件）时，工作流管理器将_halt_执行并将工作流实例持久保存到基础持久层。</font> </p>
+<p>When the appropriate event is triggered (which could happen seconds, days, weeks or even years from now), the workflow manager will load the workflow instance from storage and resume execution.</p>
+<p><font color=#0099ff size=4 face="黑体">当触发适当的事件（可能在几秒，几天，几周甚至几年后发生）时，工作流管理器将从存储加载工作流实例并继续执行。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="scripts-and-expressions">Scripts and Expressions</h2>
+<h2 id="_22"><font color=#0099ff size=4 face="黑体">脚本和表达式</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Many activities have settings that can contain either <strong>JavaScript</strong> or <strong>Liquid</strong> syntax.</p>
+<p><font color=#0099ff size=4 face="黑体">许多活动的设置可以包含<strong> JavaScript </strong>或<strong> Liquid </strong>语法。</font> </p>
+<p>For example, when adding the <strong>Notify</strong> activity, its editor shows the folling fields:</p>
+<p><font color=#0099ff size=4 face="黑体">例如，在添加<strong> Notify </strong>活动时，其编辑器会显示以下字段：</font> </p>
+<p>These type of fields allow you to enter Liquid markup, enabling access to system-wide variables and filters as well as variables from the <strong>workflow execution context</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">这些类型的字段允许您输入Liquid标记，允许访问系统范围的变量和过滤器以及<strong>工作流程执行上下文</strong>中的变量。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="javascript-functions">JavaScript Functions</h3>
+<h2 id="javascript"><font color=#0099ff size=4 face="黑体">JavaScript函数</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following JavaScript functions are available by default to any activity that supports script expressions:</p>
+<p><font color=#0099ff size=4 face="黑体">默认情况下，以下JavaScript函数可用于支持脚本表达式的任何活动：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Function | Description | Signature |</p>
+<p><font color=#0099ff size=4 face="黑体">|功能|说明|签名|</font> </p>
+<p>| -------- | ----------- | --------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| -------- | ----------- --------- |</font> </p>
+<p>| workflow | Returns the <code>WorkflowExecutionContext</code> which provides access to all information related to the current workflow execution context. | <code>workflow(): WorkflowExecutionContext</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">|工作流程|返回<code>WorkflowExecutionContext</code>，它提供对与当前工作流执行上下文相关的所有信息的访问。 | <code>workflow（）：WorkflowExecutionContext</code> |</font> </p>
+<p>| workflowId | Returns the unique workflow ID. | <code>workflowId(): string</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| workflowId |返回唯一的工作流ID。 | <code>workflowId（）：string</code> |</font> </p>
+<p>| input | Returns the input parameter with the specified name. Input to the workflow is provided when the workflow is executed by the workflow manager. | <code>input(name: string): any</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">|输入|返回具有指定名称的输入参数。当工作流程由工作流程管理器执行时，将提供对工作流程的输入。 | <code>input（name：string）：any</code> |</font> </p>
+<p>| output | Sets an output parameter with the specified name. Workflow output can be collected by the invoker of the workflow. | <code>output(name: string, value: any): void</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">|输出|设置具有指定名称的输出参数。工作流输出可以由工作流的调用者收集。 | <code>output（name：string，value：any）：void</code> |</font> </p>
+<p>| property | Returns the property value with the specified name. Properties are a dictionary that workflow activities can read and write information from and to. | <code>property(name: string): any</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|返回具有指定名称的属性值。属性是工作流活动可以从中读取和写入信息的字典。 | <code>property（name：string）：any</code> |</font> </p>
+<p>| lastResult | Returns the value that the previous activity provided, if any. | <code>lastResult(): any</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| lastResult |返回上一个活动提供的值（如果有）。 | <code>lastResult（）：any</code> |</font> </p>
+<p>| correlationId | Returns the correlation value of the workflow instance. | <code>correlationId(): string</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| correlationId |返回工作流实例的相关值。 | <code>correlationId（）：string</code> |</font> </p>
+<p>| signalUrl | Returns workflow trigger URL with a protected SAS token into which the specified signal name is encoded. Use this to generate URLs that can be shared with trusted parties to trigger the current workflow if it is blocked on the Signal activity that is condifured with the same signal name. | <code>signalUrl(signal: string): string</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| signalUrl |返回工作流触发器URL，其中包含受保护的SAS令牌，其中编码指定的信号名称。使用此选项可生成可与受信任方共享的URL，以触发当前工作流（如果在使用相同信号名称编号的Signal活动上被阻止）。 | <code>signalUrl（signal：string）：string</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="liquid-expressions">Liquid Expressions</h3>
+<h2 id="_23"><font color=#0099ff size=4 face="黑体">液体表达</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following Liquid tags, properties and filters are available by default to any activity that supports Liquid expressions:</p>
+<p><font color=#0099ff size=4 face="黑体">默认情况下，以下Liquid标签，属性和过滤器可用于支持Liquid表达式的任何活动：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Expression | Type | Description | Example |</p>
+<p><font color=#0099ff size=4 face="黑体">|表达|输入|说明|示例|</font> </p>
+<p>| ---------- | ---- | ----------- | ------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| ---------- | ---- | ----------- ------- |</font> </p>
+<p>| Workflow.CorrelationId | Property | Returns the correlation value of the workflow instance. | <code>{{ Workflow.CorrelationId }}</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| Workflow.CorrelationId |财产|返回工作流实例的相关值。 | <code>{{Workflow.CorrelationId}}</code>|</font> </p>
+<p>| Workflow.Input | Property | Returns the Input dictionary. | <code>{{ Workflow.Input["ContentItem"] }}</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| Workflow.Input |财产|返回Input字典。 | <code>{{Workflow.Input [“ContentItem”]}}</code>|</font> </p>
+<p>| Workflow.Output | Property | Returns the Output dictionary. | <code>{{ Workflow.Output["SomeResult"] }}</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| Workflow.Output |财产|返回输出字典。 | <code>{{Workflow.Output [“SomeResult”]}}</code>|</font> </p>
+<p>| Workflow.Properties | Property | Returns the Properties dictionary. | <code>{{ Workflow.Properties["Foo"] }}</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| Workflow.Properties |财产|返回Properties字典。 | <code>{{Workflow.Properties [“Foo”]}}</code>|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Instead of using the indexer syntax on the three workflow dictionaries <code>Input</code>, <code>Output</code> and <code>Properties</code>, you cal also use dot notation, e.g.:</p>
+<p><font color=#0099ff size=4 face="黑体">而不是在三个工作流词典<code>Input</code>，<code>Output</code>和<code>Properties</code>上使用索引器语法，你也可以使用点表示法，例如：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Workflow.Input.ContentItem }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Workflow.Input.ContentItem}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="liquid-expressions-and-contentitem-events">Liquid Expressions and ContentItem Events</h3>
+<h2 id="liquid-expressionscontentitem"><font color=#0099ff size=4 face="黑体">Liquid Expressions和ContentItem事件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When handling content related events using a workflow, the content item in question is made available to the workflow via the <code>Input</code> dictionary.</p>
+<p><font color=#0099ff size=4 face="黑体">当使用工作流处理内容相关事件时，所讨论的内容项通过“输入”字典提供给工作流。</font> </p>
+<p>For example, if you have a workflow that starts with the <strong>Content Created Event</strong> activity, you can send an email or make an HTTP request whereand reference the content item from fieldsliquid-ebabled fields as follows:</p>
+<p><font color=#0099ff size=4 face="黑体">例如，如果您的工作流程以<strong> Content Created Event </strong>活动开头，则可以发送电子邮件或发出HTTP请求，并在fieldsliquid-ebabled字段中引用内容项，如下所示：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Workflow.Input.ContentItem | display_url }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Workflow.Input.ContentItem | display_url}}&lt;/font&gt; 
+
+
+{{ Workflow.Input.ContentItem | display_text }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Workflow.Input.ContentItem | display_text}}&lt;/font&gt; 
+
+
+{{ Workflow.Input.ContentItem.DisplayText }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Workflow.Input.ContentItem.DisplayText}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For more examples of supported content item filters, see documention on <a href="https://orchardcore.readthedocs.io/en/latest/OrchardCore.Modules/OrchardCore.Liquid/README/">Liquid </a>.</p>
+<p><font color=#0099ff size=4 face="黑体">有关受支持的内容项过滤器的更多示例，请参阅[Liquid]上的文档（https://orchardcore.readthedocs.io/en/latest/OrchardCore.Modules/OrchardCore.Liquid/README/）。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="activities-out-of-the-box">Activities out of the box</h2>
+<h2 id="_24"><font color=#0099ff size=4 face="黑体">开箱即用的活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following activities are available with any default Orchard installation:</p>
+<p><font color=#0099ff size=4 face="黑体">任何默认的Orchard安装都可以使用以下活动：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Activity | Type | Description | Documentation |</p>
+<p><font color=#0099ff size=4 face="黑体">|活动|输入|说明|文档|</font> </p>
+<p>| -------- | ---- | ----------- | ------------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| -------- | ---- | ----------- ------------- |</font> </p>
+<p>| <strong>Workflows</strong> | * | * | * |</p>
+<p><font color=#0099ff size=4 face="黑体">| <strong>工作流程</strong> | * | * | * |</font> </p>
+<p>| Correlate | Task | Correlate the current workflow instance with a value. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|相关|任务|将当前工作流实例与值相关联。 | [链接] |</font> </p>
+<p>| For Each | Task | Iterate over a list. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|每个|任务|迭代一个列表。 | [链接] |</font> </p>
+<p>| Fork | Task | Fork workflow execution into separate paths of execution. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|叉|任务|将工作流执行分成独立的执行路径。 | [链接] |</font> </p>
+<p>| For Loop | Task | Iterates for N times. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">| For Loop |任务|迭代N次。 | [链接] |</font> </p>
+<p>| If / Else | Task | Evaluate a boolean condition and continues execution based on the outcome. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|如果/ Else |任务|评估布尔条件并根据结果继续执行。 | [链接] |</font> </p>
+<p>| Join | Task | Join a forked workflow execution back into a single path of execution. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|加入|任务|将分叉的工作流程执行重新加入到单个执行路径中。 | [链接] |</font> </p>
+<p>| Log | Task | Write a log entry. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|记录|任务|写一个日志条目。 | [链接] |</font> </p>
+<p>| Notify | Task | Display a notification. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|通知|任务|显示通知。 | [链接] |</font> </p>
+<p>| Script | Task | Execute script and continue execution based on the returned outcome. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|脚本|任务|执行脚本并根据返回的结果继续执行。 | [链接] |</font> </p>
+<p>| Set Output | Task | Evaluate a script expression and store the result into the workflow's output. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|设置输出|任务|评估脚本表达式并将结果存储到工作流的输出中。 | [链接] |</font> </p>
+<p>| Set Property | Task | Execute script and continue execution based on the returned outcome. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|设置属性|任务|执行脚本并根据返回的结果继续执行。 | [链接] |</font> </p>
+<p>| While Loop | Task | Iterate while a condition is true. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|而Loop |任务|在条件成立时迭代。 | [链接] |</font> </p>
+<p>| <strong>HTTP Workflow Activities</strong> | * | * | * |</p>
+<p><font color=#0099ff size=4 face="黑体">| <strong> HTTP工作流程活动</strong> | * | * | * |</font> </p>
+<p>| HTTP Redirect | Task | Redirect the user agent to the specified URL (301/302). | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">| HTTP重定向|任务|将用户代理重定向到指定的URL（301/302）。 | [链接] |</font> </p>
+<p>| HTTP Request | Task | Perform a HTTP request to a given URL. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">| HTTP请求|任务|对给定的URL执行HTTP请求。 | [链接] |</font> </p>
+<p>| Filter Incoming HTTP Request | Event | Executes when the specified HTTP request comes in. Similar to an MVC Action Filter. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|过滤传入的HTTP请求|活动|在指定的HTTP请求进入时执行。类似于MVC操作过滤器。 | [链接] |</font> </p>
+<p>| Signal | Event | Executes when a signal is triggered. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|信号|活动|触发信号时执行。 | [链接] |</font> </p>
+<p>| <strong>Email</strong> | * | * | * |</p>
+<p><font color=#0099ff size=4 face="黑体">| <strong>电子邮件</strong> | * | * | * |</font> </p>
+<p>| Send Email | Task | Send an email. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|发送电子邮件|任务|发送电子邮件。 | [链接] |</font> </p>
+<p>| <strong>Timer Workflow Activities</strong> | * | * | * |</p>
+<p><font color=#0099ff size=4 face="黑体">| <strong>定时器工作流程活动</strong> | * | * | * |</font> </p>
+<p>| Timer | Event | Executes repeatedly according to a specified CRON expression. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|定时器|活动|根据指定的CRON表达式重复执行。 | [链接] |</font> </p>
+<p>| <strong>Contents</strong> | * | * | * |</p>
+<p><font color=#0099ff size=4 face="黑体">| <strong>内容</strong> | * | * | * |</font> </p>
+<p>| Content Created | Event | Executes when content is created. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|内容创建|活动|创建内容时执行。 | [链接] |</font> </p>
+<p>| Content Deleted | Event | Executes when content is deleted. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|内容已删除|活动|删除内容时执行。 | [链接] |</font> </p>
+<p>| Content Published | Event | Executes when content is published. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|内容发布|活动|发布内容时执行。 | [链接] |</font> </p>
+<p>| Content Updated | Event | Executes when content is updated. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|内容更新|活动|更新内容时执行。 | [链接] |</font> </p>
+<p>| Content Versioned| Event | Executes when content is versioned. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|内容版本|活动|在内容版本化时执行。 | [链接] |</font> </p>
+<p>| Create Content | Task | Create a content item. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|创建内容|任务|创建内容项。 | [链接] |</font> </p>
+<p>| Delete Content | Task | Delete a content item. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|删除内容|任务|删除内容项。 | [链接] |</font> </p>
+<p>| Publish Content | Task | Publish a content item. | [link] |</p>
+<p><font color=#0099ff size=4 face="黑体">|发布内容|任务|发布内容项。 | [链接] |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="walkthroughs">Walkthroughs</h2>
+<h2 id="_25"><font color=#0099ff size=4 face="黑体">演练</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="_26"></h3>
+<h2 id="_27"><font color=#0099ff size=4 face="黑体"></font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="developing-custom-activities">Developing Custom Activities</h2>
+<h2 id="_28"><font color=#0099ff size=4 face="黑体">开发自定义活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Orchard is built to be extended, and the Workflows module is no different. When creating your own module, you can develop custom workflow activities. Developing custom activities involve the following steps:</p>
+<p><font color=#0099ff size=4 face="黑体">Orchard是为扩展而构建的，Workflows模块也不例外。创建自己的模块时，您可以开发自定义工作流程活动。开发自定义活动涉及以下步骤：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ol>
+<li>Create a new class that directly or indirectly implements <code>IActivity</code>. In most cases, you either derive from <code>TaskActivity</code> or <code>EventActivity</code>, depending on whether your activity represents an event or not. Although not required, it is recommended to keep this class in a folder called <strong>Activities</strong>.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">1.创建一个直接或间接实现“IActivity”的新类。在大多数情况下，您可以从“TaskActivity”或“EventActivity”派生，具体取决于您的活动是否代表某个事件。虽然不是必需的，但建议将此类保存在名为<strong> Activities </strong>的文件夹中。</font> </p>
+<ol>
+<li>Create a new <strong>display driver</strong> class that directly or indirectly implements <code>IDisplayDriver</code>. An activity display driver controls the activity's display on the <strong>workflow editor canvas</strong>, the <strong>activity picker</strong> and the <strong>activity editor</strong>. Although not required, it is recommended to keep this class in a folder called <strong>Drivers</strong>. </li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">2.创建一个直接或间接实现<code>IDisplayDriver</code>的新<strong>显示驱动程序</strong>类。活动显示驱动程序控制<strong>工作流编辑器画布</strong>，<strong>活动选择器</strong>和<strong>活动编辑器</strong>上的活动显示。虽然不是必需的，但建议将此类保存在名为<strong> Drivers </strong>的文件夹中。</font> </p>
+<ol>
+<li>Optionally implement a <strong>view model</strong> if your activity has properties that the user should be able to configure.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">3.如果您的活动具有用户应该能够配置的属性，则可以选择实施<strong>视图模型</strong>。</font> </p>
+<ol>
+<li>Implement the various Razor views for the various shapes provided by the driver. Although not required, it is recommended to store these files in the <strong>Views/Items</strong> folder. Note that it is required for your views to be discoverable by the display engine.  </li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">4.为驱动程序提供的各种形状实现各种Razor视图。虽然不是必需的，但建议将这些文件存储在<strong> Views / Items </strong>文件夹中。请注意，显示引擎可以发现您的视图。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="activity-display-types">Activity Display Types</h3>
+<h2 id="_29"><font color=#0099ff size=4 face="黑体">活动显示类型</font></h2>
+<p>An activity has the following display types:</p>
+<p><font color=#0099ff size=4 face="黑体">活动具有以下显示类型：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Thumbnail</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">缩略图</font> </p>
+</li>
+<li>
+<p>Design</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">设计</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><strong>Thumbnail</strong></p>
+<p><strong> <font color=#0099ff size=4 face="黑体">缩略图</strong></font> </p>
+<p>Used when the activity is rendered as part of the activity picker.</p>
+<p><font color=#0099ff size=4 face="黑体">在活动作为活动选择器的一部分呈现时使用。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><strong>Design</strong></p>
+<p><strong> <font color=#0099ff size=4 face="黑体">设计</strong></font> </p>
+<p>Used when the activity is rendered as part of the workflow editor design surface.</p>
+<p><font color=#0099ff size=4 face="黑体">在活动作为工作流编辑器设计图面的一部分呈现时使用。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="iactivity">IActivity</h3>
+<h2 id="iactivity_1"><font color=#0099ff size=4 face="黑体">IActivity</font></h2>
+<p><code>IActivity</code> has the following members:</p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Name</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">名称</font> </p>
+</li>
+<li>
+<p>Category</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">类别</font> </p>
+</li>
+<li>
+<p>Properties</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">属性</font> </p>
+</li>
+<li>
+<p>HasEditor</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">HasEditor</font> </p>
+</li>
+<li>
+<p>GetPossibleOutcomes</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">GetPossibleOutcomes</font> </p>
+</li>
+<li>
+<p>CanExecuteAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">CanExecuteAsync</font> </p>
+</li>
+<li>
+<p>ExecuteAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">ExecuteAsync</font> </p>
+</li>
+<li>
+<p>ResumeAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">ResumeAsync</font> </p>
+</li>
+<li>
+<p>OnInputReceivedAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">OnInputReceivedAsync</font> </p>
+</li>
+<li>
+<p>OnWorkflowStartingAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">OnWorkflowStartingAsync</font> </p>
+</li>
+<li>
+<p>OnWorkflowStartedAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">OnWorkflowStartedAsync</font> </p>
+</li>
+<li>
+<p>OnWorkflowResumingAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">OnWorkflowResumingAsync</font> </p>
+</li>
+<li>
+<p>OnWorkflowResumedAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">OnWorkflowResumedAsync</font> </p>
+</li>
+<li>
+<p>OnActivityExecutingAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">OnActivityExecutingAsync</font> </p>
+</li>
+<li>
+<p>OnActivityExecutedAsync</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">OnActivityExecutedAsync</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <code>IEvent</code> interface adds the following member:</p>
+<p><font color=#0099ff size=4 face="黑体"><code>IEvent</code>接口添加以下成员：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>CanStartWorkflow</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">CanStartWorkflow</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following is an example of a simple activity implementation that displays a notification:</p>
+<p><font color=#0099ff size=4 face="黑体">以下是显示通知的简单活动实现的示例：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="csharp">
+public class NotifyTask : TaskActivity
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;公共类NotifyTask：TaskActivity&lt;/font&gt; 
+
+
+{
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{&lt;/font&gt; 
+
+
+    private readonly INotifier _notifier;
+
+    private readonly IStringLocalizer S;
+
+    private readonly IHtmlLocalizer H;
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    public NotifyTask(INotifier notifier, IStringLocalizer&lt;NotifyTask&gt; s, IHtmlLocalizer&lt;NotifyTask&gt; h)
+
+    {
+
+        _notifier = notifier;
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        S = s;
+
+        H = h;
+
+    }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    // The technical name of the activity. Activities on a workflow definition reference this name.
+
+    public override string Name =&gt; nameof(NotifyTask);
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    // The category to which this activity belongs. The activity picker groups activities by this category.
+
+    public override LocalizedString Category =&gt; S[&quot;UI&quot;];
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    // A description of this activity's purpose. 
+
+  &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;//此活动目的的描述。&lt;/font&gt; 
+
+
+    public override LocalizedString Description =&gt; S[&quot;Display a message.&quot;];
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    // The notification type to display.
+
+    public NotifyType NotificationType
+
+    {
+
+        get =&gt; GetProperty&lt;NotifyType&gt;();
+
+        set =&gt; SetProperty(value);
+
+    }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    // The message to display.
+
+  &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;//要显示的消息。&lt;/font&gt; 
+
+
+    public WorkflowExpression&lt;string&gt; Message
+
+    {
+
+        get =&gt; GetProperty(() =&gt; new WorkflowExpression&lt;string&gt;());
+
+        set =&gt; SetProperty(value);
+
+    }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    // Returns the possible outcomes of this activity.
+
+    public override IEnumerable&lt;Outcome&gt; GetPossibleOutcomes(WorkflowContext workflowContext, ActivityContext activityContext)
+
+    {
+
+        return Outcomes(S[&quot;Done&quot;]);
+
+    }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    // This is the heart of the activity and actually performs the work to be done.
+
+    public override async Task&lt;ActivityExecutionResult&gt; ExecuteAsync(WorkflowContext workflowContext, ActivityContext activityContext)
+
+    {
+
+        var message = await workflowContext.EvaluateExpressionAsync(Message);
+
+        _notifier.Add(NotificationType, H[message]);
+
+        return Outcomes(&quot;Done&quot;);
+
+    }
+
+}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following is an example of a simple activity display driver:</p>
+<p><font color=#0099ff size=4 face="黑体">以下是简单活动显示驱动程序的示例：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="csharp">
+public class NotifyTaskDisplay : ActivityDisplayDriver&lt;NotifyTask, NotifyTaskViewModel&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;public class NotifyTaskDisplay：ActivityDisplayDriver &lt;NotifyTask，NotifyTaskViewModel&gt;&lt;/font&gt; 
+
+
+{
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{&lt;/font&gt; 
+
+
+    protected override void EditActivity(NotifyTask activity, NotifyTaskViewModel model)
+
+    {
+
+        model.NotificationType = activity.NotificationType;
+
+        model.Message = activity.Message.Expression;
+
+    }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    protected override void UpdateActivity(NotifyTaskViewModel model, NotifyTask activity)
+
+    {
+
+        activity.NotificationType = model.NotificationType;
+
+        activity.Message = new WorkflowExpression&lt;string&gt;(model.Message);
+
+    }
+
+}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The above code performs a simple mapping of a <code>NotifyTask</code> to a <code>NotifyTaskViewModel</code> and vice versa. </p>
+<p><font color=#0099ff size=4 face="黑体">上面的代码执行“NotifyTask”到“NotifyTaskViewModel”的简单映射，反之亦然。</font> </p>
+<p>This simple implementation is possible because the actual creation of the necessary editor and display shapes are taken care of by <code>ActivityDisplayDriver&lt;TActivity, TEditViewModel&gt;</code>, which looks like this (modified to focus on the important parts):</p>
+<p><font color=#0099ff size=4 face="黑体">这种简单的实现是可行的，因为必要的编辑器和显示形状的实际创建由<code>ActivityDisplayDriver &lt;TActivity，TEditViewModel&gt;</code>来处理，它看起来像这样（修改为专注于重要部分）：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="csharp">
+public abstract class ActivityDisplayDriver&lt;TActivity, TEditViewModel&gt; : ActivityDisplayDriver&lt;TActivity&gt; where TActivity : class, IActivity where TEditViewModel : class, new()
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;公共抽象类ActivityDisplayDriver &lt;TActivity，TEditViewModel&gt;：ActivityDisplayDriver &lt;TActivity&gt;其中TActivity：class，IActivity其中TEditViewModel：class，new（）&lt;/font&gt; 
+
+
+{
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{&lt;/font&gt; 
+
+
+    private static string ThumbnailshapeType = $&quot;{typeof(TActivity).Name}_Fields_Thumbnail&quot;;
+
+    private static string DesignShapeType = $&quot;{typeof(TActivity).Name}_Fields_Design&quot;;
+
+    private static string EditShapeType = $&quot;{typeof(TActivity).Name}_Fields_Edit&quot;;
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    public override IDisplayResult Display(TActivity activity)
+
+    {
+
+        return Combine(
+
+            Shape(ThumbnailshapeType, new ActivityViewModel&lt;TActivity&gt;(activity)).Location(&quot;Thumbnail&quot;, &quot;Content&quot;),
+
+            Shape(DesignShapeType, new ActivityViewModel&lt;TActivity&gt;(activity)).Location(&quot;Design&quot;, &quot;Content&quot;)
+
+        );
+
+    }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    public override IDisplayResult Edit(TActivity activity)
+
+    {
+
+        return Initialize&lt;TEditViewModel&gt;(EditShapeType, model =&gt;
+
+        {
+
+            return EditActivityAsync(activity, model);
+
+        }).Location(&quot;Content&quot;);
+
+    }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+    public async override Task&lt;IDisplayResult&gt; UpdateAsync(TActivity activity, IUpdateModel updater)
+
+    {
+
+        var viewModel = new TEditViewModel();
+
+        if (await updater.TryUpdateModelAsync(viewModel, Prefix))
+
+        {
+
+            await UpdateActivityAsync(viewModel, activity);
+
+        }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        return Edit(activity);
+
+    }
+
+}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Notice that the shape names are derived from the activity type, effectively implementing a naming convention for the shape template names to use.</p>
+<p><font color=#0099ff size=4 face="黑体">请注意，形状名称是从活动类型派生的，有效地实现了要使用的形状模板名称的命名约定。</font> </p>
+<p>Continuing with the <code>NotifyTask</code> example, we now need to create the following Razor files:</p>
+<p><font color=#0099ff size=4 face="黑体">继续使用<code>NotifyTask</code>示例，我们现在需要创建以下Razor文件：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>NotifyTask.Fields.Design.cshtml</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">NotifyTask.Fields.Design.cshtml</font> </p>
+</li>
+<li>
+<p>NotifyTask.Fields.Thumbnail.cshtml</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">NotifyTask.Fields.Thumbnail.cshtml</font> </p>
+</li>
+<li>
+<p>NotifyTask.Fields.Edit.cshtml</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">NotifyTask.Fields.Edit.cshtml</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="credits">CREDITS</h2>
+<h2 id="_30"><font color=#0099ff size=4 face="黑体">学分</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="jsplumb">jsPlumb</h3>
+<h2 id="jsplumb_1"><font color=#0099ff size=4 face="黑体">jsPlumb</font></h2>
+<p><a href="https://github.com/jsplumb/jsplumb">https://github.com/jsplumb/jsplumb</a></p>
+<p><font color=#0099ff size=4 face="黑体"><a href="https://github.com/jsplumb/jsplumb">https://github.com/jsplumb/jsplumb</a></font> </p>
+<p>Copyright (c) 2010 - 2014 jsPlumb, http://jsplumbtoolkit.com/</p>
+<p><font color=#0099ff size=4 face="黑体">版权所有（c）2010  -  2014 jsPlumb，http：//jsplumbtoolkit.com/</font> </p>
+<p>License: dual-licensed under both MIT and GPLv</p>
+<p><font color=#0099ff size=4 face="黑体">许可证：MIT和GPLv下的双重许可</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="ncrontab">NCrontab</h3>
+<h2 id="ncrontab_1"><font color=#0099ff size=4 face="黑体">NCrontab</font></h2>
+<p><a href="https://github.com/atifaziz/NCrontab">https://github.com/atifaziz/NCrontab</a></p>
+<p><font color=#0099ff size=4 face="黑体"><a href="https://github.com/atifaziz/NCrontab">https://github.com/atifaziz/NCrontab</a></font> </p>
+<p>Copyright (C) Atif Aziz</p>
+<p><font color=#0099ff size=4 face="黑体">版权所有（C）Atif Aziz</font> </p>
+<p>License: Apache License 2.0</p>
+<p><font color=#0099ff size=4 face="黑体">许可证：Apache License 2.0</font> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.Tenants/" title="Tenants" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Tenants
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                DataProtection (Azure Storage)
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1442 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Forms - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#forms-orchardcoreforms" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Forms
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Forms" class="md-nav__link md-nav__link--active">
+      Forms
+    </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Forms/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="forms-orchardcoreforms">Forms (OrchardCore.Forms)</h1>
+<h1 id="orchardcoreforms"><font color=#0099ff size=4 face="黑体">表格（OrchardCore.Forms）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The Forms module provides components in the form of widgets and workflow activities to create, validate and process forms.</p>
+<p><font color=#0099ff size=4 face="黑体">Forms模块以窗口小部件和工作流活动的形式提供组件，以创建，验证和处理表单。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="general-concepts">General Concepts</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">一般概念</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When building a form, there are primarily two aspects involved:</p>
+<p><font color=#0099ff size=4 face="黑体">构建表单时，主要涉及两个方面：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ol>
+<li>Building the form.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">1.构建表单。</font> </p>
+<ol>
+<li>Processing the form when submitted.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">2.提交表格时处理。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Both parts are independent from one another, so that you can just use the form builder and handle its submissions yourself, or provide the form HTML markup yourself but rely on workflows to handle form submission.</p>
+<p><font color=#0099ff size=4 face="黑体">这两个部分彼此独立，因此您可以自己使用表单构建器并处理其提交，或者自己提供表单HTML标记，但依靠工作流来处理表单提交。</font> </p>
+<p>The form-building part relies on the Form widget. To create a form, add a Form widget to a zone or to a content item that has the FlowPart attached.</p>
+<p><font color=#0099ff size=4 face="黑体">表单构建部分依赖于Form小部件。要创建表单，请将表单窗口小部件添加到区域或附加了FlowPart的内容项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="creating-a-form">Creating a Form</h3>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">创建表单</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Creating a form typically involves the following steps:</p>
+<p><font color=#0099ff size=4 face="黑体">创建表单通常包括以下步骤：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ol>
+<li>Make sure the Forms feature is enabled.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">1.确保已启用“表单”功能。</font> </p>
+<ol>
+<li>Create a new content item that has the FlowPart attached. If you used the Blog recipe, there will be a Page content type that you can use.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">2.创建附加了FlowPart的新内容项。如果您使用了Blog配方，则会有一个可以使用的页面内容类型。</font> </p>
+<ol>
+<li>Add the Form widget.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">3.添加表单小部件。</font> </p>
+<ol>
+<li>Because the Form widget has the FlowPart attached, you can add other widgets to the Form widget. Add widgets such as Input, Textarea and Button to build up your form.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">4.由于Form窗口小部件附加了FlowPart，因此您可以将其他窗口小部件添加到窗体小部件。添加诸如Input，Textarea和Button之类的小部件来构建表单。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="processing-form-submissions">Processing Form submissions</h3>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">处理表格提交</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Once you have a form in place, you need to handle its submission. The Form widget has a field called <strong>Action</strong>, into which you can enter a URL to where the form should submit to. This could be the path to your own controller, but it can also be the URL pointing to a workflow type.</p>
+<p><font color=#0099ff size=4 face="黑体">一旦有表格，您需要处理其提交。表单窗口小部件有一个名为<strong> Action </strong>的字段，您可以在其中输入表单应提交到的URL。这可能是您自己的控制器的路径，但它也可以是指向工作流类型的URL。</font> </p>
+<p>Using a workflow is convenient because it doesn't require you to create a custom module.</p>
+<p><font color=#0099ff size=4 face="黑体">使用工作流很方便，因为它不需要您创建自定义模块。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Creating a workflow and associating it with a form typically involves the following steps:</p>
+<p><font color=#0099ff size=4 face="黑体">创建工作流并将其与表单相关联通常涉及以下步骤：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ol>
+<li>Make sure the <strong>HTTP Workflows Activities</strong> feature is enabled.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">1.确保已启用<strong> HTTP工作流活动</strong>功能。</font> </p>
+<ol>
+<li>Click on the Workflows menu item and create a new Workflow Type.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">2.单击“工作流程”菜单项并创建新的“工作流程类型”。</font> </p>
+<ol>
+<li>Add the <strong>Http Request Event</strong> event to the workflow. Make sure the <strong>HTTP Method</strong> field is set to <strong>POST</strong>.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">3.将<strong> Http Request Event </strong>事件添加到工作流程中。确保<strong> HTTP Method </strong>字段设置为<strong> POST </strong>。</font> </p>
+<ol>
+<li>Copy the generated workflow URL to your clipboard.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">4.将生成的工作流URL复制到剪贴板。</font> </p>
+<ol>
+<li>Click Save to save the changes and return to the workflow editor.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">5.单击“保存”以保存更改并返回到工作流编辑器。</font> </p>
+<ol>
+<li>Make sure the Http Request Event activity is configured as the start activity (on the workflow editor, single-click the activity and click on the on/off icon). The activity will have a green color if it's the starting activity.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">5.确保将Http Request Event活动配置为启动活动（在工作流编辑器上，单击活动并单击开/关图标）。如果活动是起始活动，则活动将为绿色。</font> </p>
+<ol>
+<li>Add any other activities to validate and process the form submission. We will see a real-world example later on.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">5.添加任何其他活动以验证和处理表单提交。我们稍后会看到一个真实的例子。</font> </p>
+<ol>
+<li>Click Save to save the workflow.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">6.单击“保存”以保存工作流程。</font> </p>
+<ol>
+<li>Go to the content item where you added a Form widget.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">7.转到添加“表单”窗口小部件的内容项。</font> </p>
+<ol>
+<li>Paste the workflow URL into the Action field.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">8.将工作流URL粘贴到“操作”字段中。</font> </p>
+<ol>
+<li>Save your content item.</li>
+</ol>
+<p><font color=#0099ff size=4 face="黑体">9.保存您的内容项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>At this point, you should be able to test out your form and its submission.</p>
+<p><font color=#0099ff size=4 face="黑体">此时，您应该能够测试您的表单及其提交。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="implementing-a-contact-form">Implementing a Contact Form</h2>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">实施联系表格</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In the following walkthrough, we'll build an actual contact form and implement a form handler using a workflow.</p>
+<p><font color=#0099ff size=4 face="黑体">在下面的演练中，我们将构建一个实际的联系表单，并使用工作流实现表单处理程序。</font> </p>
+<p>The contact form will include the following fields:</p>
+<p><font color=#0099ff size=4 face="黑体">联系表格将包括以下字段：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>A Validation Summary widget.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">验证摘要小部件。</font> *</p>
+</li>
+<li>
+<p>A Name input widget.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">名称输入小部件。</font> *</p>
+</li>
+<li>
+<p>An Email input widget.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">电子邮件输入小部件。</font> *</p>
+</li>
+<li>
+<p>A Message text area widget.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">消息文本区域小部件。</font> *</p>
+</li>
+<li>
+<p>A Google NoCaptcha widget to protect against automated form submissions.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">Google NoCaptcha小部件，可防止自动提交表单。</font> *</p>
+</li>
+<li>
+<p>A Submit button widget.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">提交按钮小部件。</font> *</p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The workflow will perform the following actions:</p>
+<p><font color=#0099ff size=4 face="黑体">工作流程将执行以下操作：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Validate that the Name, Email and Message fields are not empty. If they are empty, we'll add Model State Validation errors.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">验证名称，电子邮件和消息字段不为空。如果它们为空，我们将添加模型状态验证错误。</font> *</p>
+</li>
+<li>
+<p>Validate the NoCaptcha.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">验证NoCaptcha。</font> *</p>
+</li>
+<li>
+<p>Send an email to the site owner that the contact form was submitted. The email will contain the submitted form fields.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">向提交联系表单的网站所有者发送电子邮件。电子邮件将包含提交的表单字段。</font> *</p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="creating-the-contact-form">Creating the Contact Form</h3>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">创建联系表单</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For this walkthrough, I am assuming you executed the Blog recipe when setting up the site, which will automatically create a Page content type with the FlowPart attached.</p>
+<p><font color=#0099ff size=4 face="黑体">在本演练中，我假设您在设置站点时执行了博客配方，这将自动创建附加了FlowPart的页面内容类型。</font> </p>
+<p>when you have a fresh new installation, the first thing we need to do is enable the following features:</p>
+<p><font color=#0099ff size=4 face="黑体">当你有一个全新的安装时，我们首先需要做的是启用以下功能：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Forms</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">形式</font> *</p>
+</li>
+<li>
+<p>HTTP Workflow Activities</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">HTTP工作流活动</font> *</p>
+</li>
+<li>
+<p>Email</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">电子邮件</font> *</p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Next, create a new Page content item and give it a title of <em>Contact Form</em>. Click the <strong>Add Widget</strong> button to add the <strong>Form</strong> widget.</p>
+<p><font color=#0099ff size=4 face="黑体">接下来，创建一个新的页面内容项，并为其标题为<em> Contact Form </em>。单击<strong>添加窗口小部件</strong>按钮以添加<strong>窗体</strong>窗口小部件。</font> </p>
+<p>give the Form a title of <em>Contact</em> and leave the Action field empty for now.</p>
+<p><font color=#0099ff size=4 face="黑体">给表单一个<em> Contact </em>标题，暂时将Action字段留空。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Add the following widgets to the Form widget:</p>
+<p><font color=#0099ff size=4 face="黑体">将以下小部件添加到窗体小部件：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Validation Summary widget</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">验证摘要小部件</font> *</p>
+</li>
+<li>
+<p>Input widget, Name = "Name", Type = "Text", Placeholder Text = "Enter your name"</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">输入小部件，名称=“名称”，类型=“文本”，占位符文本=“输入您的姓名”</font> *</p>
+</li>
+<li>
+<p>Input widget, Name = "Email", Type = "Email", Placeholder Text = "Enter your email address"</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">输入小部件，名称=“电子邮件”，类型=“电子邮件”，占位符文本=“输入您的电子邮件地址”</font> *</p>
+</li>
+<li>
+<p>Textarea widget, Name = "Message", Placeholder Text = "Enter your message"</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">Textarea小部件，Name =“Message”，占位符Text =“输入您的消息”</font> *</p>
+</li>
+<li>
+<p>NoCaptcha widget (we'll configure the settings momentarily)</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">NoCaptcha小部件（我们将暂时配置设置）</font> *</p>
+</li>
+<li>
+<p>Button widget, Text = "Submit!", Type = "Submit"</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">Button widget，Text =“Submit！”，Type =“Submit”</font> *</p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="configuring-nocaptcha">Configuring NoCaptcha</h3>
+<h2 id="nocaptcha"><font color=#0099ff size=4 face="黑体">配置NoCaptcha</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When adding the NoCaptcha widget, a message was displayed that the NoCaptcha settings need to be configured before it will be displayed on the form. Let's do that right away.</p>
+<p><font color=#0099ff size=4 face="黑体">添加NoCaptcha小部件时，会显示一条消息，说明在表单上显示之前需要配置NoCaptcha设置。让我们马上做。</font> </p>
+<p>Click on the <strong>NoCaptcha Settings</strong> link that is displayed within the message. Alternatively, go to <em>Configuration</em> -&gt; <em>Settings</em> -&gt; <em>Forms</em>. </p>
+<p><font color=#0099ff size=4 face="黑体">单击消息中显示的<strong> NoCaptcha Settings </strong>链接。或者，转到<em>配置</em>  - &gt; <em>设置</em>  - &gt; <em>表单</em>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The Forms settings shows two fields: <strong>SiteKey</strong> and <strong>Site Secret</strong>. You can get these values for free from <a href="https://developers.google.com/recaptcha/">https://developers.google.com/recaptcha/</a>. The widget uses <strong>reCaptcha V2</strong>, so make sure to create Site Key and Site Secret for that version.</p>
+<p><font color=#0099ff size=4 face="黑体">表单设置显示两个字段：<strong> SiteKey </strong>和<strong> Site Secret </strong>。您可以从[https://developers.google.com/recaptcha/](https://developers.google.com/recaptcha/）免费获取这些值。小部件使用<strong> reCaptcha V2 </strong>，因此请确保为该版本创建站点密钥和站点密钥。</font> </p>
+<p>Once you have generated a Site Key and Site Secret with Google, copy &amp; paste those values in the SiteKey and Site Secret fields, repsectively, and click the Save button.</p>
+<p><font color=#0099ff size=4 face="黑体">使用Google生成站点密钥和站点密钥后，将这些值复制并粘贴到SiteKey和Site Secret字段中，然后单击“保存”按钮。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The final form configuration should look something like this:</p>
+<p><font color=#0099ff size=4 face="黑体">最终的表单配置应如下所示：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="Contact Form - Expanded" src="Docs/contact-form-expanded-1.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>And on the front-end, it will look like this:</p>
+<p><font color=#0099ff size=4 face="黑体">在前端，它看起来像这样：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="Contact Form - front-end" src="Docs/contact-form-front-end-1.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="create-the-contact-form-workflow">Create the Contact Form Workflow</h3>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">创建联系表单工作流程</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In order to validate the form input and send an email, we will create a workflow. </p>
+<p><font color=#0099ff size=4 face="黑体">为了验证表单输入并发送电子邮件，我们将创建一个工作流程。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>From the admin menu, click the <strong>Workflows</strong> menu item. Next, click on <strong>Create Workflow Type</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">从管理菜单中，单击<strong>工作流程</strong>菜单项。接下来，单击<strong>创建工作流程类型</strong>。</font> </p>
+<p>We're now asked to provide a name for the workflow. Enter "Contact Form Workflow", leave the other options as-is, and click Save. When you do, you will be redirected to the Workflow Editor, which is where we'll implement the Contact Form submission logic.</p>
+<p><font color=#0099ff size=4 face="黑体">我们现在要求提供工作流程的名称。输入“联系表单工作流程”，保留其他选项，然后单击“保存”。当您这样做时，您将被重定向到工作流程编辑器，这是我们将实现联系表单提交逻辑的地方。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-the-http-request-event">Adding the Http Request Event</h3>
+<h2 id="http"><font color=#0099ff size=4 face="黑体">添加Http请求事件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click on the Add Event button and look for the activity named <strong>HTTP Request</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">单击Add Event按钮，查找名为<strong> HTTP Request </strong>的活动。</font> </p>
+<p>For the Title, enter "Contact Form Submitted", and change the <strong>HTTP Method</strong> selection to <strong>POST</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">对于标题，输入“提交的联系表单”，并将<strong> HTTP方法</strong>选项更改为<strong> POST </strong>。</font> </p>
+<p>Copy the generated URL (without the scheme, host name and port number) to the clipboard, because we will need it to update the form we created.</p>
+<p><font color=#0099ff size=4 face="黑体">将生成的URL（没有方案，主机名和端口号）复制到剪贴板，因为我们需要它来更新我们创建的表单。</font> </p>
+<p>Click Save to return to the workflow editor.</p>
+<p><font color=#0099ff size=4 face="黑体">单击“保存”返回工作流编辑器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Back on the workflow editor, we have now a single activity. Single-click this activity and click on the left-most icon to turn this activity into the starting activity.</p>
+<p><font color=#0099ff size=4 face="黑体">回到工作流编辑器，我们现在有一个活动。单击此活动，然后单击最左侧的图标将此活动转换为启动活动。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-the-fork-activity">Adding the Fork Activity</h3>
+<h2 id="fork"><font color=#0099ff size=4 face="黑体">添加Fork活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>There are various aspects of the form that we need to validate: we want to make sure the user entered a value for the <strong>Name</strong>, <strong>Email</strong> and <strong>Message</strong> fields, and we want to make sure the <strong>captcha</strong> is valid.</p>
+<p><font color=#0099ff size=4 face="黑体">我们需要验证表单的各个方面：我们要确保用户输入<strong> Name </strong>，<strong> Email </strong>和<strong> Message </strong>字段的值，我们希望确保<strong>验证码</strong>有效。</font> </p>
+<p>Although we could perform each field validation sequentially (i.e. one at a time), we are going to do it in parallel. The advantage of doing so is that we can perform form field validation without having to check the result of each validation immediately. Instead, we can simply check the ModelState.IsValid property after all form fields have been validated. This keeps the workflow simplified, and works similar to when you would perform this validation from code.</p>
+<p><font color=#0099ff size=4 face="黑体">虽然我们可以顺序执行每个字段验证（即一次一个），但我们将并行执行。这样做的好处是我们可以执行表单字段验证，而无需立即检查每个验证的结果。相反，我们可以在验证所有表单字段后检查ModelState.IsValid属性。这使工作流程简化，并且与从代码执行此验证时的工作方式类似。</font> </p>
+<p>To execute branches of execution in parallel, we need to add the <strong>Fork</strong> activity, so go ahead and click the Add Task button and look for the Fork activity.</p>
+<p><font color=#0099ff size=4 face="黑体">要并行执行执行分支，我们需要添加<strong> Fork </strong>活动，因此请继续并单击Add Task按钮并查找Fork活动。</font> </p>
+<p>In the Fork activity editor, enter <code>"Validate Form Fields"</code> as the Title, and enter the following outcomes: <code>"Validate Name, Validate Email, Validate Message, Validate Captcha"</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">在Fork活动编辑器中，输入“验证表单字段”作为标题，并输入以下结果：`“验证名称，验证电子邮件，验证消息，验证验证码”。</font> </p>
+<p>Click on Save to save the changes and to be returned to the workflow editor.</p>
+<p><font color=#0099ff size=4 face="黑体">单击“保存”以保存更改并返回到工作流编辑器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Connect the <strong>Http Request</strong> activity to the <strong>Fork</strong> activity you just added.</p>
+<p><font color=#0099ff size=4 face="黑体">将<strong> Http Request </strong>活动连接到刚刚添加的<strong> Fork </strong>活动。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-name-email-and-message-validation">Adding Name, Email and Message Validation</h3>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">添加名称，电子邮件和消息验证</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Next, we will do the following for each of Name, Email and Message:</p>
+<p><font color=#0099ff size=4 face="黑体">接下来，我们将针对名称，电子邮件和消息执行以下操作：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Add the <strong>Validate Form Field</strong> activity. Enter a title of <code>"Validate Name"</code> for the Name field, <code>"Validate Email"</code> for the Email field and <code>"Validate Message"</code> for the Message field.</p>
+<p><font color=#0099ff size=4 face="黑体">添加<strong>验证表单字段</strong>活动。为名称字段输入“验证名称”的标题，为电子邮件字段输入“验证电子邮件”，为“消息”字段输入“验证消息”。</font> </p>
+<p>Enter the appropriate field name for the <strong>Field Name</strong> field ("Name", "Email" and "Message", respectively).</p>
+<p><font color=#0099ff size=4 face="黑体">为<strong>字段名称</strong>字段输入相应的字段名称（分别为“名称”，“电子邮件”和“消息”）。</font> </p>
+<p>In the <strong>Error Message</strong> field, enter <code>"&lt;field name here&gt; is required"</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">在<strong>错误消息</strong>字段中，输入“”<field name here> is“”。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<blockquote>
+<p>The <strong>Validate Form Field</strong> activity in the Beta 2 version of the Forms module only supports checking if the form field is empty or not. The RC version will have support for other kinds of validation, including the ability to provide custom vlidation.</p>
+<p><font color=#0099ff size=4 face="黑体">Beta模型的Forms模块中的<strong> Validate Form Field </strong>活动仅支持检查表单字段是否为空。 RC版本将支持其他类型的验证，包括提供自定义vlidation的功能。</font> </p>
+</blockquote>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-nocaptcha">Adding NoCaptcha</h3>
+<h2 id="nocaptcha_1"><font color=#0099ff size=4 face="黑体">添加NoCaptcha</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To add the NoCaptcha validation activity, click Add Task and find the <strong>Validate NoCaptcha</strong>. Since there is nothing to configure on this activity, you'll be redirected straight to the workflow editor when you click Add.</p>
+<p><font color=#0099ff size=4 face="黑体">要添加NoCaptcha验证活动，请单击“添加任务”，然后找到<strong>验证NoCaptcha </strong>。由于此活动无需配置任何内容，因此单击“添加”时，您将直接重定向到工作流编辑器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Once you added all 4 validation tasks, connect the Fork activity to the validation activities using the appropriate outcomes. For example, connect the "Validate Name" outcome of the Fork activity to the "Validate Name" activity.</p>
+<p><font color=#0099ff size=4 face="黑体">添加完所有4个验证任务后，使用适当的结果将Fork活动连接到验证活动。例如，将Fork活动的“Validate Name”结果连接到“Validate Name”活动。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>If the specified form field is empty, the <strong>Validate Form Field</strong> activity will <em>add a model validation error to the ModelState</em> dictionary. The same goes for the <strong>Validate NoCaptcha</strong> activity if the captcha failed. This is useful, because we now only have to add a single check to see if there are <em>any</em> model validation errors.</p>
+<p><font color=#0099ff size=4 face="黑体">如果指定的表单字段为空，则<strong> Validate Form Field </strong>活动将<em>模型验证错误添加到ModelState </em>字典。如果验证码失败，<strong> Validate NoCaptcha </strong>活动也是如此。这很有用，因为我们现在只需要添加一个检查以查看是否存在<em> any </em>模型验证错误。</font> </p>
+<p>Before we do that however, we first need to <em>join</em> the forked workflow execution back into a single flow.</p>
+<p><font color=#0099ff size=4 face="黑体">然而，在我们这样做之前，我们首先需要<em>将分叉的工作流执行</em>加入到单个流中。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-the-join-activity">Adding the Join Activity</h3>
+<h2 id="_8"><font color=#0099ff size=4 face="黑体">添加加入活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <strong>Join</strong> activity will merge the forked workflow back into a single flow of execution. There are two modes: <strong>Wait Any</strong> and <strong>Wait All</strong>. In our case, we need the <strong>Wait All</strong> mode, because we need all validation steps to finish before continuing.</p>
+<p><font color=#0099ff size=4 face="黑体"><strong> Join </strong>活动将分叉的工作流程合并为单个执行流程。有两种模式：<strong>等待任何</strong>和<strong>等待所有</strong>。在我们的例子中，我们需要<strong> Wait All </strong>模式，因为我们需要在继续之前完成所有验证步骤。</font> </p>
+<p>Go ahead and add the Join activity to the workflow, and <em>make sure to connect the <strong>Done</strong> outcome of each validation task</em> to the Join activity. The "Done" outcome will execute regardless of whether or not the form field validation step failed or not, which is exactly what we want.</p>
+<p><font color=#0099ff size=4 face="黑体">继续将Join活动添加到工作流程中，并确保将每个验证任务*的<strong> Done </strong>结果连接到Join活动。无论表单字段验证步骤是否失败，“完成”结果都将执行，这正是我们想要的。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-the-validate-form-activity">Adding the Validate Form Activity</h3>
+<h2 id="_9"><font color=#0099ff size=4 face="黑体">添加验证表单活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <strong>Validate Form</strong> activity will check if the ModelState is valid or not. If any validation errors occurred, it will return False, and True otherwise.</p>
+<p><font color=#0099ff size=4 face="黑体"><strong> Validate Form </strong>活动将检查ModelState是否有效。如果发生任何验证错误，则返回False，否则返回True。</font> </p>
+<p>Go ahead and add the Validate Form activity and connect it to the Join activity.</p>
+<p><font color=#0099ff size=4 face="黑体">继续并添加Validate Form活动并将其连接到Join活动。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Next, we have to implement the two possible outcomes: <strong>Valid</strong> and <strong>Invalid</strong>.</p>
+<p><font color=#0099ff size=4 face="黑体">接下来，我们必须实现两种可能的结果：<strong>有效</strong>和<strong>无效</strong>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>If the outcome is Invalid, we will redirect back to the form. Since the form contains a Validation Summary, it will display all validation errors.</p>
+<p><font color=#0099ff size=4 face="黑体">如果结果为无效，我们将重定向回表单。由于表单包含验证摘要，因此它将显示所有验证错误。</font> </p>
+<p>If the outcome is Valid, we want to send an email and redirect the user to a Thank You page.</p>
+<p><font color=#0099ff size=4 face="黑体">如果结果是有效的，我们希望发送电子邮件并将用户重定向到“感谢您”页面。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Let's implement the Redirect first.</p>
+<p><font color=#0099ff size=4 face="黑体">让我们先实现重定向。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-the-first-redirect-activity">Adding the First Redirect Activity</h3>
+<h2 id="_10"><font color=#0099ff size=4 face="黑体">添加第一个重定向活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click the Add Task button and locate the Redirect activity. Use "Display Form Errors" for the title, and enter the relative path to the Contact Form content item (<code>/contact-form</code> if you used the same title as I did).</p>
+<p><font color=#0099ff size=4 face="黑体">单击“添加任务”按钮，然后找到“重定向”活动。使用“显示表​​单错误”作为标题，并输入联系表单内容项的相对路径（如果您使用与我相同的标题，则输入<code>/ contact-form</code>）。</font> </p>
+<p>Click Save and connect the Invalid outcome of the Validate Form activity to the Redirect activity you just added.</p>
+<p><font color=#0099ff size=4 face="黑体">单击“保存”，将“验证表单”活动的“无效结果”连接到刚刚添加的“重定向”活动。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-the-email-activity">Adding the Email Activity</h3>
+<h2 id="_11"><font color=#0099ff size=4 face="黑体">添加电子邮件活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Click the Add Task button and locate the Send Email activity. Enter the following values:</p>
+<p><font color=#0099ff size=4 face="黑体">单击“添加任务”按钮，找到“发送电子邮件”活动。输入以下值：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Title: <code>Send Email to Site Admin</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">标题：`向网站管理员发送电子邮件'</font> *</p>
+</li>
+<li>
+<p>Sender: (leave empty)</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">发件人:(留空）</font> *</p>
+</li>
+<li>
+<p>Recipients: <code>admin@orchardcore.io</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">收件人：<code>admin @ orchardcore.io</code></font> *</p>
+</li>
+<li>
+<p>Subject: <code>Contact Form submitted by {{ Request.Form.Name }}!</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">主题：<code>{{Request.Form.Name}}提交的联系表格！</code></font> *</p>
+</li>
+<li>
+<p>Body:</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">身体：</font> *</p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+&lt;p&gt;The following information was submitted:&lt;p/&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;p&gt;提交了以下信息：&lt;p /&gt;&lt;/font&gt; 
+
+
+&lt;p&gt;Name: {{ Request.Form.Name }}&lt;/p&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;p&gt;姓名：{{Request.Form.Name}} &lt;/ p&gt;&lt;/font&gt; 
+
+
+&lt;p&gt;Email: {{ Request.Form.Email }}&lt;/p&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;p&gt;电子邮件：{{Request.Form.Email}} &lt;/ p&gt;&lt;/font&gt; 
+
+
+&lt;p&gt;Message: {{ Request.Form.Message }}&lt;/p&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;p&gt;消息：{{Request.Form.Message}} &lt;/ p&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="configuring-smtp">Configuring SMTP</h4>
+<h2 id="smtp"><font color=#0099ff size=4 face="黑体">配置SMTP</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In order to try out sending emails, you will need to configure the SMTP settings. You can do so via <em>Configuration</em> -&gt; <em>Settings</em> -&gt; <em>Smtp</em>. For development purposes, I am a big fan of <a href="https://github.com/rnwood/smtp4dev">Smtp4Dev</a>, which makes it super easy to try out sending emails <em>without actually sending them</em>. It's basically an SMTP host that intercepts emails being sent that you can then inspect.</p>
+<p><font color=#0099ff size=4 face="黑体">要尝试发送电子邮件，您需要配置SMTP设置。您可以通过<em> Configuration *  - &gt; * Settings *  - &gt; * Smtp </em>来实现。出于开发目的，我是[Smtp4Dev]（https://github.com/rnwood/smtp4dev）的忠实粉丝，这使得尝试发送电子邮件<em>非常容易，而无需实际发送</em>。它基本上是一个SMTP主机拦截发送的电子邮件，然后您可以检查。</font> </p>
+<p>When configuring the SMTP settings in Orchard, make sure to provide the <strong>Sender email address</strong>, which will be used by default (remember, we didn't specify a Sender in the Send Email activity). Enter <code>system@orchardcore.io</code> or any other valid email address you like.</p>
+<p><font color=#0099ff size=4 face="黑体">在Orchard中配置SMTP设置时，请确保提供<strong>发件人电子邮件地址</strong>，默认情况下将使用该邮件地址**（请记住，我们未在“发送电子邮件”活动中指定发件人）。输入<code>system @ orchardcore.io</code>或您喜欢的任何其他有效电子邮件地址。</font> </p>
+<p>If you're using Smtp4Dev, make sure to enter <code>localhost</code> in the Host name field, and the configured port number.</p>
+<p><font color=#0099ff size=4 face="黑体">如果您使用的是Smtp4Dev，请确保在主机名字段中输入<code>localhost</code>和配置的端口号。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-the-second-redirect-activity">Adding the Second Redirect Activity</h3>
+<h2 id="_12"><font color=#0099ff size=4 face="黑体">添加第二个重定向活动</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>After the email is sent, we want to redirect the user to a "Thank You" page. Go ahead and add a Redirect activity, using <code>Display Thank You Page</code> as the title and <code>/thank-you</code> as the URL. Make sure to connect the <em>Done</em> outcome of the Send Email activity to this new Redirect activity.</p>
+<p><font color=#0099ff size=4 face="黑体">发送电子邮件后，我们希望将用户重定向到“谢谢”页面。继续添加一个Redirect活动，使用<code>Display Thank You Page</code>作为标题，使用<code>/ thank-you</code>作为URL。确保将“发送电子邮件”活动的<em>完成</em>结果连接到此新的重定向活动。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="adding-a-thank-you-page">Adding a Thank You Page</h3>
+<h2 id="_13"><font color=#0099ff size=4 face="黑体">添加一个感谢页面</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Create a new Page content item with a title of <code>Thank You!</code>, and make sure its Permalink is <code>thank-you</code> after saving. Add any widgets to this page that you like. For example, add the <strong>Paragraph</strong> widget with the following text: <code>Thank you for reaching out! We'll get back to you soon.</code></p>
+<p><font color=#0099ff size=4 face="黑体">创建一个标题为“谢谢！”的新页面内容项，并在保存后确保其永久链接为“谢谢”。将任何小部件添加到您喜欢的页面。例如，使用以下文本添加<strong> Paragraph </strong>小部件：`谢谢你伸出援手！我们很快就会回复你</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="updating-the-contact-form-widget">Updating the Contact Form widget</h3>
+<h2 id="_14"><font color=#0099ff size=4 face="黑体">更新“联系表单”小组件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Now that our workflow is done, we need to update the Contact Form widget with the Workflow URL that was generated for us in the <strong>Http Request</strong> activity. Unless you have that URL still on your clipboard, go back to the first activity on the workflow, double-click it to get to its activity editor, and copy the URL (without the scheme, host and port number; just the path).</p>
+<p><font color=#0099ff size=4 face="黑体">现在我们的工作流程已经完成，我们需要使用在<strong> Http Request </strong>活动中为我们生成的工作流URL更新Contact Form小部件。除非您的剪贴板上仍有该URL，否则请返回工作流上的第一个活动，双击它以进入其活动编辑器，然后复制URL（不包括方案，主机和端口号;只有路径）。</font> </p>
+<p>Go back to the Contact Form page content item, expand the Contact Form widget and paste in the URL into the <strong>Action</strong> field and save your changes.</p>
+<p><font color=#0099ff size=4 face="黑体">返回“联系表单”页面内容项，展开“联系表单”窗口小部件并将URL粘贴到<strong>操作</strong>字段中并保存更改。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="try-it-out">Try it out!</h3>
+<h2 id="_15"><font color=#0099ff size=4 face="黑体">试试看！</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Go ahead and try it out. Navigate to https://localhost:44300/contact-form and fill out the form. If all went well, you should see an email coming in and be redirected to the Thank You page.</p>
+<p><font color=#0099ff size=4 face="黑体">继续尝试一下。导航到https：// localhost：44300 / contact-form并填写表单。如果一切顺利，您应该会看到一封电子邮件，并被重定向到Thank You页面。</font> </p>
+<p>If you leave any field empty or do not pass the captcha, you should be redirected to the Contact Form page and see the validation errors.</p>
+<p><font color=#0099ff size=4 face="黑体">如果您将任何字段留空或未通过验证码，则应将您重定向到“联系表单”页面并查看验证错误。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="fixing-the-lost-field-values-isue">Fixing the Lost Field Values Isue</h3>
+<h2 id="isue"><font color=#0099ff size=4 face="黑体">修复丢失的字段值Isue</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>There's one issue with the form that I left out intentionally to the very last. To see the problem, try entering some values in the form, except for one (e.g. leave Email empty, or do not check the captcha checkbox). When you submit the form, notice that the values you entered have disappeared.</p>
+<p><font color=#0099ff size=4 face="黑体">这个表格有一个问题，我故意排到最后。要查看问题，请尝试在表单中输入一些值（一个除外）（例如，将电子邮件留空，或者不检查验证码复选框）。提交表单时，请注意您输入的值已消失。</font> </p>
+<p>Normally what happens when you submit a form to an MVC controller, the model binder will bind the fields to some view model. During the model binding phase, MVC will add model state entries. However, we are not invoking model binding anywhere. We only add model validation errors when we identify a missing value.</p>
+<p><font color=#0099ff size=4 face="黑体">通常，当您将表单提交给MVC控制器时会发生什么，模型绑定器会将字段绑定到某个视图模型。在模型绑定阶段，MVC将添加模型状态条目。但是，我们不会在任何地方调用模型绑定。我们只在识别缺失值时添加模型验证错误。</font> </p>
+<p>To fix this, we must add the <strong>Bind Form Model State</strong> activity to the workflow, and connect it in between the first activity (Http Request) and the second activity (the Fork activity). This will cause all Form fields to be copied into ModelState, which is used when displaying the form again.</p>
+<p><font color=#0099ff size=4 face="黑体">要解决这个问题，我们必须将<strong> Bind Form Model State </strong>活动添加到工作流程中，并将其连接到第一个活动（Http Request）和第二个活动（Fork活动）之间。这将导致所有表单字段都复制到ModelState中，这在再次显示表单时使用。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The final workflow should look like this:</p>
+<p><font color=#0099ff size=4 face="黑体">最终的工作流程应如下所示：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><img alt="Contact Form Workflow" src="Docs/contact-form-workflow-1.png" /></p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="future-improvements">Future Improvements</h2>
+<h2 id="_16"><font color=#0099ff size=4 face="黑体">未来的改进</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Implementing a workflow that handles form submissions is easy, but the workflow becomes big quite quickly as soon as you start adding validation logic to the mix. In the next version of the Forms module, there will be an easier way to validate Form submissions in combination with the Form widget. The Form widget will contain all of the validation settings, and there will be a single workflow activity that validates the submitted values against those settings.</p>
+<p><font color=#0099ff size=4 face="黑体">实现处理表单提交的工作流很容易，但只要您开始在混合中添加验证逻辑，工作流就会很快变大。在Forms模块的下一个版本中，将有一种更简单的方法来结合Form小部件验证Form提交。表单窗口小部件将包含所有验证设置，并且将有一个工作流活动根据这些设置验证提交的值。</font> </p>
+<p>The low-level validation activities will remain part of the toolbox to support workflow validation for forms that are not built with the Form widget, but implemented as raw HTML for example.</p>
+<p><font color=#0099ff size=4 face="黑体">低级验证活动将仍然是工具箱的一部分，以支持不是使用表单窗口小部件构建的表单的工作流验证，而是实现为原始HTML。</font> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.Flows/" title="Flows" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Flows
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Placement
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2043 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Liquid - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#liquid-orchardcoreliquid" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Liquid
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Liquid" class="md-nav__link md-nav__link--active">
+      Liquid
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Liquid/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="liquid-orchardcoreliquid">Liquid (OrchardCore.Liquid)</h1>
+<h1 id="orchardcoreliquid"><font color=#0099ff size=4 face="黑体">液体（OrchardCore.Liquid）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This module provides a way to create templates securely from the admin site.</p>
+<p><font color=#0099ff size=4 face="黑体">此模块提供了一种从管理站点安全地创建模板的方法。</font> </p>
+<p>For more information about the Liquid syntax, please refer to this site: <a href="https://shopify.github.io/liquid/">https://shopify.github.io/liquid/</a></p>
+<p><font color=#0099ff size=4 face="黑体">有关Liquid语法的更多信息，请参阅此站点：<a href="https://shopify.github.io/liquid/">https://shopify.github.io/liquid/</a></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="general-concepts">General concepts</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">一般概念</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="html-escaping">HTML escaping</h3>
+<h2 id="html"><font color=#0099ff size=4 face="黑体">HTML转义</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>All outputs are encoded into HTML by default.</p>
+<p><font color=#0099ff size=4 face="黑体">默认情况下，所有输出都编码为HTML。</font> </p>
+<p>This means that any HTML reserved chars will be converted to the corresponding HTML entities.</p>
+<p><font color=#0099ff size=4 face="黑体">这意味着任何HTML保留的字符都将转换为相应的HTML实体。</font> </p>
+<p>If you need to render some raw HTML chars you can use the <code>Raw</code> filter.</p>
+<p><font color=#0099ff size=4 face="黑体">如果需要渲染一些原始HTML字符，可以使用<code>Raw</code>过滤器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="content-item-filters">Content Item Filters</h2>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">内容项过滤器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>All the default filters that are available in the standard Liquid syntax are available in OrchardCore.</p>
+<p><font color=#0099ff size=4 face="黑体">OrchardCore中提供了标准Liquid语法中可用的所有默认过滤器。</font> </p>
+<p>On top of that each Orchard module can provide custom filters for their own purpose.</p>
+<p><font color=#0099ff size=4 face="黑体">最重要的是，每个Orchard模块都可以为自己的目的提供自定义过滤器。</font> </p>
+<p>Here is a list of common filters that apply to content items.</p>
+<p><font color=#0099ff size=4 face="黑体">以下是适用于内容项的常用过滤器列表。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="display_url">display_url</h3>
+<h2 id="display_url_1"><font color=#0099ff size=4 face="黑体">DISPLAY_URL</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Returns the URL of the content item</p>
+<p><font color=#0099ff size=4 face="黑体">返回内容项的URL</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.ContentItem | display_url }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.ContentItem | display_url}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+/blog/my-blog-post
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;/博客/我 - 博客 - 岗位&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="display_text">display_text</h3>
+<h2 id="display_text_1"><font color=#0099ff size=4 face="黑体">DISPLAY_TEXT</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Returns the title of the content item</p>
+<p><font color=#0099ff size=4 face="黑体">返回内容项的标题</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.ContentItem | display_text }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.ContentItem | display_text}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+My Blog Post
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;我的博文&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="slugify">slugify</h3>
+<h2 id="slugify_1"><font color=#0099ff size=4 face="黑体">slugify</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Convert a text into a string that can be used in a URL.</p>
+<p><font color=#0099ff size=4 face="黑体">将文本转换为可在URL中使用的字符串。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ &quot;This is some text&quot; | slugify }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{“这是一些文字”| slugify}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+this-is-some-text
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;这 - 是 - 一些文本&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="container">container</h3>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">容器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Returns the container content item of another content item.</p>
+<p><font color=#0099ff size=4 face="黑体">返回另一个内容项的容器内容项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.ContentItem | container | display_text }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.ContentItem |容器| display_text}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In this example we assume <code>ContentItem</code> represents a blog post.</p>
+<p><font color=#0099ff size=4 face="黑体">在这个例子中，我们假设<code>ContentItem</code>代表博客文章。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+Blog
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;博客&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="local">local</h3>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">本地</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Converts a UTC date and time to the local date and time based on the site settings.</p>
+<p><font color=#0099ff size=4 face="黑体">根据站点设置将UTC日期和时间转换为本地日期和时间。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ &quot;now&quot; | local | date: &quot;%c&quot; }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{“now”|当地的|日期：“％c”}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>or</p>
+<p><font color=#0099ff size=4 face="黑体">要么</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.ContentItem.CreatedUtc | local | date: &quot;%c&quot; }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.ContentItem.CreatedUtc |当地的|日期：“％c”}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+Wednesday, 02 August 2017 11:54:48
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;2017年8月2日星期三11:54:48&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="t">t</h3>
+<h2 id="t_1"><font color=#0099ff size=4 face="黑体">Ť</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Localizes a string using the current culture.</p>
+<p><font color=#0099ff size=4 face="黑体">使用当前文化本地化字符串。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ &quot;Hello!&quot; | t }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{ “你好！” | t}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+Bonjour!
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;你好！&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="html_class">html_class</h3>
+<h2 id="html_class_1"><font color=#0099ff size=4 face="黑体">html_class</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Converts a string into a friendly HTML class.</p>
+<p><font color=#0099ff size=4 face="黑体">将字符串转换为友好的HTML类。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ &quot;LandingPage&quot; | html_class }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{“LandingPage”| html_class}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+landing-page
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;登陆页面&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="markdownify">Markdownify</h3>
+<h2 id="markdownify_1"><font color=#0099ff size=4 face="黑体">Markdownify</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Converts a Markdown string to HTML.</p>
+<p><font color=#0099ff size=4 face="黑体">将Markdown字符串转换为HTML。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ &quot;### Services&quot; | markdownify }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{“###服务”|降价}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+&lt;h3&gt;Services&lt;/h3&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;H3&gt;服务&lt;/ H3&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="properties">Properties</h2>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>By default the liquid templates have access to a common set of objects.</p>
+<p><font color=#0099ff size=4 face="黑体">默认情况下，液体模板可以访问一组公共对象。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="modelcontent">Model.Content</h3>
+<h2 id="modelcontent_1"><font color=#0099ff size=4 face="黑体">Model.Content</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When available, a zone shape that contains all the shapes generated by the content's parts and fields.</p>
+<p><font color=#0099ff size=4 face="黑体">可用时，区域形状包含内容的部件和字段生成的所有形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="modelcontentitem">Model.ContentItem</h3>
+<h2 id="modelcontentitem_1"><font color=#0099ff size=4 face="黑体">Model.ContentItem</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When available, represents the current content item being rendered.</p>
+<p><font color=#0099ff size=4 face="黑体">可用时，表示正在呈现的当前内容项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following properties are available on the <code>ContentItem</code> object.</p>
+<p><font color=#0099ff size=4 face="黑体"><code>ContentItem</code>对象提供以下属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Example | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|示例|说明|</font> </p>
+<p>| --------- | ---- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ---- | ------------ |</font> </p>
+<p>| <code>Id</code> | <code>12</code> | The id of the document in the database |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Id</code> | <code>12</code> |数据库中文档的ID |</font> </p>
+<p>| <code>ContentItemId</code> | <code>4qs7mv9xc4ttg5ktm61qj9dy5d</code> | The common identifier of all versions of the content item |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ContentItemId</code> | <code>4qs7mv9xc4ttg5ktm61qj9dy5d</code> |内容项的所有版本的公共标识符</font> </p>
+<p>| <code>ContentItemVersionId</code> | <code>4jp895achc3hj1qy7xq8f10nmv</code> | The unique identifier of the content item version |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ContentItemVersionId</code> | <code>4jp895achc3hj1qy7xq8f10nmv</code> |内容项版本的唯一标识符</font> </p>
+<p>| <code>Number</code> | <code>6</code> | The version number |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Number</code> | <code>6</code> |版本号|</font> </p>
+<p>| <code>Owner</code> | <code>admin</code> | The username of the creator of this content item |</p>
+<p><font color=#0099ff size=4 face="黑体">| '所有者'| <code>admin</code> |此内容项的创建者的用户名</font> </p>
+<p>| <code>Author</code> | <code>admin</code> | The username of the editor of this version |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>作者</code>| <code>admin</code> |此版本的编辑器的用户名|</font> </p>
+<p>| <code>Published</code> | <code>true</code> | Whether this content item version is published or not |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>已发布</code>| <code>true</code> |是否发布此内容项版本|</font> </p>
+<p>| <code>Latest</code> | <code>true</code> | Whether this content item version is the latest of the content item |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Latest</code> | <code>true</code> |此内容项版本是否是最新的内容项|</font> </p>
+<p>| <code>ContentType</code> | <code>BlogPost</code> | The content type |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ContentType</code> | <code>BlogPost</code> |内容类型|</font> </p>
+<p>| <code>CreatedUtc</code> | <code>2017-05-25 00:27:22.647</code> | When the content item was first created or first published |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>CreatedUtc</code> | <code>2017-05-25 00：27：22.647</code> |首次创建或首次发布内容项时</font> </p>
+<p>| <code>ModifiedUtc</code> | <code>2017-05-25 00:27:22.647</code> | When the content item version was created |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ModifiedUtc</code> | <code>2017-05-25 00：27：22.647</code> |创建内容项版本时|</font> </p>
+<p>| <code>PublishedUtc</code> | <code>2017-05-25 00:27:22.647</code> | When the content item was last published |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>PublishedUtc</code> | <code>2017-05-25 00：27：22.647</code> |上次发布内容项时|</font> </p>
+<p>| <code>Content</code> | <code>{ ... }</code> | A document containing all the content properties. See specific documentation for usage .|</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>内容</code>| <code>{...}</code>|包含所有内容属性的文档。有关用法，请参阅特定文档</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="content-property">Content property</h4>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">内容属性</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <code>Content</code> property of a content item exposes all its elements, like parts and fields. It is possible to</p>
+<p><font color=#0099ff size=4 face="黑体">内容项的“Content”属性公开其所有元素，如部分和字段。有可能</font> </p>
+<p>inspect all the available properties by evaluating <code>Content</code> directly. It will then render the full document.</p>
+<p><font color=#0099ff size=4 face="黑体">通过直接评估<code>Content</code>来检查所有可用的属性。然后它将呈现完整的文档。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The convention is that each Part is exposed by its name as the first level.</p>
+<p><font color=#0099ff size=4 face="黑体">惯例是每个Part都以其名称作为第一级公开。</font> </p>
+<p>If the content item has custom fields, they will be available under a part whose name will match the content type.</p>
+<p><font color=#0099ff size=4 face="黑体">如果内容项具有自定义字段，则它们将在名称与内容类型匹配的部件下可用。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>For example, assuming the type <code>Product</code> has a Text field named <code>Size</code>, access the value of this field for a </p>
+<p><font color=#0099ff size=4 face="黑体">例如，假设类型<code>Product</code>有一个名为<code>Size</code>的文本字段，请访问该字段的值</font> </p>
+<p>content item as follows:</p>
+<p><font color=#0099ff size=4 face="黑体">内容项目如下：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.ContentItem.Content.Product.Size.Text }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.ContentItem.Content.Product.Size.Text}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Similarly, if the content item has a <code>Title</code> part, we can access it like this:</p>
+<p><font color=#0099ff size=4 face="黑体">类似地，如果内容项具有“标题”部分，我们可以像这样访问它：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.ContentItem.Content.TitlePart.Title }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.ContentItem.Content.TitlePart.Title}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="user">User</h3>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">用户</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Represents the authenticated user for the current request.</p>
+<p><font color=#0099ff size=4 face="黑体">表示当前请求的经过身份验证的用户。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following properties are available on the <code>User</code> object.</p>
+<p><font color=#0099ff size=4 face="黑体">“User”对象上提供了以下属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Example | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|示例|说明|</font> </p>
+<p>| --------- | ---- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ---- | ------------ |</font> </p>
+<p>| <code>Identity.Name</code> | <code>admin</code> | The name of the authenticated user |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Identity.Name</code> | <code>admin</code> |经过身份验证的用户的名称</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="site">Site</h3>
+<h2 id="_8"><font color=#0099ff size=4 face="黑体">现场</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Gives access to the current site settings, e.g <code>Site.SiteName</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">提供对当前站点设置的访问，例如“Site.SiteName”。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Example | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|示例|说明|</font> </p>
+<p>| -------- | ------- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| -------- | ------- | ------------ |</font> </p>
+<p>| <code>BaseUrl</code> |  | The base URL of the site | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>BaseUrl</code> | |站点的基本URL |</font> </p>
+<p>| <code>Calendar</code> |  | The site's calendar | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>日历</code>| |该网站的日历|</font> </p>
+<p>| <code>Culture</code> | <code>en-us</code> | The site's default culture as an ISO language code | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>文化</code>| <code>en-us</code> |该网站的默认文化为ISO语言代码|</font> </p>
+<p>| <code>MaxPagedCount</code> | <code>0</code> | The maximum number of pages that can be paged | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>MaxPagedCount</code> | <code>0</code> |可以分页的最大页数</font> </p>
+<p>| <code>MaxPageSize</code> | <code>100</code> | The maximum page size that can be set by a user | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>MaxPageSize</code> | <code>100</code> |用户可以设置的最大页面大小</font> </p>
+<p>| <code>PageSize</code> | <code>10</code> | The default page size of lists | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>PageSize</code> | <code>10</code> |列表的默认页面大小|</font> </p>
+<p>| <code>SiteName</code> | <code>My Site</code> | The friendly name of the site | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>SiteName</code> | <code>我的网站</code>|网站的友好名称|</font> </p>
+<p>| <code>SuperUser</code> | <code>admin</code> | The user name of the site's super user | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>超级用户</code>| <code>admin</code> |站点的超级用户的用户名|</font> </p>
+<p>| <code>TimeZoneId</code> | <code>America/Los_Angeles</code> | The site's time zone id as per the tz database, c.f., https://en.wikipedia.org/wiki/List_of_tz_database_time_zones | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>TimeZoneId</code> | <code>America / Los_Angeles</code> |该网站的时区ID根据tz数据库，c.f。，https：//en.wikipedia.org/wiki/List_of_tz_database_time_zones |</font> </p>
+<p>| <code>UseCdn</code> | <code>false</code> | Enable/disable the use of a CDN | </p>
+<p><font color=#0099ff size=4 face="黑体">| <code>UseCdn</code> | <code>false</code> |启用/禁用CDN的使用</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="request">Request</h3>
+<h2 id="_9"><font color=#0099ff size=4 face="黑体">请求</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Represents the current request.</p>
+<p><font color=#0099ff size=4 face="黑体">表示当前请求。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following properties are available on the <code>Request</code> object.</p>
+<p><font color=#0099ff size=4 face="黑体">“Request”对象上提供了以下属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Example | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|示例|说明|</font> </p>
+<p>| --------- | ---- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ---- | ------------ |</font> </p>
+<p>| <code>QueryString</code> | <code>?sort=name&amp;page=1</code> | The query string |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>QueryString</code> | <code>？sort = name＆page = 1</code> |查询字符串|</font> </p>
+<p>| <code>ContentType</code> | <code>application/x-www-form-urlencoded; charset=UTF-8</code> | The <code>Content-Type</code> header |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ContentType</code> | <code>应用程序/ x-WWW窗体-urlencoded; charset = UTF-8</code> | <code>Content-Type</code>标题|</font> </p>
+<p>| <code>ContentLength</code> | <code>600</code> | The <code>Content-Length</code> header |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ContentLength</code> | <code>600</code> | <code>Content-Length</code>标题|</font> </p>
+<p>| <code>Cookies</code> | Usage: <code>Request.Cookies.orchauth_Default</code> | The collection of cookies for this request |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Cookies</code> |用法：<code>Request.Cookies.orchauth_Default</code> |此请求的cookie集合|</font> </p>
+<p>| <code>Headers</code> | Usage: <code>Request.Headers.accept</code> | The request headers |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>标题</code>|用法：<code>Request.Headers.accept</code> |请求标头|</font> </p>
+<p>| <code>Query</code> | Usage: <code>Request.Query.sort</code> | The query value collection parsed from <code>QueryString</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>查询</code>|用法：<code>Request.Query.sort</code> |查询值集合从<code>QueryString</code> |解析</font> </p>
+<p>| <code>Form</code> | Usage: <code>Request.Form.value</code> | The collection of form values |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Form</code> |用法：<code>Request.Form.value</code> |表单值的集合|</font> </p>
+<p>| <code>Protocol</code> | <code>https</code> | The protocol of this request |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Protocol</code> | <code>https</code> |此请求的协议|</font> </p>
+<p>| <code>Path</code> | <code>/OrchardCore.ContentPreview/Preview/Render</code> | The path of the request, unescaped |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Path</code> | <code>/ OrchardCore.ContentPreview / Preview / Render</code> |请求的路径，未转义|</font> </p>
+<p>| <code>PathBase</code> | <code>/mytenant</code> | The base path of the request, unescaped |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>PathBase</code> | <code>/ mytenant</code> |请求的基本路径，未转义|</font> </p>
+<p>| <code>Host</code> | <code>localhost:44300</code> | The <code>Host</code> header. May contain the port |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>主持人|</code>localhost：44300<code>|</code>Host`标题。可能包含端口|</font> </p>
+<p>| <code>IsHttps</code> | <code>true</code> | True if the scheme of the request is <code>https</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>IsHttps</code> | <code>true</code> |如果请求的方案是“https”|，则为True</font> </p>
+<p>| <code>Scheme</code> | <code>https</code> | The scheme of the request |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Scheme</code> | <code>https</code> |请求的方案|</font> </p>
+<p>| <code>Method</code> | <code>GET</code> | The HTTP method  |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>方法</code>| <code>GET</code> | HTTP方法|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="culture">Culture</h3>
+<h2 id="_10"><font color=#0099ff size=4 face="黑体">文化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Represents the current culture.</p>
+<p><font color=#0099ff size=4 face="黑体">代表当前的文化。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following properties are available on the <code>Culture</code> object.</p>
+<p><font color=#0099ff size=4 face="黑体"><code>Culture</code>对象提供以下属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Example | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|示例|说明|</font> </p>
+<p>| --------- | ---- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ---- | ------------ |</font> </p>
+<p>| <code>Name</code> | <code>en-US</code> | The requests's culture as an ISO language code |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>姓名</code>| <code>en-US</code> |请求的文化作为ISO语言代码|</font> </p>
+<p>| <code>Dir</code> | <code>rtl</code> | The text writing directionality |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Dir</code> | <code>rtl</code> |文字写作方向性|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="shape-filters">Shape Filters</h2>
+<h2 id="_11"><font color=#0099ff size=4 face="黑体">形状滤镜</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>These filters let you create and filter shapes.</p>
+<p><font color=#0099ff size=4 face="黑体">使用这些过滤器可以创建和过滤形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_new">shape_new</h3>
+<h2 id="shape_new_1"><font color=#0099ff size=4 face="黑体">shape_new</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Returns a shape with the specified name as input.</p>
+<p><font color=#0099ff size=4 face="黑体">返回具有指定名称作为输入的形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% assign date_time = &quot;DateTime&quot; | shape_new %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％assign date_time =“DateTime”| shape_new％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_render">shape_render</h3>
+<h2 id="shape_render_1"><font color=#0099ff size=4 face="黑体">shape_render</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Renders a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">渲染形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ Model.Content | shape_render }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.Content | shape_render}}&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_stringify">shape_stringify</h3>
+<h2 id="shape_stringify_1"><font color=#0099ff size=4 face="黑体">shape_stringify</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Converts a shape to its string representation. Contrary to <code>shape_render</code> the result of this filter will</p>
+<p><font color=#0099ff size=4 face="黑体">将形状转换为其字符串表示形式。与<code>shape_render</code>相反，此过滤器的结果将是</font> </p>
+<p>be encoded if rendered in the output.</p>
+<p><font color=#0099ff size=4 face="黑体">如果在输出中呈现，则进行编码。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ &quot;DateTime&quot; | shape_new | shape_stringify }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{“DateTime”| shape_new | shape_stringify}}&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Output</p>
+<p><font color=#0099ff size=4 face="黑体">产量</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="text">
+Monday, September 11, 2017 3:29:26 PM
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;2017年9月11日星期一下午3:29:26&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="layout-tags">Layout Tags</h2>
+<h2 id="_12"><font color=#0099ff size=4 face="黑体">布局标签</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="layout">layout</h3>
+<h2 id="_13"><font color=#0099ff size=4 face="黑体">布局</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sets the layout of a view.</p>
+<p><font color=#0099ff size=4 face="黑体">设置视图的布局。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% layout &quot;CustomLayout&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％layout“CustomLayout”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Internally an alternate is added to the current theme <code>Layout</code> shape.</p>
+<p><font color=#0099ff size=4 face="黑体">在内部，替代品被添加到当前主题“布局”形状中。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="render_body">render_body</h3>
+<h2 id="render_body_1"><font color=#0099ff size=4 face="黑体">render_body</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In a layout, renders the body of the current view.</p>
+<p><font color=#0099ff size=4 face="黑体">在布局中，呈现当前视图的主体。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% render_body %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％render_body％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="render_section">render_section</h3>
+<h2 id="render_section_1"><font color=#0099ff size=4 face="黑体">render_section</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In a layout, renders the section with the specified name.</p>
+<p><font color=#0099ff size=4 face="黑体">在布局中，使用指定的名称呈现节。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% render_section &quot;Header&quot;, required: false %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％render_section“标题”，必填：false％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="page_title">page_title</h3>
+<h2 id="_14"><font color=#0099ff size=4 face="黑体">页面标题</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Alters and renders the title of the current page.</p>
+<p><font color=#0099ff size=4 face="黑体">更改并呈现当前页面的标题。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<pre><code class="liquid">
+{% page_title Site.SiteName, position: &quot;before&quot;, separator: &quot; - &quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％page_title Site.SiteName，position：“before”，separator：“ - ”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The default parameter is a text that is appended to the current value of the title.</p>
+<p><font color=#0099ff size=4 face="黑体">默认参数是附加到标题当前值的文本。</font> </p>
+<p><code>position</code> is where the value is appended, in this example at the beginning.</p>
+<p><code>separator</code> is a string that is used to separate all the fragments of the title.</p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="shape-tags">Shape Tags</h2>
+<h2 id="_15"><font color=#0099ff size=4 face="黑体">形状标签</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_clear_alternates">shape_clear_alternates</h3>
+<h2 id="shape_clear_alternates_1"><font color=#0099ff size=4 face="黑体">shape_clear_alternates</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Removes any alternates from a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">从形状中删除任何替换。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_clear_alternates my_shape %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_clear_alternates my_shape％}&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_add_alternates">shape_add_alternates</h3>
+<h2 id="shape_add_alternates_1"><font color=#0099ff size=4 face="黑体">shape_add_alternates</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Adds alternates to a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">添加替代形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_add_alternates my_shape &quot;alternate1&quot;, &quot;alternate2&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_add_alternates my_shape“alternate1”，“alternate2”％}&lt;/font&gt; 
+
+
+{% shape_add_alternates my_shape &quot;alternate1 alternate2&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_add_alternates my_shape“alternate1 alternate2”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_clear_wrappers">shape_clear_wrappers</h3>
+<h2 id="shape_clear_wrappers_1"><font color=#0099ff size=4 face="黑体">shape_clear_wrappers</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Removes any wrappers from a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">从形状中移除任何包装。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_clear_wrappers my_shape %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_clear_wrappers my_shape％}&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_add_wrappers">shape_add_wrappers</h3>
+<h2 id="shape_add_wrappers_1"><font color=#0099ff size=4 face="黑体">shape_add_wrappers</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Adds wrappers to a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">将包装器添加到形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_add_wrappers my_shape &quot;wrapper1&quot;, &quot;wrapper2&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_add_wrappers my_shape“wrapper1”，“wrapper2”％}&lt;/font&gt; 
+
+
+{% shape_add_wrappers my_shape &quot;wrapper1 wrapper2&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_add_wrappers my_shape“wrapper1 wrapper2”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_clear_classes">shape_clear_classes</h3>
+<h2 id="shape_clear_classes_1"><font color=#0099ff size=4 face="黑体">shape_clear_classes</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Removes any classes from a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">从形状中删除任何类。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_clear_classes my_shape %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_clear_classes my_shape％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_add_classes">shape_add_classes</h3>
+<h2 id="shape_add_classes_1"><font color=#0099ff size=4 face="黑体">shape_add_classes</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Adds classes to a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">将类添加到形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_add_classes my_shape &quot;class1 class2&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_add_classes my_shape“class1 class2”％}&lt;/font&gt; 
+
+
+{% shape_add_classes my_shape &quot;class1&quot;, &quot;class2&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_add_classes my_shape“class1”，“class2”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_clear_attributes">shape_clear_attributes</h3>
+<h2 id="shape_clear_attributes_1"><font color=#0099ff size=4 face="黑体">shape_clear_attributes</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Removes any attributes from a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">从形状中删除任何属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_clear_attributes my_shape %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_clear_attributes my_shape％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_add_attributes">shape_add_attributes</h3>
+<h2 id="shape_add_attributes_1"><font color=#0099ff size=4 face="黑体">shape_add_attributes</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Adds attributes to a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">将属性添加到形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_add_attributes my_shape attr_name1: &quot;value1&quot;, attr_name2: &quot;value2&quot; ... %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_add_attributes my_shape attr_name1：“value1”，attr_name2：“value2”...％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_type">shape_type</h3>
+<h2 id="shape_type_1"><font color=#0099ff size=4 face="黑体">SHAPE_TYPE</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sets the type of a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">设置形状的类型。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_type my_shape &quot;MyType&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_type my_shape“MyType”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Whenever the type is changed, it is recommended to clear the shape alternates before using the <code>shape_clear_alternates</code> tag.</p>
+<p><font color=#0099ff size=4 face="黑体">每当更改类型时，建议在使用<code>shape_clear_alternates</code>标记之前交替清除形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_display_type">shape_display_type</h3>
+<h2 id="shape_display_type_1"><font color=#0099ff size=4 face="黑体">shape_display_type</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sets the display type of a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">设置形状的显示类型。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_display_type my_shape &quot;Summary&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_display_type my_shape“摘要”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Whenever the display type is changed, it is recommended to clear the shape alternates before.</p>
+<p><font color=#0099ff size=4 face="黑体">每当更改显示类型时，建议先交替清除形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_position">shape_position</h3>
+<h2 id="shape_position_1"><font color=#0099ff size=4 face="黑体">shape_position</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sets the position of a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">设置形状的位置。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_position my_shape &quot;Content:before&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_position my_shape“内容：在”％}之前&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_tab">shape_tab</h3>
+<h2 id="shape_tab_1"><font color=#0099ff size=4 face="黑体">shape_tab</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sets the tab of a shape.</p>
+<p><font color=#0099ff size=4 face="黑体">设置形状的选项卡。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_tab my_shape &quot;properties&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_tab my_shape“properties”％}&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_remove_item">shape_remove_item</h3>
+<h2 id="shape_remove_item_1"><font color=#0099ff size=4 face="黑体">shape_remove_item</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Removes a shape by its name in a Zone.</p>
+<p><font color=#0099ff size=4 face="黑体">在区域中删除其名称的形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_remove_item Model.Content &quot;HtmlBodyPart&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_remove_item Model.Content“HtmlBodyPart”％}&lt;/font&gt; 
+
+
+{{ Model.Content | shape_render }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{Model.Content | shape_render}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>In this example, the <code>Model.Content</code> property evaluates to a zone shape, typically from a Content Item shape template, which contains the <code>HtmlBodyPart</code> shape</p>
+<p><font color=#0099ff size=4 face="黑体">在此示例中，<code>Model.Content</code>属性计算为区域形状，通常来自Content Item形状模板，其中包含<code>HtmlBodyPart</code>形状</font> </p>
+<p>rendered for the Body Part element. This call will remove the specific shape named <code>HtmlBodyPart</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">为Body Part元素渲染。此调用将删除名为“HtmlBodyPart”的特定形状。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_pager">shape_pager</h3>
+<h2 id="shape_pager_1"><font color=#0099ff size=4 face="黑体">shape_pager</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Replaces the properties of a Pager shape.</p>
+<p><font color=#0099ff size=4 face="黑体">替换寻呼机形状的属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape_pager Model.Pager next_class: 'next', next_text: '&gt;&gt;' %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape_pager Model.Pager next_class：'next'，next_text：'&gt;&gt;'％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape_build_display">shape_build_display</h3>
+<h2 id="shape_build_display_1"><font color=#0099ff size=4 face="黑体">shape_build_display</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Creates the display shape for a content item. It can be used in conjunction with <code>shape_render</code></p>
+<p><font color=#0099ff size=4 face="黑体">创建内容项的显示形状。它可以与<code>shape_render</code>一起使用</font> </p>
+<p>to render a content item.</p>
+<p><font color=#0099ff size=4 face="黑体">呈现内容项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{{ mycontentitem | shape_build_display: &quot;Detail&quot; | shape_render }}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{{mycontentitem | shape_build_display：“细节”| shape_render}}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shape">shape</h3>
+<h2 id="_16"><font color=#0099ff size=4 face="黑体">形状</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Renders a specific named tag with its properties</p>
+<p><font color=#0099ff size=4 face="黑体">使用其属性呈现特定的命名标记</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape &quot;menu&quot;, alias: &quot;alias:main-menu&quot;, cache_id: &quot;main-menu&quot;, cache_expires_after: &quot;00:05:00&quot;, cache_tag: &quot;alias:main-menu&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape“menu”，别名：“alias：main-menu”，cache_id：“main-menu”，cache_expires_after：“00：05：00”，cache_tag：“alias：main-menu”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>When using the shape tag a specific wrapper and / or alternate can be specified.</p>
+<p><font color=#0099ff size=4 face="黑体">使用形状标记时，可以指定特定的包装和/或替换。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% shape &quot;menu&quot;, alias: &quot;alias:main-menu&quot;, alternate: &quot;Menu_Footer&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％shape“menu”，别名：“alias：main-menu”，alternate：“Menu_Footer”％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="zone">zone</h3>
+<h2 id="_17"><font color=#0099ff size=4 face="黑体">区</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Renders some HTML content in the specified zone.</p>
+<p><font color=#0099ff size=4 face="黑体">在指定区域中呈现一些HTML内容。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Input</p>
+<p><font color=#0099ff size=4 face="黑体">输入</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% zone &quot;Header&quot; %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％zone“标题”％}&lt;/font&gt; 
+
+
+    &lt;!-- some content goes here --&gt;
+
+{% endzone %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％endzone％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The content of this block can then be reused from the Layout using the <code>{{ Model.Header | shape_render }}</code> code.</p>
+<p><font color=#0099ff size=4 face="黑体">然后可以使用<code>{{Model.Header |。 - 从布局重用该块的内容shape_render}}</code>代码。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="tag-helper-tags">Tag Helper tags</h2>
+<h2 id="tag-helper"><font color=#0099ff size=4 face="黑体">Tag Helper标签</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>ASP.NET Core MVC provides a set of tag helpers to render predefined HTML outputs. The Liquid module provides a way to call into these Tag Helpers using custom liquid tags.</p>
+<p><font color=#0099ff size=4 face="黑体">ASP.NET Core MVC提供了一组标记帮助器来呈现预定义的HTML输出。 Liquid模块提供了一种使用自定义液体标签调用这些Tag Helpers的方法。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="link">link</h3>
+<h2 id="_18"><font color=#0099ff size=4 face="黑体">链接</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Invokes the <code>link</code> tag helper from the <strong>Orchard.ResourceManagement</strong> package.</p>
+<p><font color=#0099ff size=4 face="黑体">从<strong> Orchard.ResourceManagement </strong>包调用<code>link</code>标签助手。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="meta">meta</h3>
+<h2 id="_19"><font color=#0099ff size=4 face="黑体">元</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Invokes the <code>meta</code> tag helper from the <strong>Orchard.ResourceManagement</strong> package.</p>
+<p><font color=#0099ff size=4 face="黑体">从<strong> Orchard.ResourceManagement </strong>包调用<code>meta</code>标签帮助器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="resources">resources</h3>
+<h2 id="_20"><font color=#0099ff size=4 face="黑体">资源</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Invokes the <code>resources</code> tag helper from the <strong>Orchard.ResourceManagement</strong> package.</p>
+<p><font color=#0099ff size=4 face="黑体">从<strong> Orchard.ResourceManagement </strong>包中调用<code>resources</code>标签帮助器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="script">script</h3>
+<h2 id="_21"><font color=#0099ff size=4 face="黑体">脚本</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Invokes the <code>script</code> tag helper from the <strong>Orchard.ResourceManagement</strong> package.</p>
+<p><font color=#0099ff size=4 face="黑体">从<strong> Orchard.ResourceManagement </strong>包调用<code>script</code>标签帮助器。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="style">style</h3>
+<h2 id="_22"><font color=#0099ff size=4 face="黑体">样式</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Invokes the <code>style</code> tag helper from the <strong>Orchard.ResourceManagement</strong> package.</p>
+<p><font color=#0099ff size=4 face="黑体">从<strong> Orchard.ResourceManagement </strong>包中调用<code>style</code>标签助手。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="a">a</h3>
+<h2 id="_23"><font color=#0099ff size=4 face="黑体">一个</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Invokes the <code>a</code> content link tag helper from the <strong>OrchardCore.Contents</strong> package.</p>
+<p><font color=#0099ff size=4 face="黑体">从<strong> OrchardCore.Contents </strong>包中调用<code>a</code>内容链接标记助手。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="antiforgerytoken">antiforgerytoken</h3>
+<h2 id="antiforgerytoken_1"><font color=#0099ff size=4 face="黑体">antiforgerytoken</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Renders a <code>&lt;hidden&gt;</code> element (antiforgery token) that will be validated when the containing <code>&lt;form&gt;</code> is submitted.</p>
+<p><font color=#0099ff size=4 face="黑体">呈现一个<code>&lt;hidden&gt;</code>元素（防伪标记），当提交包含“<form>”时将对其进行验证。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Example</p>
+<p><font color=#0099ff size=4 face="黑体">例</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="liquid">
+{% antiforgerytoken %}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{％antiforgerytoken％}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="credits">CREDITS</h2>
+<h2 id="_24"><font color=#0099ff size=4 face="黑体">学分</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="fluid">Fluid</h3>
+<h2 id="_25"><font color=#0099ff size=4 face="黑体">流体</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><a href="https://github.com/sebastienros/fluid">https://github.com/sebastienros/fluid</a>  </p>
+<p><font color=#0099ff size=4 face="黑体"><a href="https://github.com/sebastienros/fluid">https://github.com/sebastienros/fluid</a></font> </p>
+<p>Copyright (c) 2017 Sebastien Ros  </p>
+<p><font color=#0099ff size=4 face="黑体">版权所有（c）2017 Sebastien Ros</font> </p>
+<p>MIT License</p>
+<p><font color=#0099ff size=4 face="黑体">MIT许可证</font> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.Themes/" title="Themes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Themes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Custom Settings
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1172 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Localization - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#localization-orchardcorelocalization" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Localization
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Localization" class="md-nav__link md-nav__link--active">
+      Localization
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Localization/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="localization-orchardcorelocalization">Localization (OrchardCore.Localization)</h1>
+<h1 id="orchardcorelocalization"><font color=#0099ff size=4 face="黑体">本地化（OrchardCore.Localization）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This module provides the infrastructure necessary to support the PO (Portable Object) localization file format.</p>
+<p><font color=#0099ff size=4 face="黑体">此模块提供支持PO（可移植对象）本地化文件格式所需的基础结构。</font> </p>
+<p>It also supports plural forms.</p>
+<p><font color=#0099ff size=4 face="黑体">它还支持复数形式。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="po-files-locations">PO files locations</h2>
+<h2 id="po"><font color=#0099ff size=4 face="黑体">PO文件位置</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>PO files are found via the following steps:</p>
+<p><font color=#0099ff size=4 face="黑体">PO文件可通过以下步骤找到：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>For each module and theme all files matching <code>[ModuleLocation]/App_Data/Localization/[CultureName].po</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">对于每个模块和主题，所有文件都匹配<code>[ModuleLocation] / App_Data / Localization / [CultureName] .po</code></font> </p>
+</li>
+<li>
+<p>Then all files matching <code>/App_Data/Localization/[CultureName].po</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">然后所有文件匹配<code>/ App_Data / Localization / [CultureName] .po</code></font> </p>
+</li>
+<li>
+<p>For each tenant all files matching <code>/App_Data/Sites/[TenantName]/Localization/[CultureName].po</code></p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">对于每个租户所有匹配<code>/ App_Data / Sites / [TenantName] / Localization / [CultureName] .po</code>的文件</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="file-format">File format</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">文件格式</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This article explains how PO files are organized, including plural forms.</p>
+<p><font color=#0099ff size=4 face="黑体">本文介绍了PO文件的组织方式，包括复数形式。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><a href="https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html">https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html</a></p>
+<p><font color=#0099ff size=4 face="黑体"><a href="https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html">https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html</a></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="translation-contexts">Translation contexts</h2>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">翻译背景</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To prevent different PO files entries from overriding each other, entries define a context for each translation string.</p>
+<p><font color=#0099ff size=4 face="黑体">为了防止不同的PO文件条目相互覆盖，条目为每个翻译字符串定义上下文。</font> </p>
+<p>For instance two views could use the string named <code>Hello</code> but they might have different translation. It's then necessary to</p>
+<p><font color=#0099ff size=4 face="黑体">例如，两个视图可以使用名为“Hello”的字符串，但它们可能具有不同的转换。然后有必要</font> </p>
+<p>provide two entries and specify which <em>context</em> is associated with each translation. In this case each view name is a context.</p>
+<p><font color=#0099ff size=4 face="黑体">提供两个条目并指定哪个_context_与每个翻译相关联。在这种情况下，每个视图名称都是上下文。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="from-a-view">From a View</h3>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">从一个视图</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The context string must match the view location up to the module folder.</p>
+<p><font color=#0099ff size=4 face="黑体">上下文字符串必须与视图位置匹配，直到模块文件夹。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="view">View</h4>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">视图</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Assuming the view's path is <code>TheAdmin\Views\Layout.cshtml</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">假设视图的路径是<code>TheAdmin \\ Views \\ Layout.cshtml</code>。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="po-file">PO File</h4>
+<h2 id="po_1"><font color=#0099ff size=4 face="黑体">PO文件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+msgctxt &quot;TheAdmin.Views.Layout&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgctxt“TheAdmin.Views.Layout”&lt;/font&gt; 
+
+
+msgid &quot;Hello&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgstr“你好”&lt;/font&gt; 
+
+
+msgstr &quot;Bonjour&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgstr“Bonjour”&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="from-a-service">From a Service</h3>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">来自服务</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The context string must match the full name of the type the localizer is injecting in.</p>
+<p><font color=#0099ff size=4 face="黑体">上下文字符串必须与本地化程序所注入的类型的全名相匹配。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="source">Source</h4>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">资源</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+namespace MyNamespace
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;名称空间MyNamespace&lt;/font&gt; 
+
+
+{
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;{&lt;/font&gt; 
+
+
+    public class MyService : IMyService
+
+    {
+
+        public IStringLocalizer T { get; set; }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        public MyService(IStringLocalizer&lt;MyService&gt; localizer)
+
+        {
+
+            T = localizer;
+
+        }
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+        public void DoSomething()
+
+        {
+
+            Console.WriteLine(T[&quot;Hello&quot;]);
+
+        }
+
+    }
+
+}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;}&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="po-file_1">PO file</h4>
+<h2 id="po_2"><font color=#0099ff size=4 face="黑体">PO文件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+msgctxt &quot;MyNamespace.MyService&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgctxt“MyNamespace.MyService”&lt;/font&gt; 
+
+
+msgid &quot;Hello&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgstr“你好”&lt;/font&gt; 
+
+
+msgstr &quot;Bonjour&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgstr“Bonjour”&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="pluralization">Pluralization</h2>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">多元化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This module also provides support for pluralization.</p>
+<p><font color=#0099ff size=4 face="黑体">该模块还支持多元化。</font> </p>
+<p>It is necessary to reference the <code>OrchardCore.Localization.Abstractions</code> package in order to be able to use it.</p>
+<p><font color=#0099ff size=4 face="黑体">有必要引用<code>OrchardCore.Localization.Abstractions</code>包以便能够使用它。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="sample-po-file">Sample PO file</h3>
+<h2 id="po_3"><font color=#0099ff size=4 face="黑体">示例PO文件</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+msgctxt &quot;TheAdmin.Views.Layout&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgctxt“TheAdmin.Views.Layout”&lt;/font&gt; 
+
+
+msgid &quot;1 book&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgstr“1本书”&lt;/font&gt; 
+
+
+msgid_plural &quot;{0} books&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgid_plural“{0}书籍”&lt;/font&gt; 
+
+
+msgstr[0] &quot;[1 livre]&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgstr [0]“[1 livre]”&lt;/font&gt; 
+
+
+msgstr[1] &quot;[{0} livres]&quot;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;msgstr [1]“[{0} livres]”&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="usage">Usage</h3>
+<h2 id="_8"><font color=#0099ff size=4 face="黑体">用法</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<ul>
+<li>
+<p>Import the <code>using Microsoft.Extensions.Localization</code> namespace.</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">导入<code>using Microsoft.Extensions.Localization</code>命名空间。</font> </p>
+</li>
+<li>
+<p>Inject an instance of <code>IStringLocalizer</code> or <code>IViewLocalizer</code> (represented as the <code>T</code> variable in the following example).</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体">注入一个<code>IStringLocalizer</code>或<code>IViewLocalizer</code>的实例（在下面的例子中表示为<code>T</code>变量）。</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code>
+T.Plural(count, &quot;1 book&quot;, &quot;{0} books&quot;)
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;T.Plural（伯爵，“1本书”，“{0}书”）&lt;/font&gt; 
+
+
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Dynamic Cache
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Logging Serilog
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

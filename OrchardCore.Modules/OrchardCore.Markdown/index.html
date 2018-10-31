@@ -1,0 +1,1162 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../..">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Markdown - Orchard Core Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#markdown-orchardcoremarkdown" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Orchard Core Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Orchard Core Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Markdown
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Orchard Core Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Orchard Core Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/OrchardCMS/OrchardDoc/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About Orchard Core" class="md-nav__link">
+      About Orchard Core
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Getting started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/" title="Create a CMS Web application" class="md-nav__link">
+      Create a CMS Web application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/getting-started/theme/" title="Create a Theme" class="md-nav__link">
+      Create a Theme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../docs/templates/" title="Code Generation Templates" class="md-nav__link">
+      Code Generation Templates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore/Modules/" title="Orchard Core Modules" class="md-nav__link">
+      Orchard Core Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      CMS Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        CMS Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Title/" title="Title" class="md-nav__link">
+      Title
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Alias/" title="Alias" class="md-nav__link">
+      Alias
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Autoroute/" title="Autoroute" class="md-nav__link">
+      Autoroute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Contents/" title="Contents" class="md-nav__link">
+      Contents
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentFields/" title="Content Fields" class="md-nav__link">
+      Content Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentPreview/" title="Content Preview" class="md-nav__link">
+      Content Preview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.ContentTypes/" title="Content Types" class="md-nav__link">
+      Content Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Markdown" class="md-nav__link md-nav__link--active">
+      Markdown
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Media/" title="Media" class="md-nav__link">
+      Media
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Menu/" title="Menu" class="md-nav__link">
+      Menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Navigation/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Indexing/" title="Indexing" class="md-nav__link">
+      Indexing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Lucene/" title="Lucene" class="md-nav__link">
+      Lucene
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Themes/" title="Themes" class="md-nav__link">
+      Themes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Liquid/" title="Liquid" class="md-nav__link">
+      Liquid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.CustomSettings/" title="Custom Settings" class="md-nav__link">
+      Custom Settings
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Widgets/" title="Widgets" class="md-nav__link">
+      Widgets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Flows/" title="Flows" class="md-nav__link">
+      Flows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Forms/" title="Forms" class="md-nav__link">
+      Forms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Core Modules
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Core Modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.DisplayManagement/" title="Placement" class="md-nav__link">
+      Placement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DynamicCache/" title="Dynamic Cache" class="md-nav__link">
+      Dynamic Cache
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Localization/" title="Localization" class="md-nav__link">
+      Localization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../OrchardCore/OrchardCore.Logging.Serilog/readme/" title="Logging Serilog" class="md-nav__link">
+      Logging Serilog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.OpenId/" title="OpenId" class="md-nav__link">
+      OpenId
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Recipes/" title="Recipes" class="md-nav__link">
+      Recipes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Scripting/" title="Scripting" class="md-nav__link">
+      Scripting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Tenants/" title="Tenants" class="md-nav__link">
+      Tenants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.Workflows/" title="Workflows" class="md-nav__link">
+      Workflows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OrchardCore.DataProtection.Azure/" title="DataProtection (Azure Storage)" class="md-nav__link">
+      DataProtection (Azure Storage)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/OrchardCMS/OrchardDoc/edit/master/docs/OrchardCore.Modules/OrchardCore.Markdown/README.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="markdown-orchardcoremarkdown">Markdown (OrchardCore.Markdown)</h1>
+<h1 id="markdownorchardcoremarkdown"><font color=#0099ff size=4 face="黑体">Markdown（OrchardCore.Markdown）</font></h1>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="theming">Theming</h2>
+<h2 id="_1"><font color=#0099ff size=4 face="黑体">主题化</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="shapes">Shapes</h3>
+<h2 id="_2"><font color=#0099ff size=4 face="黑体">形状</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following shapes are rendered when the <strong>BodyPMarkdownBodyPartart</strong> is attached to a content type</p>
+<p><font color=#0099ff size=4 face="黑体">当<strong> BodyPMarkdownBodyPartart </strong>附加到内容类型时，将呈现以下形状</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Name | Display Type | Default Location | Model Type |</p>
+<p><font color=#0099ff size=4 face="黑体">|名称|显示类型|默认位置|型号类型|</font> </p>
+<p>| ------| ------------ |----------------- | ---------- |</p>
+<p><font color=#0099ff size=4 face="黑体">| ------ | ------------ | ----------------- | ---------- |</font> </p>
+<p>| <code>MarkdownBodyPart</code> | <code>Detail</code> | <code>Content:5</code> | <code>MarkdownBodyPartViewModel</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>MarkdownBodyPart</code> | <code>细节</code>| <code>内容：5</code> | <code>MarkdownBodyPartViewModel</code> |</font> </p>
+<p>| <code>MarkdownBodyPart</code> | <code>Summary</code> | <code>Content:10</code> | <code>MarkdownBodyPartViewModel</code> |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>MarkdownBodyPart</code> | <code>摘要</code>| <code>内容：10</code> | <code>MarkdownBodyPartViewModel</code> |</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="bodypartviewmodel">BodyPartViewModel</h3>
+<h2 id="bodypartviewmodel_1"><font color=#0099ff size=4 face="黑体">BodyPartViewModel</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following properties are available on the <code>MarkdownBodyPartViewModel</code> class.</p>
+<p><font color=#0099ff size=4 face="黑体"><code>MarkdownBodyPartViewModel</code>类提供以下属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Type | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|输入|说明|</font> </p>
+<p>| --------- | ---- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ---- | ------------ |</font> </p>
+<p>| <code>Markdown</code> | <code>string</code> | The Markdown value after all tokens have been processed |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Markdown</code> | <code>string</code> |处理完所有令牌后的Markdown值</font> </p>
+<p>| <code>Html</code> | <code>string</code> | The HTML content resulting from the Markdown source |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Html</code> | <code>string</code> | Markdown源代码生成的HTML内容</font> </p>
+<p>| <code>ContentItem</code> | <code>ContentItem</code> | The content item of the part |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ContentItem</code> | <code>ContentItem</code> |部分的内容项目</font> </p>
+<p>| <code>MarkdownBodyPart</code> | <code>MarkdownBodyPart</code> | The <code>MarkdownBodyPart</code> instance|</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>MarkdownBodyPart</code> | <code>MarkdownBodyPart</code> | <code>MarkdownBodyPart</code>实例|</font> </p>
+<p>| <code>TypePartSettings</code> | <code>MarkdownBodyPartSettings</code> | The settings of the part |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>TypePartSettings</code> | <code>MarkdownBodyPartSettings</code> |部分的设置|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="markdownbodypart">MarkdownBodyPart</h3>
+<h2 id="markdownbodypart_1"><font color=#0099ff size=4 face="黑体">MarkdownBodyPart</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following properties are available on <code>MarkdownBodyPart</code></p>
+<p><font color=#0099ff size=4 face="黑体"><code>MarkdownBodyPart</code>提供以下属性</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Name | Type | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|名称|输入|说明|</font> </p>
+<p>| -----| ---- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| ----- | ---- | ------------ |</font> </p>
+<p>| <code>Markdown</code> | The Markdown content. It can contain Liquid tags so using it directly might result in unexpected results. Prefer rendering the <code>MarkdownBodyPart</code> shape instead |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Markdown</code> | Markdown内容。它可以包含Liquid标签，因此直接使用它可能会导致意外结果。更喜欢渲染<code>MarkdownBodyPart</code>形状</font> </p>
+<p>| <code>Content</code> | The raw content of the part |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>内容</code>|部分的原始内容|</font> </p>
+<p>| <code>ContentItem</code> | The content item containing this part |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>ContentItem</code> |包含此部分的内容项目</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="markdownfield">MarkdownField</h3>
+<h2 id="markdownfield_1"><font color=#0099ff size=4 face="黑体">MarkdownField</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>This shape is rendered when a <code>MarkdownField</code> is attached to a content part.</p>
+<p><font color=#0099ff size=4 face="黑体">当“MarkdownField”附加到内容部分时，将呈现此形状。</font> </p>
+<p>The shape base class is of type <code>MarkdownFieldViewModel</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">形状基类的类型为“MarkdownFieldViewModel”。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The following properties are available on the <code>MarkdownFieldViewModel</code> class.</p>
+<p><font color=#0099ff size=4 face="黑体"><code>MarkdownFieldViewModel</code>类提供以下属性。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>| Property | Type | Description |</p>
+<p><font color=#0099ff size=4 face="黑体">|财产|输入|说明|</font> </p>
+<p>| --------- | ---- |------------ |</p>
+<p><font color=#0099ff size=4 face="黑体">| --------- | ---- | ------------ |</font> </p>
+<p>| <code>Markdown</code> | <code>string</code> | The Markdown value once all tokens have been processed |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Markdown</code> | <code>string</code> |处理完所有令牌后的Markdown值|</font> </p>
+<p>| <code>Html</code> | <code>string</code> | The HTML content resulting from the Markdown source |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Html</code> | <code>string</code> | Markdown源代码生成的HTML内容</font> </p>
+<p>| <code>Field</code> | <code>MarkdownField</code> | The <code>MarkdownField</code> instance|</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Field</code> | <code>MarkdownField</code> | <code>MarkdownField</code>实例|</font> </p>
+<p>| <code>Part</code> | <code>ContentPart</code> | The part this field attached to |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>Part</code> | <code>ContentPart</code> |此字段附加到|的部分</font> </p>
+<p>| <code>PartFieldDefinition</code> | <code>ContentPartFieldDefinition</code> | The part field definition |</p>
+<p><font color=#0099ff size=4 face="黑体">| <code>PartFieldDefinition</code> | <code>ContentPartFieldDefinition</code> |零件字段定义|</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="editors">Editors</h2>
+<h2 id="_3"><font color=#0099ff size=4 face="黑体">编者</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>The <strong>Markdown Part</strong> editor can be different for each content type. In the <strong>Markdown Part</strong> settings of a </p>
+<p><font color=#0099ff size=4 face="黑体">每个内容类型的__Markdown Part__编辑器可以不同。在a的__Markdown Part__设置中</font> </p>
+<p>content type, just select the one that needs to be used.</p>
+<p><font color=#0099ff size=4 face="黑体">内容类型，只需选择需要使用的内容。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>There are two predefined editor names:</p>
+<p><font color=#0099ff size=4 face="黑体">有两个预定义的编辑器名称：</font> </p>
+<ul>
+<li>
+<p><code>Default</code> is the editor that is used by default</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体"><code>Default</code>是默认使用的编辑器</font> </p>
+</li>
+<li>
+<p><code>Wysiwyg</code> is the editor that provides a WYSIWYG experience</p>
+</li>
+<li>
+<p><font color=#0099ff size=4 face="黑体"><code>Wysiwyg</code>是提供WYSIWYG体验的编辑器</font> </p>
+</li>
+</ul>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="custom-editors">Custom Editors</h3>
+<h2 id="_4"><font color=#0099ff size=4 face="黑体">自定义编辑器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Customizing the editor can mean to replace the predefined one with different experiences, or to provide</p>
+<p><font color=#0099ff size=4 face="黑体">自定义编辑器可能意味着用不同的体验替换预定义的编辑器，或者提供</font> </p>
+<p>new options for the user to choose from.</p>
+<p><font color=#0099ff size=4 face="黑体">用户可供选择的新选项。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To create a new custom editor, it is required to provide two shape templates, one to provide</p>
+<p><font color=#0099ff size=4 face="黑体">要创建新的自定义编辑器，需要提供两个形状模板，一个用于提供</font> </p>
+<p>the name of the editor (optional if you want to override an existing one), and a shape to</p>
+<p><font color=#0099ff size=4 face="黑体">编辑器的名称（如果要覆盖现有编辑器，则为可选项）和形状</font> </p>
+<p>render the actual HTML for the editor.</p>
+<p><font color=#0099ff size=4 face="黑体">呈现编辑器的实际HTML。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="declaration">Declaration</h4>
+<h2 id="_5"><font color=#0099ff size=4 face="黑体">宣言</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To declare a new editor, create a shape named <code>Markdown_Option__{Name}</code> where <code>{Name}</code> is a value </p>
+<p><font color=#0099ff size=4 face="黑体">要声明一个新的编辑器，创建一个名为<code>Markdown_Option __ {Name}</code>的形状，其中<code>{Name}</code>是一个值</font> </p>
+<p>of your choosing. This will be represented by a file named <code>Markdown-{Name}.Option.cshtml</code>.</p>
+<p><font color=#0099ff size=4 face="黑体">你选择的。这将由名为<code>Markdown- {Name} .Option.cshtml</code>的文件表示。</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sample content:</p>
+<p><font color=#0099ff size=4 face="黑体">示例内容：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="csharp">
+@{
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;@ {&lt;/font&gt; 
+
+
+    string currentEditor = Model.Editor;
+
+}
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;}&lt;/font&gt; 
+
+
+&lt;option value=&quot;Wysiwyg&quot; selected=&quot;@(currentEditor == &quot;Wysiwyg&quot;)&quot;&gt;@T[&quot;Wysiwyg editor&quot;]&lt;/option&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;option value =“Wysiwyg”selected =“@（currentEditor ==”Wysiwyg“）”&gt; @ T [“Wysiwyg编辑”] &lt;/ option&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h4 id="html-editor">HTML Editor</h4>
+<h2 id="html"><font color=#0099ff size=4 face="黑体">HTML编辑器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>To define what HTML to render when the editor is selected from the settings, a shape named </p>
+<p><font color=#0099ff size=4 face="黑体">要定义从设置中选择编辑器时要呈现的HTML，请使用名为的形状</font> </p>
+<p><code>Markdown_Editor__{Name}</code> corresponding to a file <code>Markdown-{Name}.Editor.cshtml</code> can be created.</p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>Sample content:</p>
+<p><font color=#0099ff size=4 face="黑体">示例内容：</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<pre><code class="csharp">
+@using OrchardCore.Markdown.ViewModels;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;@using OrchardCore.Markdown.ViewModels;&lt;/font&gt; 
+
+
+@model MarkdownBodyPartViewModel
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;@model MarkdownBodyPartViewModel&lt;/font&gt; 
+
+
+
+
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/font&gt; 
+
+
+&lt;fieldset class=&quot;form-group&quot;&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;fieldset class =“form-group”&gt;&lt;/font&gt; 
+
+
+    &lt;label asp-for=&quot;Markdown&quot;&gt;@T[&quot;Markdown&quot;]&lt;/label&gt;
+
+    &lt;textarea asp-for=&quot;Markdown&quot; rows=&quot;5&quot; class=&quot;form-control&quot;&gt;&lt;/textarea&gt;
+
+    &lt;span class=&quot;hint&quot;&gt;@T[&quot;The markdown of the content item.&quot;]&lt;/span&gt;
+
+&lt;/fieldset&gt;
+
+ &lt;font color=#0099ff size=4 face=&quot;黑体&quot;&gt;&lt;/字段集&gt;&lt;/font&gt; 
+
+
+</code></pre>
+
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="overriding-the-predefined-editors">Overriding the predefined editors</h3>
+<h2 id="_6"><font color=#0099ff size=4 face="黑体">覆盖预定义的编辑器</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<p>You can override the HTML editor for the <code>Default</code> editor by creating a shape file named </p>
+<p><font color=#0099ff size=4 face="黑体">您可以通过创建名为的形状文件来覆盖“Default”编辑器的HTML编辑器</font> </p>
+<p><code>Markdown.Editor.cshtml</code>. The Wysiwyg editor is defined by using the file named </p>
+<p><code>Markdown-Wysiwyg.Editor.cshtml</code>.</p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h2 id="credits">CREDITS</h2>
+<h2 id="_7"><font color=#0099ff size=4 face="黑体">学分</font></h2>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="markdig">Markdig</h3>
+<h2 id="markdig_1"><font color=#0099ff size=4 face="黑体">Markdig</font></h2>
+<p><a href="https://github.com/lunet-io/markdig">https://github.com/lunet-io/markdig</a>  </p>
+<p><font color=#0099ff size=4 face="黑体"><a href="https://github.com/lunet-io/markdig">https://github.com/lunet-io/markdig</a></font> </p>
+<p>Copyright (c) 2016, Alexandre Mutel  </p>
+<p><font color=#0099ff size=4 face="黑体">版权所有（c）2016，Alexandre Mutel</font> </p>
+<p>BSD-2</p>
+<p><font color=#0099ff size=4 face="黑体">BSD-2</font> </p>
+<p><font color=#0099ff size=4 face="黑体"></font> </p>
+<h3 id="simplemde">SimpleMDE</h3>
+<h2 id="simplemde_1"><font color=#0099ff size=4 face="黑体">SimpleMDE</font></h2>
+<p><a href="https://github.com/NextStepWebs/simplemde-markdown-editor">https://github.com/NextStepWebs/simplemde-markdown-editor</a></p>
+<p><font color=#0099ff size=4 face="黑体"><a href="https://github.com/NextStepWebs/simplemde-markdown-editor">https://github.com/NextStepWebs/simplemde-markdown-editor</a></font> </p>
+<p>Copyright (c) 2015 Next Step Webs, Inc.  </p>
+<p><font color=#0099ff size=4 face="黑体">版权所有（c）2015 Next Step Webs，Inc。</font> </p>
+<p>MIT</p>
+<p><font color=#0099ff size=4 face="黑体">MIT</font> </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../OrchardCore.Lists/" title="Lists" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Lists
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../OrchardCore.Media/" title="Media" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Media
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright <a href="http://orchardproject.net">Orchard Project</a>.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.e72fd936.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../search/main.js"></script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-20757794-1","orchardproject.net"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
